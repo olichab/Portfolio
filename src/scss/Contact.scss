@@ -1,0 +1,29 @@
+@import "./helpers/Colors.scss";
+
+.contact-container {
+  height: 100vh;
+
+  .picto-email,
+  .picto-phone,
+  .picto-location {
+    width: 30px;
+  }
+
+  .form-control {
+    background-color: rgba($main-yellow, 0.1);
+    border: none;
+    border-radius: 1px;
+    border-bottom: solid 1px rgba($main-yellow, 0.5);
+    color: #fff;
+    font-size: 12px;
+    resize: none;
+    &::placeholder {
+      color: #fff;
+    }
+    &:focus {
+      background-color: rgba($main-yellow, 0.1);
+      color: #fff;
+      border-bottom: solid 1px $main-yellow;
+    }
+  }
+}
