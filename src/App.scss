@@ -1,0 +1,47 @@
+@import "./scss//helpers/Colors.scss";
+
+.App {
+  background-color: $main-grey;
+  color: #fff;
+  font-family: "Maitree";
+  button,
+  input,
+  textarea {
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+
+  h1 {
+    color: $main-yellow;
+    font-size: 28px;
+    font-family: "JosefinSlab";
+    font-weight: 600;
+  }
+
+  .btn-yellow {
+    background-color: transparent;
+    border: solid 1px $main-yellow;
+    color: $main-yellow;
+    padding: 5px 8px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .hvr-bounce-to-bottom {
+    &:hover {
+      color: $main-grey;
+    }
+
+    &:before {
+      background-color: $main-yellow;
+    }
+
+    &:active:before,
+    &:focus:before,
+    &:hover:before {
+      background-color: $main-yellow;
+    }
+  }
+}

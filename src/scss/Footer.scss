@@ -1,0 +1,22 @@
+@import "./helpers/Colors.scss";
+
+.footer-container {
+  font-size: 12px;
+  padding: 20px;
+  a {
+    color: #fff;
+    &:hover {
+      color: $main-yellow;
+    }
+  }
+  &:before {
+    content: "";
+    display: block;
+    position: relative;
+    height: 1px;
+    top: -20px;
+    width: 65%;
+    margin: auto;
+    background-color: rgba($main-yellow, 0.25);
+  }
+}

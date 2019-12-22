@@ -1,0 +1,13 @@
+@import "./helpers/Media.scss";
+
+.typeWriter {
+  font-size: 20px;
+
+  @include md {
+    font-size: 24px;
+  }
+
+  @include lg {
+    font-size: 30px;
+  }
+}
