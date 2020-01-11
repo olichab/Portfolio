@@ -1,4 +1,4 @@
-@import "./helpers/Colors.scss";
+@import './helpers/Colors.scss';
 
 .footer-container {
   font-size: 12px;
@@ -10,7 +10,7 @@
     }
   }
   &:before {
-    content: "";
+    content: '';
     display: block;
     position: relative;
     height: 1px;

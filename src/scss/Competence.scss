@@ -1,0 +1,78 @@
+@import './helpers//Colors.scss';
+
+.competence-container {
+  width: 150px;
+  height: 150px;
+  box-shadow: inset 0 0 0 1px $main-yellow;
+
+  img {
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin: auto;
+    transition: all 0.25s ease-in-out;
+  }
+
+  &:hover img {
+    opacity: 1;
+    transform: scale(1.25, 1.25);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid $main-yellow;
+    border-left: 15px solid transparent;
+    bottom: 15px;
+    margin-left: auto;
+  }
+
+  .caption {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all 0.45s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .blur {
+      z-index: 2;
+      position: absolute;
+      background-color: rgba($main-grey, 0.9);
+      height: 150px;
+      width: 150px;
+    }
+
+    .caption-text {
+      z-index: 3;
+      position: relative;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      p {
+        font-size: 24px;
+        color: $main-yellow;
+        margin: 0;
+      }
+    }
+  }
+
+  .caption-on-click {
+    opacity: 1;
+  }
+}

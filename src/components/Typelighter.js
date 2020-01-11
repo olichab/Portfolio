@@ -5,13 +5,13 @@ import '../scss/Typelighter.scss';
 export default function Typelighter() {
   return (
     <p>
-      <span className="typeWriter">J&apos;aime </span>
+      <span className='typeWriter'>J&apos;aime </span>
       <span
-        className="typeWriter"
-        data-random="false"
-        data-speed="2.5"
-        data-end="1000"
-        data-dltspeed="true"
+        className='typeWriter'
+        data-random='false'
+        data-speed='2.5'
+        data-end='1000'
+        data-dltspeed='true'
         data-text='[
           "être mis au défi",
           "acquérir de nouvelles connaissances et partager les miennes",

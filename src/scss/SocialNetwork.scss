@@ -1,4 +1,4 @@
-@import "./helpers/Media.scss";
+@import './helpers/Media.scss';
 
 .container-social-network {
   display: block;
@@ -8,7 +8,7 @@
   .logo-github {
     width: 30px;
     margin: 20px;
-    opacity: 0.45;
+    opacity: 0.5;
 
     @include lg {
       position: fixed;

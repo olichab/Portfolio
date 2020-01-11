@@ -18,18 +18,18 @@ export default function Header() {
   };
 
   return (
-    <Navbar expand="lg" fixed="top" className="header-container pb-0">
-      <NavbarBrand tag={Link} to="/">
+    <Navbar expand='lg' fixed='top' className='header-container'>
+      <NavbarBrand tag={Link} to='/'>
         <Media
           object
           src={logo}
-          alt="logo olivier chabot"
-          className="logo-oc"
+          alt='logo olivier chabot'
+          className='logo-oc'
           onClick={scrollToTop}
         />
       </NavbarBrand>
       <button
-        type="button"
+        type='button'
         className={`btn-menu ${isOpen ? 'active' : 'not-active'}`}
         onClick={toggleNavbar}
       >
@@ -38,27 +38,27 @@ export default function Header() {
         <span />
       </button>
       <Collapse isOpen={isOpen} navbar>
-        <Nav className="ml-auto" navbar>
+        <Nav className='ml-auto' navbar>
           <NavItem>
             <Link
-              className="nav-link"
-              activeClass="active"
-              to="anchorHomePart"
+              className='nav-link'
+              activeClass='active'
+              to='anchorHomePart'
               spy
-              smooth="easeInOutQuad"
+              smooth='easeInOutQuad'
               duration={750}
               onClick={closeMenu}
             >
-              <Media object src={home} alt="home" className="picto-home" />
+              <Media object src={home} alt='home' className='picto-home' />
             </Link>
           </NavItem>
           <NavItem onClick={toggleNavbar}>
             <Link
-              className="nav-link"
-              activeClass="active"
-              to="anchorBioPart"
+              className='nav-link'
+              activeClass='active'
+              to='anchorBioPart'
               spy
-              smooth="easeInOutQuad"
+              smooth='easeInOutQuad'
               duration={750}
               onClick={closeMenu}
             >
@@ -67,11 +67,11 @@ export default function Header() {
           </NavItem>
           <NavItem>
             <Link
-              className="nav-link"
-              activeClass="active"
-              to="anchorProjetsPart"
+              className='nav-link'
+              activeClass='active'
+              to='anchorProjetsPart'
               spy
-              smooth="easeInOutQuad"
+              smooth='easeInOutQuad'
               duration={750}
               onClick={closeMenu}
             >
@@ -80,9 +80,9 @@ export default function Header() {
           </NavItem>
           <NavItem>
             <Link
-              className="nav-link"
-              activeClass="active"
-              to="anchorContactPart"
+              className='nav-link'
+              activeClass='active'
+              to='anchorContactPart'
               spy
               smooth
               duration={750}

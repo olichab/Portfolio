@@ -22,7 +22,7 @@ export default function IconScroll() {
   return (
     <>
       <div className={`icon-scroll  ${scrollY > 50 && 'hide-icon-scroll'}`}>
-        <span className="title-scroll">SCROLL</span>
+        <span className='title-scroll'>SCROLL</span>
       </div>
     </>
   );
