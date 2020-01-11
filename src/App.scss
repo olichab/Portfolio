@@ -1,9 +1,10 @@
-@import "./scss//helpers/Colors.scss";
+@import './scss//helpers/Colors.scss';
 
 .App {
   background-color: $main-grey;
   color: #fff;
-  font-family: "Maitree";
+  font-family: 'Maitree';
+
   button,
   input,
   textarea {
@@ -16,7 +17,7 @@
   h1 {
     color: $main-yellow;
     font-size: 28px;
-    font-family: "JosefinSlab";
+    font-family: 'JosefinSlab';
     font-weight: 600;
   }
 

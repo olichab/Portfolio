@@ -7,7 +7,7 @@ export default function ParticlesBubbles() {
   return (
     <>
       <Particles
-        className="particles-container"
+        className='particles-container'
         params={{
           particles: {
             number: {

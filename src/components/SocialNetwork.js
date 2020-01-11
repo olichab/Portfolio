@@ -7,12 +7,12 @@ import '../scss/SocialNetwork.scss';
 
 export default function SocialNetwork() {
   return (
-    <div className="container-social-network">
+    <div className='container-social-network'>
       <Media
         object
         src={logoLinkedIn}
-        alt="logo linkedin"
-        className="logo-linked-in hvr-grow"
+        alt='logo linkedin'
+        className='logo-linked-in hvr-grow'
         onClick={() =>
           window.open('https://www.linkedin.com/in/olichab', '_blank')
         }
@@ -21,8 +21,8 @@ export default function SocialNetwork() {
       <Media
         object
         src={logoGithub}
-        alt="logo linkedin"
-        className="logo-github hvr-grow"
+        alt='logo linkedin'
+        className='logo-github hvr-grow'
         onClick={() => window.open('https://github.com/olichab', '_blank')}
       />
     </div>

@@ -1,5 +1,5 @@
-@import "./helpers/Colors.scss";
-@import "./helpers/Media.scss";
+@import './helpers/Colors.scss';
+@import './helpers/Media.scss';
 
 .header-container {
   background-color: $main-grey;
@@ -38,7 +38,7 @@
   .nav-item {
     .nav-link {
       color: #fff;
-      font-family: "Josefin Slab", serif;
+      font-family: 'Josefin Slab', serif;
       font-weight: 600;
       text-align: center;
       font-size: 30px;
@@ -52,7 +52,7 @@
     @include lg {
       &:before {
         z-index: -1;
-        content: "";
+        content: '';
         display: block;
         position: relative;
         height: 1px;
@@ -72,7 +72,7 @@
 
     .active {
       &:after {
-        content: "";
+        content: '';
         display: block;
         position: relative;
         height: 1px;

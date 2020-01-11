@@ -1,28 +1,41 @@
-@import "./helpers/Colors.scss";
+@import './helpers/Colors.scss';
+@import './helpers/Media.scss';
 
 .bio-container {
-  padding: 75px;
+  padding-top: 50px;
+
+  @include lg {
+    padding-top: 75px;
+  }
 
   .presentaion-text {
-    padding: 15px;
+    z-index: 2;
+    padding: 35px;
     background-color: rgba($main-yellow, 0.1);
-    margin-bottom: 50px;
+
+    @include lg {
+      padding-right: 100px;
+    }
+
     p {
       font-size: 14px;
       margin: 0;
     }
   }
-  .presentation-photo {
-    .photo {
-      width: 300px;
-      height: 300px;
-      display: block;
-      margin: auto;
-    }
-  }
 
-  img {
+  .photo {
+    z-index: 1;
+    width: 225px;
+    height: 225px;
+    position: relative;
     display: block;
     margin: auto;
+    border-radius: 2px;
+
+    @include lg {
+      width: 300px;
+      height: 300px;
+      margin-left: -85px;
+    }
   }
 }
