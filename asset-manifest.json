@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.cec8b045.chunk.css",
-    "main.js": "/Portfolio/static/js/main.091cc8e8.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.091cc8e8.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.7ba136f8.chunk.css",
+    "main.js": "/Portfolio/static/js/main.18db62c0.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.18db62c0.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.d3ebe2ed.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.d3ebe2ed.js.map",
     "static/css/2.17e5ed98.chunk.css": "/Portfolio/static/css/2.17e5ed98.chunk.css",
     "static/js/2.f2576d2d.chunk.js": "/Portfolio/static/js/2.f2576d2d.chunk.js",
     "static/js/2.f2576d2d.chunk.js.map": "/Portfolio/static/js/2.f2576d2d.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.1d44b8e03cc8267ed0d4a7d314b24f0f.js": "/Portfolio/precache-manifest.1d44b8e03cc8267ed0d4a7d314b24f0f.js",
+    "precache-manifest.dc0d934dbc66df6e2760dba6389ca13d.js": "/Portfolio/precache-manifest.dc0d934dbc66df6e2760dba6389ca13d.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/Portfolio/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.cec8b045.chunk.css.map": "/Portfolio/static/css/main.cec8b045.chunk.css.map",
+    "static/css/main.7ba136f8.chunk.css.map": "/Portfolio/static/css/main.7ba136f8.chunk.css.map",
     "static/js/2.f2576d2d.chunk.js.LICENSE": "/Portfolio/static/js/2.f2576d2d.chunk.js.LICENSE",
     "static/media/Photo_OC.jpg": "/Portfolio/static/media/Photo_OC.58b8eafa.jpg",
     "static/media/Thumbnail_Archi.jpg": "/Portfolio/static/media/Thumbnail_Archi.3f6fdeb4.jpg",
@@ -24,7 +24,7 @@
     "static/media/Thumbnail_LaDefenseArena.jpg": "/Portfolio/static/media/Thumbnail_LaDefenseArena.0155ab5f.jpg",
     "static/media/Thumbnail_Mooviz.jpg": "/Portfolio/static/media/Thumbnail_Mooviz.d64ebcce.jpg",
     "static/media/Thumbnail_PacifaBasket.jpg": "/Portfolio/static/media/Thumbnail_PacifaBasket.4a20b436.jpg",
-    "static/media/Thumbnail_SketchMirodia.JPG": "/Portfolio/static/media/Thumbnail_SketchMirodia.157a9e62.JPG",
+    "static/media/Thumbnail_SketchMirodia.jpg": "/Portfolio/static/media/Thumbnail_SketchMirodia.157a9e62.jpg",
     "static/media/Thumbnail_Themis.jpg": "/Portfolio/static/media/Thumbnail_Themis.28a70c51.jpg",
     "static/media/Thumbnail_Uvsq.jpg": "/Portfolio/static/media/Thumbnail_Uvsq.f73aa3bf.jpg",
     "static/media/adobexd.svg": "/Portfolio/static/media/adobexd.891dcb59.svg",
@@ -57,7 +57,7 @@
     "static/js/runtime-main.d3ebe2ed.js",
     "static/css/2.17e5ed98.chunk.css",
     "static/js/2.f2576d2d.chunk.js",
-    "static/css/main.cec8b045.chunk.css",
-    "static/js/main.091cc8e8.chunk.js"
+    "static/css/main.7ba136f8.chunk.css",
+    "static/js/main.18db62c0.chunk.js"
   ]
 }
