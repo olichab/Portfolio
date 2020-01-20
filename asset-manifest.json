@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.dc3f4330.chunk.css",
-    "main.js": "/Portfolio/static/js/main.0d6c2971.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.0d6c2971.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.d5f8a2b8.chunk.css",
+    "main.js": "/Portfolio/static/js/main.23465aa3.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.23465aa3.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.d3ebe2ed.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.d3ebe2ed.js.map",
     "static/css/2.17e5ed98.chunk.css": "/Portfolio/static/css/2.17e5ed98.chunk.css",
-    "static/js/2.f2576d2d.chunk.js": "/Portfolio/static/js/2.f2576d2d.chunk.js",
-    "static/js/2.f2576d2d.chunk.js.map": "/Portfolio/static/js/2.f2576d2d.chunk.js.map",
+    "static/js/2.86e18242.chunk.js": "/Portfolio/static/js/2.86e18242.chunk.js",
+    "static/js/2.86e18242.chunk.js.map": "/Portfolio/static/js/2.86e18242.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.9c41ca8fe06f1b7d6a49e0e1bb4d80a2.js": "/Portfolio/precache-manifest.9c41ca8fe06f1b7d6a49e0e1bb4d80a2.js",
+    "precache-manifest.ac479fd5350f33ac29a0fa8b59b34656.js": "/Portfolio/precache-manifest.ac479fd5350f33ac29a0fa8b59b34656.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/Portfolio/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.dc3f4330.chunk.css.map": "/Portfolio/static/css/main.dc3f4330.chunk.css.map",
-    "static/js/2.f2576d2d.chunk.js.LICENSE": "/Portfolio/static/js/2.f2576d2d.chunk.js.LICENSE",
+    "static/css/main.d5f8a2b8.chunk.css.map": "/Portfolio/static/css/main.d5f8a2b8.chunk.css.map",
+    "static/js/2.86e18242.chunk.js.LICENSE": "/Portfolio/static/js/2.86e18242.chunk.js.LICENSE",
     "static/media/Photo_OC.jpg": "/Portfolio/static/media/Photo_OC.58b8eafa.jpg",
     "static/media/Thumbnail_Archi.jpg": "/Portfolio/static/media/Thumbnail_Archi.3f6fdeb4.jpg",
     "static/media/Thumbnail_BreakingBad.jpg": "/Portfolio/static/media/Thumbnail_BreakingBad.8dfbaeba.jpg",
@@ -56,8 +56,8 @@
   "entrypoints": [
     "static/js/runtime-main.d3ebe2ed.js",
     "static/css/2.17e5ed98.chunk.css",
-    "static/js/2.f2576d2d.chunk.js",
-    "static/css/main.dc3f4330.chunk.css",
-    "static/js/main.0d6c2971.chunk.js"
+    "static/js/2.86e18242.chunk.js",
+    "static/css/main.d5f8a2b8.chunk.css",
+    "static/js/main.23465aa3.chunk.js"
   ]
 }
