@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3635ed77.chunk.css",
-    "main.js": "/portfolio/static/js/main.47374fdf.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.47374fdf.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.660ef190.chunk.css",
+    "main.js": "/portfolio/static/js/main.306061e8.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.306061e8.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.860ade9b.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.860ade9b.js.map",
     "static/css/2.17e5ed98.chunk.css": "/portfolio/static/css/2.17e5ed98.chunk.css",
-    "static/js/2.6e8a922f.chunk.js": "/portfolio/static/js/2.6e8a922f.chunk.js",
-    "static/js/2.6e8a922f.chunk.js.map": "/portfolio/static/js/2.6e8a922f.chunk.js.map",
+    "static/js/2.48cdf8b7.chunk.js": "/portfolio/static/js/2.48cdf8b7.chunk.js",
+    "static/js/2.48cdf8b7.chunk.js.map": "/portfolio/static/js/2.48cdf8b7.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.4bbd0e0d68f1c551c37e559b2b70e7ba.js": "/portfolio/precache-manifest.4bbd0e0d68f1c551c37e559b2b70e7ba.js",
+    "precache-manifest.4a07d4cf7433b1fdb0182274b6065bb9.js": "/portfolio/precache-manifest.4a07d4cf7433b1fdb0182274b6065bb9.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/portfolio/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.3635ed77.chunk.css.map": "/portfolio/static/css/main.3635ed77.chunk.css.map",
-    "static/js/2.6e8a922f.chunk.js.LICENSE": "/portfolio/static/js/2.6e8a922f.chunk.js.LICENSE",
+    "static/css/main.660ef190.chunk.css.map": "/portfolio/static/css/main.660ef190.chunk.css.map",
+    "static/js/2.48cdf8b7.chunk.js.LICENSE": "/portfolio/static/js/2.48cdf8b7.chunk.js.LICENSE",
     "static/media/1_Bol_OngoingProject.jpg": "/portfolio/static/media/1_Bol_OngoingProject.762419dd.jpg",
     "static/media/2_Bol_AddSupport.jpg": "/portfolio/static/media/2_Bol_AddSupport.92612ac2.jpg",
     "static/media/3_Bol_Support.jpg": "/portfolio/static/media/3_Bol_Support.59e6da6f.jpg",
@@ -60,8 +60,8 @@
   "entrypoints": [
     "static/js/runtime-main.860ade9b.js",
     "static/css/2.17e5ed98.chunk.css",
-    "static/js/2.6e8a922f.chunk.js",
-    "static/css/main.3635ed77.chunk.css",
-    "static/js/main.47374fdf.chunk.js"
+    "static/js/2.48cdf8b7.chunk.js",
+    "static/css/main.660ef190.chunk.css",
+    "static/js/main.306061e8.chunk.js"
   ]
 }
