@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "01c461b9bfc5dfc2f95bfbd8f81232b4",
+    "revision": "8ff5d8189dc5e61a93bf377fa076158e",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "3de809781eb904be9d12",
+    "revision": "e37fb1c5b48646ba6988",
     "url": "/portfolio/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "82f53bb6666e438b19f5",
-    "url": "/portfolio/static/css/main.4c2361ea.chunk.css"
+    "revision": "16e026736ee0a8482abe",
+    "url": "/portfolio/static/css/main.805a20e8.chunk.css"
   },
   {
-    "revision": "3de809781eb904be9d12",
-    "url": "/portfolio/static/js/2.1b336f0e.chunk.js"
+    "revision": "e37fb1c5b48646ba6988",
+    "url": "/portfolio/static/js/2.3bf548fb.chunk.js"
   },
   {
     "revision": "b1953906fcf37f5c263e0254ff985bef",
-    "url": "/portfolio/static/js/2.1b336f0e.chunk.js.LICENSE"
+    "url": "/portfolio/static/js/2.3bf548fb.chunk.js.LICENSE"
   },
   {
-    "revision": "82f53bb6666e438b19f5",
-    "url": "/portfolio/static/js/main.ab86fc36.chunk.js"
+    "revision": "16e026736ee0a8482abe",
+    "url": "/portfolio/static/js/main.cb119fed.chunk.js"
   },
   {
     "revision": "16c109c584451046bd84",
@@ -60,6 +60,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/1_HelloWorld.4f2871d0.jpg"
   },
   {
+    "revision": "a72c4193683eb72a2dd41a3312c0aac5",
+    "url": "/portfolio/static/media/1_Monuments.a72c4193.jpg"
+  },
+  {
     "revision": "25b5dff047f84ce366dfb66806c58f71",
     "url": "/portfolio/static/media/1_Mooviz.25b5dff0.jpg"
   },
@@ -88,6 +92,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/2_Mooviz.a258bc81.jpg"
   },
   {
+    "revision": "6131945176e9d7e678e62d2c06aa47b8",
+    "url": "/portfolio/static/media/2_NotreDame.61319451.jpg"
+  },
+  {
     "revision": "17244e330a54d4acb5ee6c5716d58b5d",
     "url": "/portfolio/static/media/2_Poire.17244e33.jpg"
   },
@@ -102,6 +110,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7a894b3bf0ff6f23c906b8c616fe9d02",
     "url": "/portfolio/static/media/3_HelloWorld.7a894b3b.jpg"
+  },
+  {
+    "revision": "c8daff5df4341d58f49946ebcf2ad456",
+    "url": "/portfolio/static/media/3_Invalides.c8daff5d.jpg"
   },
   {
     "revision": "b1ed352a70cff53f9894303ddba29492",
@@ -128,12 +140,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/4_Mooviz.f74d62b7.jpg"
   },
   {
+    "revision": "31c19ae0fef3555427e4551fad8a838e",
+    "url": "/portfolio/static/media/4_SacreCoeur.31c19ae0.jpg"
+  },
+  {
     "revision": "dd015e858ae451081a312b14885e2d41",
     "url": "/portfolio/static/media/4_SalleDebain.dd015e85.jpg"
   },
   {
     "revision": "e946e481d0b07b50fdc16dad0fbe35d2",
     "url": "/portfolio/static/media/5_Affiche4.e946e481.jpg"
+  },
+  {
+    "revision": "3c575c4dd4b4f31f54af4d35d95156c2",
+    "url": "/portfolio/static/media/5_ArcDeTriomphe.3c575c4d.jpg"
   },
   {
     "revision": "fe695368bf11145b4d9a4f12fbb8d1aa",
@@ -146,6 +166,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f1e255ec188c3addbd329a7f44618629",
     "url": "/portfolio/static/media/6_Affiche5.f1e255ec.jpg"
+  },
+  {
+    "revision": "6156c22746f83a4c933cf130f59ca4ad",
+    "url": "/portfolio/static/media/6_MonumentsWireFrame.6156c227.jpg"
   },
   {
     "revision": "966191ed49c36466b2ef1239cef23b02",
