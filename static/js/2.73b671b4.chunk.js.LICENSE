@@ -1,4 +1,8 @@
 /*!
+ * Programatically add the following
+ */
+
+/*!
   Copyright (c) 2017 Jed Watson.
   Licensed under the MIT License (MIT), see
   http://jedwatson.github.io/classnames
@@ -9,6 +13,15 @@
   Based on code that is Copyright 2013-2015, Facebook, Inc.
   All rights reserved.
 */
+
+/*! @name m3u8-parser @version 4.4.0 @license Apache-2.0 */
+
+/**
+ * @videojs/http-streaming
+ * @version 1.10.6
+ * @copyright 2019 Brightcove, Inc
+ * @license Apache-2.0
+ */
 
 /*
 object-assign
