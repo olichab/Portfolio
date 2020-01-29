@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b356793ecb281d95e173814fe9b951a8",
+    "revision": "90785e860e33dc98b07a13c2a900f947",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "fcd63c0ec436ad55ab3c",
+    "revision": "79ff0c2d44f55b84b17d",
     "url": "/portfolio/static/css/2.6ca61177.chunk.css"
   },
   {
-    "revision": "222ad29d53c657f0631f",
+    "revision": "ef486818718129e7779f",
     "url": "/portfolio/static/css/main.184b5e8f.chunk.css"
   },
   {
-    "revision": "fcd63c0ec436ad55ab3c",
-    "url": "/portfolio/static/js/2.d1080b90.chunk.js"
+    "revision": "79ff0c2d44f55b84b17d",
+    "url": "/portfolio/static/js/2.3486624f.chunk.js"
   },
   {
-    "revision": "308c132ce631ddf37a7634c00fe7011e",
-    "url": "/portfolio/static/js/2.d1080b90.chunk.js.LICENSE"
+    "revision": "3fe8cb97cc092c30250c69d7a356601f",
+    "url": "/portfolio/static/js/2.3486624f.chunk.js.LICENSE"
   },
   {
-    "revision": "222ad29d53c657f0631f",
-    "url": "/portfolio/static/js/main.1dc1e480.chunk.js"
+    "revision": "ef486818718129e7779f",
+    "url": "/portfolio/static/js/main.259aef04.chunk.js"
   },
   {
     "revision": "16c109c584451046bd84",
@@ -72,6 +72,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/1_Mooviz.25b5dff0.jpg"
   },
   {
+    "revision": "64427a3f32d15ba46dc45f16dc2139ea",
+    "url": "/portfolio/static/media/1_Pacifa_Pano.64427a3f.jpg"
+  },
+  {
     "revision": "1198ba281ae21ea62f89095a6a7e81b8",
     "url": "/portfolio/static/media/1_Salon.1198ba28.jpg"
   },
@@ -102,6 +106,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6131945176e9d7e678e62d2c06aa47b8",
     "url": "/portfolio/static/media/2_NotreDame.61319451.jpg"
+  },
+  {
+    "revision": "1f0e94746f3ac3a0cef25056117c191f",
+    "url": "/portfolio/static/media/2_Pacifa_Pano.1f0e9474.jpg"
   },
   {
     "revision": "17244e330a54d4acb5ee6c5716d58b5d",
@@ -136,6 +144,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/3_Mooviz.2725add8.jpg"
   },
   {
+    "revision": "7677629da0c21fdf94f8b2fd7795d192",
+    "url": "/portfolio/static/media/3_Pacifa_Pano.7677629d.jpg"
+  },
+  {
     "revision": "8dbba5017a092cea33320be48d1acbe3",
     "url": "/portfolio/static/media/4_Affiche3.8dbba501.jpg"
   },
@@ -154,6 +166,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f74d62b708116b438df9cdd149cb1ce4",
     "url": "/portfolio/static/media/4_Mooviz.f74d62b7.jpg"
+  },
+  {
+    "revision": "beed069065f846b1f2e70b2bf3462191",
+    "url": "/portfolio/static/media/4_Pacifa_Pano.beed0690.jpg"
   },
   {
     "revision": "31c19ae0fef3555427e4551fad8a838e",
@@ -184,6 +200,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/5_Mooviz.530f39ca.jpg"
   },
   {
+    "revision": "3f179ff9685a405ff4a55abb102b0cc2",
+    "url": "/portfolio/static/media/5_Pacifa_Pano.3f179ff9.jpg"
+  },
+  {
     "revision": "f1e255ec188c3addbd329a7f44618629",
     "url": "/portfolio/static/media/6_Affiche5.f1e255ec.jpg"
   },
@@ -200,6 +220,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/6_Mooviz.966191ed.jpg"
   },
   {
+    "revision": "fc4f772cac1fd0700d077902c86e9f92",
+    "url": "/portfolio/static/media/6_Pacifa_Pano.fc4f772c.jpg"
+  },
+  {
     "revision": "fb06ae5cf7df481da027142deb9dca54",
     "url": "/portfolio/static/media/7_Affiche6.fb06ae5c.jpg"
   },
@@ -210,6 +234,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "23b60ee9e81d25b7ec5ee8af9390cbee",
     "url": "/portfolio/static/media/7_Mooviz.23b60ee9.jpg"
+  },
+  {
+    "revision": "86993228ef094eb544466e0fc515c5e4",
+    "url": "/portfolio/static/media/7_Pacifa_Pano.86993228.jpg"
   },
   {
     "revision": "767ff848a0eaaea230dc8333e7d3d003",
