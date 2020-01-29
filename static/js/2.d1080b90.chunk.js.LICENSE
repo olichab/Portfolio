@@ -8,12 +8,6 @@
   http://jedwatson.github.io/classnames
 */
 
-/*!
-  Copyright (c) 2015 Jed Watson.
-  Based on code that is Copyright 2013-2015, Facebook, Inc.
-  All rights reserved.
-*/
-
 /*! @name m3u8-parser @version 4.4.0 @license Apache-2.0 */
 
 /**
@@ -22,6 +16,12 @@
  * @copyright 2019 Brightcove, Inc
  * @license Apache-2.0
  */
+
+/*!
+  Copyright (c) 2015 Jed Watson.
+  Based on code that is Copyright 2013-2015, Facebook, Inc.
+  All rights reserved.
+*/
 
 /*
 object-assign

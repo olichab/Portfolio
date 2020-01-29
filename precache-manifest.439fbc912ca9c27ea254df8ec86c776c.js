@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a53d19e2a5471864fa9d2ffc8494dc47",
+    "revision": "7b0c2a8d9f2db56d1416bb5ae82e5285",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "c43baba839999873345b",
+    "revision": "fcd63c0ec436ad55ab3c",
     "url": "/portfolio/static/css/2.6ca61177.chunk.css"
   },
   {
-    "revision": "746d74a2305bba2b328b",
+    "revision": "27fd90dc02e1041d409e",
     "url": "/portfolio/static/css/main.184b5e8f.chunk.css"
   },
   {
-    "revision": "c43baba839999873345b",
-    "url": "/portfolio/static/js/2.e2f60501.chunk.js"
+    "revision": "fcd63c0ec436ad55ab3c",
+    "url": "/portfolio/static/js/2.d1080b90.chunk.js"
   },
   {
-    "revision": "e1a6c349529315598c4f0deb5d7648a4",
-    "url": "/portfolio/static/js/2.e2f60501.chunk.js.LICENSE"
+    "revision": "308c132ce631ddf37a7634c00fe7011e",
+    "url": "/portfolio/static/js/2.d1080b90.chunk.js.LICENSE"
   },
   {
-    "revision": "746d74a2305bba2b328b",
-    "url": "/portfolio/static/js/main.e226cf30.chunk.js"
+    "revision": "27fd90dc02e1041d409e",
+    "url": "/portfolio/static/js/main.8da21d25.chunk.js"
   },
   {
     "revision": "16c109c584451046bd84",
@@ -124,6 +124,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/3_Invalides.c8daff5d.jpg"
   },
   {
+    "revision": "aa46146e22fbea273e0764e2c2fb467e",
+    "url": "/portfolio/static/media/3_LaDefenseArena_PanoSalon2.aa46146e.jpg"
+  },
+  {
     "revision": "b1ed352a70cff53f9894303ddba29492",
     "url": "/portfolio/static/media/3_Maison.b1ed352a.jpg"
   },
@@ -142,6 +146,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3dfccecb6b8a3a830294c2ee57debfb8",
     "url": "/portfolio/static/media/4_HelloWorld.3dfccecb.jpg"
+  },
+  {
+    "revision": "ee3ec245f8af185bec45ae4587819c6f",
+    "url": "/portfolio/static/media/4_LaDefenseArena_PanoSalon3.ee3ec245.jpg"
   },
   {
     "revision": "f74d62b708116b438df9cdd149cb1ce4",
@@ -164,6 +172,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/5_ArcDeTriomphe.3c575c4d.jpg"
   },
   {
+    "revision": "de2387bedf901e3a2f83c4725464fcf5",
+    "url": "/portfolio/static/media/5_LaDefenseArena_PanoSalon1.de2387be.jpg"
+  },
+  {
     "revision": "fe695368bf11145b4d9a4f12fbb8d1aa",
     "url": "/portfolio/static/media/5_Montagne.fe695368.jpg"
   },
@@ -174,6 +186,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f1e255ec188c3addbd329a7f44618629",
     "url": "/portfolio/static/media/6_Affiche5.f1e255ec.jpg"
+  },
+  {
+    "revision": "c47cf5a90f0eaf706f2d685c85e6ff4f",
+    "url": "/portfolio/static/media/6_LaDefenseArena_PanoSalon4.c47cf5a9.jpg"
   },
   {
     "revision": "6156c22746f83a4c933cf130f59ca4ad",
@@ -188,6 +204,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/7_Affiche6.fb06ae5c.jpg"
   },
   {
+    "revision": "7ddf9bf56d929592c8a73886609dec56",
+    "url": "/portfolio/static/media/7_LaDefenseArena_PanoSalon5.7ddf9bf5.jpg"
+  },
+  {
     "revision": "23b60ee9e81d25b7ec5ee8af9390cbee",
     "url": "/portfolio/static/media/7_Mooviz.23b60ee9.jpg"
   },
@@ -196,8 +216,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/8_Affiche7.767ff848.jpg"
   },
   {
+    "revision": "ff5be7658f938184b9a54e8d5a07ace5",
+    "url": "/portfolio/static/media/8_LaDefenseArena_PanoSalon6.ff5be765.jpg"
+  },
+  {
     "revision": "4c180f5438b8535309e36752be065033",
     "url": "/portfolio/static/media/9_Affiche8.4c180f54.jpg"
+  },
+  {
+    "revision": "1f75f9c8badd6c3e55268cfa8014e7af",
+    "url": "/portfolio/static/media/9_LaDefenseArena_PanoSalon8.1f75f9c8.jpg"
   },
   {
     "revision": "3b6023c5c7087a3175969e52c9382e8b",
