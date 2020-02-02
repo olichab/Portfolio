@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "90785e860e33dc98b07a13c2a900f947",
+    "revision": "bd0fe0fe280d4593682d9cd476f6dd2b",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "79ff0c2d44f55b84b17d",
+    "revision": "05d2bf68761ef6e6f671",
     "url": "/portfolio/static/css/2.6ca61177.chunk.css"
   },
   {
-    "revision": "ef486818718129e7779f",
-    "url": "/portfolio/static/css/main.184b5e8f.chunk.css"
+    "revision": "a1d2b1ed35ccdca984a0",
+    "url": "/portfolio/static/css/main.26c31eb6.chunk.css"
   },
   {
-    "revision": "79ff0c2d44f55b84b17d",
-    "url": "/portfolio/static/js/2.3486624f.chunk.js"
+    "revision": "05d2bf68761ef6e6f671",
+    "url": "/portfolio/static/js/2.272756a4.chunk.js"
   },
   {
-    "revision": "3fe8cb97cc092c30250c69d7a356601f",
-    "url": "/portfolio/static/js/2.3486624f.chunk.js.LICENSE"
+    "revision": "308c132ce631ddf37a7634c00fe7011e",
+    "url": "/portfolio/static/js/2.272756a4.chunk.js.LICENSE"
   },
   {
-    "revision": "ef486818718129e7779f",
-    "url": "/portfolio/static/js/main.259aef04.chunk.js"
+    "revision": "a1d2b1ed35ccdca984a0",
+    "url": "/portfolio/static/js/main.816d36fe.chunk.js"
   },
   {
     "revision": "16c109c584451046bd84",
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/1_Aubergine.0e7efdf6.jpg"
   },
   {
-    "revision": "762419dd13b25a884022362aedb98ca5",
-    "url": "/portfolio/static/media/1_Bol_OngoingProject.762419dd.jpg"
+    "revision": "d1c2768323080d1c046a6fe578daaf64",
+    "url": "/portfolio/static/media/1_Bol_OngoingProject.d1c27683.jpg"
   },
   {
     "revision": "4f2871d0f19903d3f12798d1a9a8d032",
@@ -152,8 +152,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/4_Affiche3.8dbba501.jpg"
   },
   {
-    "revision": "ca9d40ac192254fd605a8ae0538a8ec0",
-    "url": "/portfolio/static/media/4_Bol_Workflow.ca9d40ac.jpg"
+    "revision": "e009b13c51087228ba789e042cd6ebf7",
+    "url": "/portfolio/static/media/4_Bol_Workflow.e009b13c.jpg"
   },
   {
     "revision": "3dfccecb6b8a3a830294c2ee57debfb8",
@@ -228,16 +228,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/7_Affiche6.fb06ae5c.jpg"
   },
   {
+    "revision": "697751e0b574193e3180bb0cc1c9b7f0",
+    "url": "/portfolio/static/media/7_Composition.697751e0.jpg"
+  },
+  {
     "revision": "7ddf9bf56d929592c8a73886609dec56",
     "url": "/portfolio/static/media/7_LaDefenseArena_PanoSalon5.7ddf9bf5.jpg"
   },
   {
     "revision": "23b60ee9e81d25b7ec5ee8af9390cbee",
     "url": "/portfolio/static/media/7_Mooviz.23b60ee9.jpg"
-  },
-  {
-    "revision": "86993228ef094eb544466e0fc515c5e4",
-    "url": "/portfolio/static/media/7_Pacifa_Pano.86993228.jpg"
   },
   {
     "revision": "767ff848a0eaaea230dc8333e7d3d003",
@@ -254,10 +254,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1f75f9c8badd6c3e55268cfa8014e7af",
     "url": "/portfolio/static/media/9_LaDefenseArena_PanoSalon8.1f75f9c8.jpg"
-  },
-  {
-    "revision": "3b6023c5c7087a3175969e52c9382e8b",
-    "url": "/portfolio/static/media/BDEThemis.3b6023c5.jpg"
   },
   {
     "revision": "874029ea5d9d0aeb0d8c2d7cf1dbd2e7",
@@ -314,10 +310,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f73f5d7964b1895ea2e0c39ca2b63eed",
     "url": "/portfolio/static/media/Thumbnail_SketchMirodia.f73f5d79.jpg"
-  },
-  {
-    "revision": "ca16acf8f30488534853e86a95500bc0",
-    "url": "/portfolio/static/media/Thumbnail_Themis.ca16acf8.jpg"
   },
   {
     "revision": "7838e607dfdcb0e561304cce2b94919b",
