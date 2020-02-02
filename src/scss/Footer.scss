@@ -3,12 +3,16 @@
 .footer-container {
   font-size: 12px;
   padding: 20px;
+  margin-top: 25px;
+
   a {
     color: #fff;
+
     &:hover {
       color: $main-yellow;
     }
   }
+
   &:before {
     content: '';
     display: block;

@@ -10,7 +10,7 @@ export default function Typelighter() {
         className='typeWriter'
         data-random='false'
         data-speed='2.5'
-        data-end='1000'
+        data-end='1500'
         data-dltspeed='true'
         data-text='[
           "être mis au défi",

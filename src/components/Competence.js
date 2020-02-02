@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import { Row, Col, Media } from 'reactstrap';
 
 import '../scss/Competence.scss';
 
-export default function Competence({ logo, logo2, name, name2, name3 }) {
+export default function Competence({ logo, name }) {
   const [showCaptionOnClick, setShowCaptionOnClick] = useState(false);
 
   const toggleCaption = () => setShowCaptionOnClick(!showCaptionOnClick);
@@ -18,11 +18,11 @@ export default function Competence({ logo, logo2, name, name2, name3 }) {
     >
       <Row className='h-100 justify-content-center'>
         <Col xs='auto' className='logo my-auto p-2'>
-          <Media object src={logo} />
+          <Media object src={logo[0]} />
         </Col>
-        {logo2 && (
+        {logo[1] && (
           <Col xs='auto' className='my-auto p-2'>
-            <Media object src={logo2} />
+            <Media object src={logo[1]} />
           </Col>
         )}
       </Row>
@@ -32,19 +32,17 @@ export default function Competence({ logo, logo2, name, name2, name3 }) {
         <div className='blur' />
         <div className='caption-text'>
           <p>
-            {name}
-            {name2 && (
-              <>
-                <br />
-                {name2}
-              </>
-            )}
-            {name3 && (
-              <>
-                <br />
-                {name3}
-              </>
-            )}
+            {name.length &&
+              name.map((e, i) =>
+                i === 0 ? (
+                  e
+                ) : (
+                  <Fragment key={e}>
+                    <br />
+                    {e}
+                  </Fragment>
+                )
+              )}
           </p>
         </div>
       </div>

@@ -27,10 +27,12 @@
     color: $main-yellow;
     padding: 5px 8px;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
   }
 
-  .hvr-bounce-to-bottom {
+  .hvr-bounce-to-bottom,
+  .hvr-sweep-to-right,
+  .hvr-sweep-to-left {
     &:hover {
       color: $main-grey;
     }

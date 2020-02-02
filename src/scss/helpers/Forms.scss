@@ -1,0 +1,14 @@
+@mixin link-unstyled {
+
+  &,
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover {
+    font-style: inherit;
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+  }
+}

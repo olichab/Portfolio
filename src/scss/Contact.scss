@@ -18,9 +18,11 @@
     color: #fff;
     font-size: 12px;
     resize: none;
+
     &::placeholder {
       color: #fff;
     }
+
     &:focus {
       background-color: rgba($main-yellow, 0.1);
       color: #fff;

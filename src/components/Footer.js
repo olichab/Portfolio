@@ -10,13 +10,12 @@ export default function Footer() {
         <Col className='my-auto'>
           <Row className='justify-content-center text-center'>
             <Col>
-              Tous droits reservés &copy; 2019 ∙ Powered by Olivier Chabot ∙
+              Tous droits reservés &copy; 2020 ∙ Powered by Olivier Chabot ∙{' '}
               <a
                 href='https://github.com/olichab'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                {' '}
                 Github
               </a>{' '}
               ∙{' '}
@@ -26,6 +25,14 @@ export default function Footer() {
                 rel='noopener noreferrer'
               >
                 Linked in
+              </a>{' '}
+              ∙{' '}
+              <a
+                href='https://www.codewars.com/users/olichab'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Codewars
               </a>
             </Col>
           </Row>
