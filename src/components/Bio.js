@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col, Media } from 'reactstrap';
-import { Element } from 'react-scroll';
 import Competence from './Competence';
 import photo from '../assets/images/Photo_OC.jpg';
 import logoReact from '../assets/images/logos/react.svg';
@@ -21,121 +20,129 @@ import logoSketch from '../assets/images/logos/sketch.svg';
 import logoAdobeXD from '../assets/images/logos/adobexd.svg';
 import logoPhotoshop from '../assets/images/logos/photoshop.svg';
 import logoIllustrator from '../assets/images/logos/illustrator.svg';
+import resume from '../assets/docs/CV_Olivier_Chabot.pdf';
 
 import '../scss/Bio.scss';
 
 export default function Bio() {
   return (
-    <Element name='anchorBioPart'>
-      <Container className='bio-container'>
-        <Row className='p-5'>
-          <Col>
-            <h1>BIO</h1>
-          </Col>
-        </Row>
-        <Row className='justify-content-center'>
-          <Col
-            xs='12'
-            md='8'
-            lg='5'
-            className='my-auto offset-lg-2 presentaion-text'
+    <Container className='bio-container' id='bio'>
+      <Row className='p-3 p-md-5'>
+        <Col>
+          <h1>BIO</h1>
+        </Col>
+      </Row>
+      <Row className='justify-content-center'>
+        <Col
+          xs='12'
+          md='8'
+          lg='5'
+          className='my-auto offset-lg-2 presentaion-text'
+        >
+          <p>
+            Je m’appelle Olivier Chabot, j’ai 28 ans. Je suis diplômé de l’IUT
+            de Vélizy-Villacoublay en Métiers du Multimédia et de l’Internet.
+            <br />
+            <br />
+            Je me suis ensuite orienté vers des études en infographie 3D et ai
+            excercé dans ce domaine.
+            <br />
+            J’ai décidé, quelques années plus tard, de renouer avec ma première
+            passion: le développement web.
+            <br />
+            <br />
+            Après un bootcamp de 5 mois à la Wild Code School et une première
+            expérience réussie au sein d&apos;Altavia connect, je suis à la
+            recherche de nouveaux défis et serais ravis de mettre à contribution
+            mes compétences dans vos projets web.
+          </p>
+        </Col>
+        <Col xs='12' lg='4' className='my-auto'>
+          <Media
+            object
+            src={photo}
+            alt='photo olivier chabot'
+            className='photo'
+          />
+        </Col>
+      </Row>
+      <Row className='p-3 p-md-5 mt-5'>
+        <Col>
+          <h1>COMPÉTENCES</h1>
+        </Col>
+      </Row>
+      <Row className='justify-content-center'>
+        <Col xs='11' md='9' lg='8'>
+          <Row>
+            <Col xs='6' md='4' lg='3'>
+              <Competence
+                logo={[logoReact, logoRedux]}
+                name={['React', 'Redux']}
+              />
+            </Col>
+            <Col xs='6' md='4' lg='3'>
+              <Competence logo={[logoNodeJS]} name={['NodeJS']} />
+            </Col>
+            <Col xs='6' md='4' lg='3'>
+              <Competence
+                logo={[logoApi, logoPostman]}
+                name={['API Rest', 'Postman', 'BDD SQL']}
+              />
+            </Col>
+            <Col xs='6' md='4' lg='3'>
+              <Competence logo={[logoTypescript]} name={['Typescript']} />
+            </Col>
+            <Col xs='6' md='4' lg='3'>
+              <Competence
+                logo={[logoGit, logoGithub]}
+                name={['Git', 'Github']}
+              />
+            </Col>
+            <Col xs='6' md='4' lg='3'>
+              <Competence
+                logo={[logoJira, logoBitbucket]}
+                name={['Jira', 'Bitbucket']}
+              />
+            </Col>
+            <Col xs='6' md='4' lg='3'>
+              <Competence logo={[logoAgile]} name={['Méthode agile']} />
+            </Col>
+            <Col xs='6' md='4' lg='3'>
+              <Competence logo={[logoBootstrap]} name={['Bootstrap']} />
+            </Col>
+            <Col xs='6' md='4' lg='3'>
+              <Competence logo={[logoHtml]} name={['Html 5']} />
+            </Col>
+            <Col xs='6' md='4' lg='3'>
+              <Competence logo={[logoCss]} name={['Css 3']} />
+            </Col>
+            <Col xs='6' md='4' lg='3'>
+              <Competence
+                logo={[logoSketch, logoAdobeXD]}
+                name={['Sketch', 'Adobe XD']}
+              />
+            </Col>
+            <Col xs='6' md='4' lg='3'>
+              <Competence
+                logo={[logoPhotoshop, logoIllustrator]}
+                name={['Photoshop', 'Illustrator']}
+              />
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+      <Row className='justify-content-center'>
+        <Col xs='auto'>
+          <button
+            type='button'
+            className='btn-download-resume hvr-sweep-to-right'
           >
-            <p>
-              Je m’appelle Olivier Chabot, j’ai 28 ans. Je suis diplômé de l’IUT
-              de Vélizy-Villacoublay en Métiers du Multimédia et de l’Internet.
-              Après des études en infographie 3D et avoir excercé dans ce
-              domaine, j’ai décidé, quelques années plus tard, de renouer avec
-              ma première passion: le développement web.
-            </p>
-          </Col>
-          <Col xs='12' lg='4' className='my-auto'>
-            <Media
-              object
-              src={photo}
-              alt='photo olivier chabot'
-              className='photo'
-            />
-          </Col>
-        </Row>
-        <Row className='p-5'>
-          <Col>
-            <h1>COMPÉTENCES</h1>
-          </Col>
-        </Row>
-        <Row className='justify-content-center'>
-          <Col xs='11' md='9' lg='8'>
-            <Row>
-              <Col xs='6' md='4' lg='3'>
-                <Competence
-                  logo={logoReact}
-                  logo2={logoRedux}
-                  name='React'
-                  name2='Redux'
-                />
-              </Col>
-              <Col xs='6' md='4' lg='3'>
-                <Competence logo={logoNodeJS} name='NodeJS' />
-              </Col>
-              <Col xs='6' md='4' lg='3'>
-                <Competence
-                  logo={logoApi}
-                  logo2={logoPostman}
-                  name='API Rest'
-                  name2='Postman'
-                  name3='BDD SQL'
-                />
-              </Col>
-              <Col xs='6' md='4' lg='3'>
-                <Competence logo={logoTypescript} name='Typescript' />
-              </Col>
-              <Col xs='6' md='4' lg='3'>
-                <Competence
-                  logo={logoGit}
-                  logo2={logoGithub}
-                  name='Git'
-                  name2='Github'
-                />
-              </Col>
-              <Col xs='6' md='4' lg='3'>
-                <Competence
-                  logo={logoJira}
-                  logo2={logoBitbucket}
-                  name='Jira'
-                  name2='Bitbucket'
-                />
-              </Col>
-              <Col xs='6' md='4' lg='3'>
-                <Competence logo={logoAgile} name='Méthode agile' />
-              </Col>
-              <Col xs='6' md='4' lg='3'>
-                <Competence logo={logoBootstrap} name='Bootstrap' />
-              </Col>
-              <Col xs='6' md='4' lg='3'>
-                <Competence logo={logoHtml} name='Html 5' />
-              </Col>
-              <Col xs='6' md='4' lg='3'>
-                <Competence logo={logoCss} name='Css 3' />
-              </Col>
-              <Col xs='6' md='4' lg='3'>
-                <Competence
-                  logo={logoSketch}
-                  logo2={logoAdobeXD}
-                  name='Sketch'
-                  name2='Adobe XD'
-                />
-              </Col>
-              <Col xs='6' md='4' lg='3'>
-                <Competence
-                  logo={logoPhotoshop}
-                  logo2={logoIllustrator}
-                  name='Photoshop'
-                  name2='Illustrator'
-                />
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-      </Container>
-    </Element>
+            <a href={resume} download className='link-unstyled'>
+              Télécharger mon CV
+            </a>
+          </button>
+        </Col>
+      </Row>
+    </Container>
   );
 }

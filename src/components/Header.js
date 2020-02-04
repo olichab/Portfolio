@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Navbar, Nav, NavbarBrand, Collapse, NavItem, Media } from 'reactstrap';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
+import { Navbar, Nav, Collapse, NavItem, Media } from 'reactstrap';
+import smoothscroll from 'smoothscroll-polyfill';
 import SocialNetwork from './SocialNetwork';
 import logo from '../assets/images/logos/logo_oc.svg';
 import home from '../assets/images/pictos/home.svg';
@@ -13,21 +14,18 @@ export default function Header() {
   const toggleNavbar = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+  smoothscroll.polyfill();
 
   return (
     <Navbar expand='lg' fixed='top' className='header-container'>
-      <NavbarBrand tag={Link} to='/'>
+      <NavLink to='/#home' smooth='true'>
         <Media
           object
           src={logo}
-          alt='logo olivier chabot'
           className='logo-oc'
-          onClick={scrollToTop}
+          alt='logo olivier chabot'
         />
-      </NavbarBrand>
+      </NavLink>
       <button
         type='button'
         className={`btn-menu ${isOpen ? 'active' : 'not-active'}`}
@@ -39,57 +37,25 @@ export default function Header() {
       </button>
       <Collapse isOpen={isOpen} navbar>
         <Nav className='ml-auto' navbar>
-          <NavItem>
-            <Link
-              className='nav-link'
-              activeClass='active'
-              to='anchorHomePart'
-              spy
-              smooth='easeInOutQuad'
-              duration={750}
-              onClick={closeMenu}
-            >
+          <NavItem onClick={closeMenu}>
+            <NavLink className='nav-link' to='/#home' smooth='true'>
               <Media object src={home} alt='home' className='picto-home' />
-            </Link>
+            </NavLink>
           </NavItem>
-          <NavItem onClick={toggleNavbar}>
-            <Link
-              className='nav-link'
-              activeClass='active'
-              to='anchorBioPart'
-              spy
-              smooth='easeInOutQuad'
-              duration={750}
-              onClick={closeMenu}
-            >
-              A PROPOS
-            </Link>
+          <NavItem onClick={closeMenu}>
+            <NavLink className='nav-link' to='/#bio' smooth='true'>
+              BIO
+            </NavLink>
           </NavItem>
-          <NavItem>
-            <Link
-              className='nav-link'
-              activeClass='active'
-              to='anchorProjetsPart'
-              spy
-              smooth='easeInOutQuad'
-              duration={750}
-              onClick={closeMenu}
-            >
+          <NavItem onClick={closeMenu}>
+            <NavLink className='nav-link' to='/#projets' smooth='true'>
               PROJETS
-            </Link>
+            </NavLink>
           </NavItem>
-          <NavItem>
-            <Link
-              className='nav-link'
-              activeClass='active'
-              to='anchorContactPart'
-              spy
-              smooth
-              duration={750}
-              onClick={closeMenu}
-            >
+          <NavItem onClick={closeMenu}>
+            <NavLink className='nav-link' to='/#contact' smooth='true'>
               CONTACT
-            </Link>
+            </NavLink>
           </NavItem>
           <NavItem>
             <SocialNetwork />

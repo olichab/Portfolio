@@ -1,10 +1,15 @@
 @import './helpers/Colors.scss';
+@import './helpers/Media.scss';
 
-.projets-container {
-  padding: 75px;
+.container-projets {
+  padding-top: 75px;
+
+  @include lg {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
 
   img {
-    display: block;
     margin: auto;
   }
 }

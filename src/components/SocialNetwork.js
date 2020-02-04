@@ -17,7 +17,6 @@ export default function SocialNetwork() {
           window.open('https://www.linkedin.com/in/olichab', '_blank')
         }
       />
-
       <Media
         object
         src={logoGithub}

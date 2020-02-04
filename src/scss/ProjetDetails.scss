@@ -1,0 +1,92 @@
+@import './helpers/Colors.scss';
+@import './helpers/Media.scss';
+@import './helpers/HoverSupported.scss';
+@import './helpers/Forms.scss';
+
+.details-projet-container {
+  min-height: 100vh;
+  position: relative;
+  padding-top: 75px;
+
+  .title-details-projet {
+    margin: 10px;
+
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      height: 2px;
+      top: 12px;
+      background-color: $main-yellow;
+      width: 100%;
+    }
+  }
+
+  .text-details-projet {
+    padding: 25px 25px 10px 25px;
+
+    @include md {
+      padding: 30px 75px 20px 75px;
+    }
+
+    li {
+      list-style-type: none;
+
+      &:before {
+        content: '‣ ';
+      }
+    }
+
+    .link-unstyled {
+      @include link-unstyled;
+    }
+  }
+
+  .label-stack {
+    padding: 3px 8px 3px 8px;
+    border: solid 1px rgba($main-yellow, 0.25);
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: $main-yellow;
+  }
+
+  .react-photo-gallery--gallery {
+    @include md {
+      margin: 30px;
+    }
+  }
+
+  .link-switch-project {
+    margin: 15px;
+    padding: 8px;
+    color: $main-yellow;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include md {
+      font-size: 16px;
+    }
+  }
+}
+
+// React-images //
+// Slide button
+.css-1h82jk3,
+.css-xfk84m {
+  background-color: rgba($main-grey, 0.8) !important;
+}
+
+// Arrow slide button + close cross
+.css-8wgz7g,
+.css-9s8aw7,
+.react-images__footer__count {
+  color: $main-yellow;
+}
+
+.react-images__header_button--fullscreen {
+  display: none !important;
+}
