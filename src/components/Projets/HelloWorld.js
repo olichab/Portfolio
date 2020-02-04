@@ -58,19 +58,36 @@ export default function HelloWorld() {
       <Row className='text-details-projet justify-content-center'>
         <Col xs='12' lg='6'>
           <p>
-            <b>Hello World</b> est un projet réalisé durant ma formation à la
+            <b>Hello World</b>
+            {' '}
+est un projet réalisé durant ma formation à la
             Wild Code School.
             <br />
-            Ce site web responsive permet de découvrir ou redécouvrir les{' '}
-            <b>pays du monde</b> à travers une <b>carte interactive</b> et des{' '}
+            Ce site web responsive permet de découvrir ou redécouvrir les
+            {' '}
+            <b>pays du monde</b>
+            {' '}
+à travers une
+            {' '}
+            <b>carte interactive</b>
+            {' '}
+et des
+            {' '}
             <b>quizz </b>
             de géographie.
             <br />
             <br />
             L&apos;objectif de ce projet est l&apos;utilisation et
             l&apos;exploitation d&apos;
-            <b>API externes</b> commme:
-            <b> REST Countries</b>, <b> Google Custom Search</b> ou encore
+            <b>API externes</b>
+            {' '}
+commme:
+            <b> REST Countries</b>
+,
+            {' '}
+            <b> Google Custom Search</b>
+            {' '}
+ou encore
             <b> Open Trivia.</b>
           </p>
         </Col>
@@ -91,40 +108,6 @@ export default function HelloWorld() {
           </Row>
         </Col>
       </Row>
-      {/* <Row className='text-details-projet justify-content-center'>
-        <Col xs='12' lg='9'>
-          <p>
-            <b>Hello World</b> est un projet réalisé durant ma formation à la
-            Wild Code School.
-            <br />
-            Ce site web responsive permet de découvrir ou redécouvrir les{' '}
-            <b>pays du monde</b> à travers une <b>carte interactive</b> et des{' '}
-            <b>quizz </b>
-            de géographie.
-            <br />
-            <br />
-            L&apos;objectif de ce projet est l&apos;utilisation et
-            l&apos;exploitation d&apos;
-            <b>API externes</b> commme:
-            <b> REST Countries</b>, <b> Google Custom Search</b> ou encore
-            <b> Open Trivia.</b>
-          </p>
-        </Col>
-        <Col xs='12' lg='9'>
-          <p>Année: 2019</p>
-        </Col>
-        <Col xs='12' lg='9'>
-          <p>Catégorie: Développement web</p>
-        </Col>
-      </Row>
-      <Row className='justify-content-center align-items-center p-1'>
-        {stack.length &&
-          stack.map(e => (
-            <Col xs='auto' className='p-2' key={e}>
-              <p className='label-stack'>{e}</p>
-            </Col>
-          ))}
-      </Row> */}
       <Gallery photos={photos} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (

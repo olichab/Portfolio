@@ -46,7 +46,7 @@ export default function LaDefenseArena() {
       <Row className='text-details-projet justify-content-center'>
         <Col xs='12' lg='6'>
           <p>
-            Sur mon temps libre, j&apos;ai débuter une série de
+            Sur mon temps libre, j&apos;ai débuté une série de
             <b> scènes 3D </b>
             mettant en lumière des
             <b> fruits </b>

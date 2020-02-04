@@ -97,17 +97,20 @@ export default function ViParisLaPlaza() {
             .
             <br />
             Dans un écrin autant graphique que pédagogique,
-            <b> l&apos;écran de la Plaza</b> permettra d&apos;affirmer
+            <b> l&apos;écran de la Plaza</b> permet d&apos;affirmer
             <b> l&apos;identité visuelle de Viparis</b>, tout en offrant une
             <b> fenêtre culturelle</b> aux visiteurs.
             <br />
             <br />
             Dans ce projet, l&apos;écran de la Plaza indique la direction où se
             trouvent les principaux
-            <b> monuments parisiens</b>, accompagnés de la
+            <b> monuments parisiens</b>, accompagnée de la
             <b> distance</b> à vol d&apos;oiseau, en
             <b> kilomètres</b> et en
-            <b> miles</b>, qui sépare la Plaza et le monument.
+            <b> miles</b>, qui sépare
+            <b> la Plaza </b>
+            du
+            <b> monument</b>.
           </p>
         </Col>
         <Col xs='12' lg='6'>

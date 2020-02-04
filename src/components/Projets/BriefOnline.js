@@ -70,7 +70,9 @@ export default function BriefOnline() {
           <p>
             La web application « <b>Brief Online</b> » permet aux clients
             d’Altavia d’envoyer un <b>brief de leurs besoins</b> et d’avoir un
-            <b> suivi</b> de leurs projets. Le client peut gérer ses
+            <b> suivi</b> de leurs projets.
+            <br />
+            Le client peut gérer ses
             <b> campagnes </b>
             et y inclure des
             <b> supports </b>

@@ -90,7 +90,7 @@ export default function Mooviz() {
       <Row className='text-details-projet justify-content-center'>
         <Col xs='12' lg='6'>
           <p>
-            <b>Mooviz</b> est une web application permettant le gestion de sa
+            <b>Mooviz</b> est une web application permettant la gestion de sa
             <b> bibliothèque de films</b>.
           </p>
           <p>
@@ -102,14 +102,14 @@ export default function Mooviz() {
             <li>Mise en place de la base de données</li>
             <li>Création de compte utilisateur</li>
             <li>Authentification</li>
-            <li>Gestion du profil</li>
+            <li>Gestion de son profil</li>
             <li>Sécurisation avec JSON Web token</li>
             <li>Ajout / suppression de film dans la bibliothèque</li>
             <li>
-              Fiche d’informations d’un film (nom, synopsis, catégorie,
+              Fiches d’informations des films (nom, synopsis, catégorie,
               réalisateur, date de sortie, durée)
             </li>
-            <li>Filtre par catégories</li>
+            <li>Filtre par catégorie</li>
             <li>Suggestion de film aléatoire</li>
           </ul>
         </Col>
@@ -138,52 +138,6 @@ export default function Mooviz() {
           </Row>
         </Col>
       </Row>
-      {/* <Row className='text-details-projet justify-content-center'>
-        <Col xs='12' lg='9'>
-          <p>
-            <b>Mooviz</b> est une web application permettant le gestion de sa
-            <b> bibliothèque de films</b>.
-          </p>
-          <p>
-            Voici une liste non exhaustive des <b>tâches réalisées</b> sur ce
-            projet:
-          </p>
-          <ul>
-            <li>Maquette du site</li>
-            <li>Mise en place de la base de données</li>
-            <li>Création de compte utilisateur</li>
-            <li>Authentification</li>
-            <li>Gestion du profil</li>
-            <li>Sécurisation avec JSON Web token</li>
-            <li>Ajout / suppression de film dans la bibliothèque</li>
-            <li>
-              Fiche d’informations d’un film (nom, synopsis, catégorie,
-              réalisateur, date de sortie, durée)
-            </li>
-            <li>Filtre par catégories</li>
-            <li>Suggestion de film aléatoire</li>
-          </ul>
-        </Col>
-        <Col xs='12' lg='9'>
-          <p>Année: 2019</p>
-        </Col>
-        <Col xs='12' lg='9'>
-          <p>Catégorie: Développement web</p>
-        </Col>
-        <Col xs='12' lg='9'>
-          <a href='https://github.com/olichab/Mooviz' className='link-unstyled'>
-            github.com/olichab/Mooviz
-          </a>
-        </Col>
-      </Row>
-      <Row className='justify-content-center align-items-center p-1'>
-        {stack.length &&
-          stack.map(e => (
-            <Col xs='auto' className='p-2' key={e}>
-              <p className='label-stack'>{e}</p>
-            </Col>
-          ))}
-      </Row> */}
       <Gallery photos={photos} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (

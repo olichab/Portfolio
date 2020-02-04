@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://olichab.github.io/olivierchabot.fr/",
+  "homepage": "https://www.olivierchabot.fr/",
   "dependencies": {
     "360-image-viewer": "^1.0.1",
     "@testing-library/jest-dom": "^4.2.4",

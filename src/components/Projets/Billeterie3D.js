@@ -47,8 +47,8 @@ export default function LaDefenseArena() {
             Au sein des équipes de Pacifa Decision, j&apos;ai été amené à
             travailler sur les
             <b> rendus 3D </b>
-            pour différentes
-            <b> billeteries</b>, que ce soit des
+            de différentes
+            <b> billeteries en ligne</b>, que ce soit pour des
             <b> stades de football </b>
             (Parc des Princes, Vélodrome, stade Louis II, Santiago Bernabéu),
             des
@@ -61,7 +61,7 @@ export default function LaDefenseArena() {
             <b> hippodromes </b>
             (ParisLongchamp).
             <br />
-            J&apos;ai également travaillé sur des projets proposant diverses
+            J&apos;ai également participé à des projets proposant diverses
             <b> expériences VR </b>
             aux clients de Pacifa Decision.
           </p>

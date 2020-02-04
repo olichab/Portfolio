@@ -120,9 +120,11 @@ export default function LaDefenseArena() {
             <br />
             <br />
             Mes missions étaient variées, allant de la création
-            <b> d&apos;affiches</b>,<b> kakemonos</b>,<b> leaflet</b>,
-            <b> totems </b>,<b> plans d&apos;orientation</b> en passant par la
-            création de
+            <b> d&apos;affiche</b>,<b> kakemono</b>,<b> leaflet</b>,
+            <b> totem</b>,<b> plan d&apos;orientation </b>
+            en passant par des
+            <b> bannières web </b>
+            et des
             <b> pictogrammes</b>
             .
             <br />

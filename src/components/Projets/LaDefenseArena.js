@@ -54,7 +54,7 @@ export default function LaDefenseArena() {
             construction, que ce soit en configuration
             <b> rugby</b>,<b> salle de concert </b>
             ou l&apos;intérieur des
-            <b> futurs loges</b>.
+            <b> futures loges</b>.
           </p>
         </Col>
         <Col xs='12' lg='6'>
