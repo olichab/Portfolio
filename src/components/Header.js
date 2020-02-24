@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
-import { Navbar, Nav, Collapse, NavItem, Media } from 'reactstrap';
-import smoothscroll from 'smoothscroll-polyfill';
-import SocialNetwork from './SocialNetwork';
-import logo from '../assets/images/logos/logo_oc.svg';
-import home from '../assets/images/pictos/home.svg';
+import React, { useState } from "react";
 
-import '../scss/Header.scss';
+import { NavHashLink as NavLink } from "react-router-hash-link";
+
+import { Navbar, Nav, Collapse, NavItem, Media } from "reactstrap";
+import smoothscroll from "smoothscroll-polyfill";
+import SocialNetwork from "./SocialNetwork";
+import logo from "../assets/images/logos/logo_oc.svg";
+import home from "../assets/images/pictos/home.svg";
+
+import "../scss/Header.scss";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +30,7 @@ export default function Header() {
       </NavLink>
       <button
         type='button'
-        className={`btn-menu ${isOpen ? 'active' : 'not-active'}`}
+        className={`btn-menu ${isOpen ? "active" : "not-active"}`}
         onClick={toggleNavbar}
       >
         <span />
@@ -37,29 +39,27 @@ export default function Header() {
       </button>
       <Collapse isOpen={isOpen} navbar>
         <Nav className='ml-auto' navbar>
-          <NavItem onClick={closeMenu}>
+          <NavItem onClick={closeMenu} className='m-2'>
             <NavLink className='nav-link' to='/#home' smooth='true'>
               <Media object src={home} alt='home' className='picto-home' />
             </NavLink>
           </NavItem>
-          <NavItem onClick={closeMenu}>
+          <NavItem onClick={closeMenu} className='m-2'>
             <NavLink className='nav-link' to='/#bio' smooth='true'>
               BIO
             </NavLink>
           </NavItem>
-          <NavItem onClick={closeMenu}>
+          <NavItem onClick={closeMenu} className='m-2'>
             <NavLink className='nav-link' to='/#projets' smooth='true'>
               PROJETS
             </NavLink>
           </NavItem>
-          <NavItem onClick={closeMenu}>
+          <NavItem onClick={closeMenu} className='m-2'>
             <NavLink className='nav-link' to='/#contact' smooth='true'>
               CONTACT
             </NavLink>
           </NavItem>
-          <NavItem>
-            <SocialNetwork />
-          </NavItem>
+          <SocialNetwork />
         </Nav>
       </Collapse>
     </Navbar>

@@ -1,23 +1,20 @@
-@import './helpers/Colors.scss';
-@import './helpers/Media.scss';
-@import './helpers/Forms.scss';
+@import "./helpers/Colors.scss";
+@import "./helpers/Media.scss";
+@import "./helpers/Forms.scss";
 
 .bio-container {
   padding-top: 50px;
 
-  @include lg {
-    padding-top: 75px;
-  }
-
-  .presentaion-text {
+  .about-text {
     z-index: 2;
-    padding: 35px;
+    padding: 32px;
     background: linear-gradient(
       180deg,
       rgba($main-yellow, 0.15),
       rgba($main-yellow, 0)
     );
     border-radius: 2px;
+
     @include lg {
       padding-right: 100px;
       background: linear-gradient(
@@ -26,26 +23,23 @@
         rgba($main-yellow, 0)
       );
     }
-
-    p {
-      font-size: 14px;
-      margin: 0;
-    }
   }
 
-  .photo {
-    z-index: 1;
-    width: 200px;
-    height: 200px;
-    position: relative;
-    display: block;
-    margin: auto;
-    border-radius: 2px;
+  .about-photo {
+    display: flex;
+    .photo {
+      z-index: 1;
+      width: 200px;
+      height: 200px;
+      display: block;
+      margin: auto;
+      border-radius: 2px;
 
-    @include lg {
-      width: 250px;
-      height: 250px;
-      margin-left: -75px;
+      @include lg {
+        width: 250px;
+        height: 250px;
+        margin-left: -75px;
+      }
     }
   }
 
@@ -53,14 +47,17 @@
     background-color: transparent;
     color: $main-yellow;
     border: none;
-    padding: 5px;
-    margin: 15px;
-    font-size: 18px;
-    font-weight: 500;
+    padding: 8px;
+    margin: 16px;
+    font-size: 1.8rem;
+    font-weight: 400;
     text-transform: uppercase;
 
-    .link-unstyled {
-      @include link-unstyled;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $main-grey;
+      text-decoration: none;
     }
   }
 }

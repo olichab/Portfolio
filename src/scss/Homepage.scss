@@ -1,0 +1,16 @@
+@import "./helpers/HoverSupported.scss";
+@import "./helpers/Media.scss";
+
+@include hover-supported {
+
+  .bio-part-animate,
+  .projets-part-animate,
+  .contact-part-animate {
+    opacity: 0.45;
+    transition: opacity ease-in-out 0.5s;
+  }
+
+  .is-visible {
+    opacity: 1;
+  }
+}

@@ -1,14 +1,16 @@
-@import './helpers/Colors.scss';
-@import './helpers/Media.scss';
-@import './helpers/Forms.scss';
-@import './helpers/HoverSupported.scss';
+@import "./helpers/Colors.scss";
+@import "./helpers/Media.scss";
+@import "./helpers/Forms.scss";
+@import "./helpers/HoverSupported.scss";
 
 .header-container {
   background-color: $main-grey;
 
   .logo-oc {
     width: 40px;
+    height: 100%;
     cursor: pointer;
+    outline: 0;
 
     @include md {
       width: 45px;
@@ -20,11 +22,10 @@
   }
 
   .picto-home {
-    width: 30px;
-    margin-bottom: 6px;
+    width: 24px;
 
     @include lg {
-      width: 14px;
+      width: 18px;
       margin-bottom: 6px;
     }
   }
@@ -41,14 +42,15 @@
   .nav-item {
     .nav-link {
       color: #fff;
-      font-family: 'Josefin Slab', serif;
+      font-family: "Josefin Slab", serif;
       font-weight: 600;
       text-align: center;
-      font-size: 30px;
+      font-size: 2rem;
       cursor: pointer;
+      outline: 0;
 
       @include lg {
-        font-size: 16px;
+        font-size: 1.8rem;
       }
     }
 
@@ -58,11 +60,11 @@
 
     &:before {
       z-index: -1;
-      content: '';
+      content: "";
       display: block;
       position: relative;
       height: 1px;
-      top: 20px;
+      top: 19px;
       background-color: $main-yellow;
       visibility: hidden;
       transform: scaleX(0);
@@ -72,34 +74,10 @@
     @include hover-supported {
       &:before {
         z-index: -1;
-        transform: scaleX(1);
+        transform: scaleX(0.9);
         visibility: visible;
       }
     }
-
-    // .active {
-    //   &:after {
-    //     content: '';
-    //     display: block;
-    //     position: relative;
-    //     height: 1px;
-    //     top: -24px;
-    //     background-color: $main-yellow;
-    //     width: 50%;
-    //     margin-left: 25%;
-
-    //     @include md {
-    //       width: 25%;
-    //       margin-left: 37.5%;
-    //     }
-
-    //     @include lg {
-    //       width: 100%;
-    //       margin-left: 0;
-    //       top: -13px;
-    //     }
-    //   }
-    // }
   }
 
   // BURGER MENU
@@ -117,7 +95,7 @@
 
   span {
     display: block;
-    // border-radius: 2px;
+    border-radius: 2px;
     height: 2px;
     background: $main-yellow;
     transition: all 0.3s;

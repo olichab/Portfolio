@@ -2,12 +2,7 @@
 @import './helpers/Media.scss';
 
 .container-projets {
-  padding-top: 75px;
-
-  @include lg {
-    padding-left: 50px !important;
-    padding-right: 50px !important;
-  }
+  padding-top: 50px;
 
   img {
     margin: auto;

@@ -1,13 +1,20 @@
-@import './helpers/Colors.scss';
+@import "./helpers/Colors.scss";
 
 .contact-container {
   height: 100vh;
-  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .picto-email,
   .picto-phone,
   .picto-location {
     width: 30px;
+    height: 100%;
+  }
+
+  p {
+    margin: auto;
   }
 
   .form-control {
@@ -16,7 +23,7 @@
     border-radius: 1px;
     border-bottom: solid 1px rgba($main-yellow, 0.5);
     color: #fff;
-    font-size: 12px;
+    font-size: 1.4rem;
     resize: none;
 
     &::placeholder {

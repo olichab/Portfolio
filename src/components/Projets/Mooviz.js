@@ -1,17 +1,17 @@
-import React, { useState, useCallback } from 'react';
-import { Link } from 'react-router-dom';
-import { Container, Row, Col } from 'reactstrap';
-import Gallery from 'react-photo-gallery';
-import Carousel, { Modal, ModalGateway } from 'react-images';
-import moovizImage1 from '../../assets/images/projets/Web/Mooviz/1_Mooviz.jpg';
-import moovizImage2 from '../../assets/images/projets/Web/Mooviz/2_Mooviz.jpg';
-import moovizImage3 from '../../assets/images/projets/Web/Mooviz/3_Mooviz.jpg';
-import moovizImage4 from '../../assets/images/projets/Web/Mooviz/4_Mooviz.jpg';
-import moovizImage5 from '../../assets/images/projets/Web/Mooviz/5_Mooviz.jpg';
-import moovizImage6 from '../../assets/images/projets/Web/Mooviz/6_Mooviz.jpg';
-import moovizImage7 from '../../assets/images/projets/Web/Mooviz/7_Mooviz.jpg';
+import React, { useState, useCallback } from "react";
+import { Link } from "react-router-dom";
+import { Container, Row, Col } from "reactstrap";
+import Gallery from "react-photo-gallery";
+import Carousel, { Modal, ModalGateway } from "react-images";
+import moovizImage1 from "../../assets/images/projets/Web/Mooviz/1_Mooviz.jpg";
+import moovizImage2 from "../../assets/images/projets/Web/Mooviz/2_Mooviz.jpg";
+import moovizImage3 from "../../assets/images/projets/Web/Mooviz/3_Mooviz.jpg";
+import moovizImage4 from "../../assets/images/projets/Web/Mooviz/4_Mooviz.jpg";
+import moovizImage5 from "../../assets/images/projets/Web/Mooviz/5_Mooviz.jpg";
+import moovizImage6 from "../../assets/images/projets/Web/Mooviz/6_Mooviz.jpg";
+import moovizImage7 from "../../assets/images/projets/Web/Mooviz/7_Mooviz.jpg";
 
-import '../../scss/ProjetDetails.scss';
+import "../../scss/ProjetDetails.scss";
 
 const photos = [
   {
@@ -53,18 +53,18 @@ const photos = [
 
 export default function Mooviz() {
   const stack = [
-    'React',
-    'Redux',
-    'NodesJS',
-    'Express',
-    'KnexJS',
-    'API Rest',
-    'MySQL',
-    'Javascript',
-    'Html',
-    'Css',
-    'Sass',
-    'Bootstrap'
+    "React",
+    "Redux",
+    "NodesJS",
+    "Express",
+    "KnexJS",
+    "API Rest",
+    "MySQL",
+    "Javascript",
+    "Html",
+    "Css",
+    "Sass",
+    "Bootstrap"
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -88,7 +88,7 @@ export default function Mooviz() {
         </Col>
       </Row>
       <Row className='text-details-projet justify-content-center'>
-        <Col xs='12' lg='6'>
+        <Col xs='12' lg='8'>
           <p>
             <b>Mooviz</b> est une web application permettant la gestion de sa
             <b> bibliothèque de films</b>.
@@ -113,7 +113,7 @@ export default function Mooviz() {
             <li>Suggestion de film aléatoire</li>
           </ul>
         </Col>
-        <Col xs='12' lg='6'>
+        <Col xs='12' lg='4'>
           <Col xs='12' className='p-0'>
             <p>Année: 2019</p>
           </Col>
