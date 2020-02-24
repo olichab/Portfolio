@@ -1,28 +1,28 @@
-import React from 'react';
-import { Container, Row, Col, Media } from 'reactstrap';
-import Competence from './Competence';
-import photo from '../assets/images/Photo_OC.jpg';
-import logoReact from '../assets/images/logos/react.svg';
-import logoRedux from '../assets/images/logos/redux.svg';
-import logoNodeJS from '../assets/images/logos/nodejs.svg';
-import logoApi from '../assets/images/logos/api.svg';
-import logoPostman from '../assets/images/logos/postman.svg';
-import logoTypescript from '../assets/images/logos/typescript.svg';
-import logoGit from '../assets/images/logos/git.svg';
-import logoGithub from '../assets/images/logos/github.svg';
-import logoJira from '../assets/images/logos/jira.svg';
-import logoBitbucket from '../assets/images/logos/bitbucket.svg';
-import logoAgile from '../assets/images/logos/agile.svg';
-import logoBootstrap from '../assets/images/logos/bootstrap.svg';
-import logoHtml from '../assets/images/logos/html5.svg';
-import logoCss from '../assets/images/logos/css3.svg';
-import logoSketch from '../assets/images/logos/sketch.svg';
-import logoAdobeXD from '../assets/images/logos/adobexd.svg';
-import logoPhotoshop from '../assets/images/logos/photoshop.svg';
-import logoIllustrator from '../assets/images/logos/illustrator.svg';
-import resume from '../assets/docs/CV_Olivier_Chabot.pdf';
+import React from "react";
+import { Container, Row, Col, Media } from "reactstrap";
+import Competence from "./Competence";
+import photo from "../assets/images/Photo_OC.jpg";
+import logoReact from "../assets/images/logos/react.svg";
+import logoRedux from "../assets/images/logos/redux.svg";
+import logoNodeJS from "../assets/images/logos/nodejs.svg";
+import logoApi from "../assets/images/logos/api.svg";
+import logoPostman from "../assets/images/logos/postman.svg";
+import logoTypescript from "../assets/images/logos/typescript.svg";
+import logoGit from "../assets/images/logos/git.svg";
+import logoGithub from "../assets/images/logos/github.svg";
+import logoJira from "../assets/images/logos/jira.svg";
+import logoBitbucket from "../assets/images/logos/bitbucket.svg";
+import logoAgile from "../assets/images/logos/agile.svg";
+import logoBootstrap from "../assets/images/logos/bootstrap.svg";
+import logoHtml from "../assets/images/logos/html5.svg";
+import logoCss from "../assets/images/logos/css3.svg";
+import logoSketch from "../assets/images/logos/sketch.svg";
+import logoAdobeXD from "../assets/images/logos/adobexd.svg";
+import logoPhotoshop from "../assets/images/logos/photoshop.svg";
+import logoIllustrator from "../assets/images/logos/illustrator.svg";
+import resume from "../assets/docs/CV_Olivier_Chabot.pdf";
 
-import '../scss/Bio.scss';
+import "../scss/Bio.scss";
 
 export default function Bio() {
   return (
@@ -33,12 +33,7 @@ export default function Bio() {
         </Col>
       </Row>
       <Row className='justify-content-center'>
-        <Col
-          xs='12'
-          md='8'
-          lg='5'
-          className='my-auto offset-lg-2 presentaion-text'
-        >
+        <Col xs='12' md='8' lg='7' className='offset-lg-1 about-text'>
           <p>
             Je m’appelle Olivier Chabot, j’ai 28 ans. Je suis diplômé de l’IUT
             de Vélizy-Villacoublay en Métiers du Multimédia et de l’Internet.
@@ -53,11 +48,11 @@ export default function Bio() {
             <br />
             Après un bootcamp de 5 mois à la Wild Code School et une première
             expérience réussie au sein d&apos;Altavia connect, je suis à la
-            recherche de nouveaux défis et serais ravis de mettre à contribution
+            recherche de nouveaux défis et serais ravi de mettre à contribution
             mes compétences dans vos projets web.
           </p>
         </Col>
-        <Col xs='12' lg='4' className='my-auto'>
+        <Col xs='12' lg='3' className='about-photo'>
           <Media
             object
             src={photo}
@@ -77,55 +72,55 @@ export default function Bio() {
             <Col xs='6' md='4' lg='3'>
               <Competence
                 logo={[logoReact, logoRedux]}
-                name={['React', 'Redux']}
+                name={["React", "Redux"]}
               />
             </Col>
             <Col xs='6' md='4' lg='3'>
-              <Competence logo={[logoNodeJS]} name={['NodeJS']} />
+              <Competence logo={[logoNodeJS]} name={["NodeJS"]} />
             </Col>
             <Col xs='6' md='4' lg='3'>
               <Competence
                 logo={[logoApi, logoPostman]}
-                name={['API Rest', 'Postman', 'BDD SQL']}
+                name={["API Rest", "Postman", "SQL"]}
               />
             </Col>
             <Col xs='6' md='4' lg='3'>
-              <Competence logo={[logoTypescript]} name={['Typescript']} />
+              <Competence logo={[logoTypescript]} name={["Typescript"]} />
             </Col>
             <Col xs='6' md='4' lg='3'>
               <Competence
                 logo={[logoGit, logoGithub]}
-                name={['Git', 'Github']}
+                name={["Git", "Github"]}
               />
             </Col>
             <Col xs='6' md='4' lg='3'>
               <Competence
                 logo={[logoJira, logoBitbucket]}
-                name={['Jira', 'Bitbucket']}
+                name={["Jira", "Bitbucket"]}
               />
             </Col>
             <Col xs='6' md='4' lg='3'>
-              <Competence logo={[logoAgile]} name={['Méthode agile']} />
+              <Competence logo={[logoAgile]} name={["Méthode agile"]} />
             </Col>
             <Col xs='6' md='4' lg='3'>
-              <Competence logo={[logoBootstrap]} name={['Bootstrap']} />
+              <Competence logo={[logoBootstrap]} name={["Bootstrap"]} />
             </Col>
             <Col xs='6' md='4' lg='3'>
-              <Competence logo={[logoHtml]} name={['Html 5']} />
+              <Competence logo={[logoHtml]} name={["Html 5"]} />
             </Col>
             <Col xs='6' md='4' lg='3'>
-              <Competence logo={[logoCss]} name={['Css 3']} />
+              <Competence logo={[logoCss]} name={["Css 3"]} />
             </Col>
             <Col xs='6' md='4' lg='3'>
               <Competence
                 logo={[logoSketch, logoAdobeXD]}
-                name={['Sketch', 'Adobe XD']}
+                name={["Sketch", "Adobe XD"]}
               />
             </Col>
             <Col xs='6' md='4' lg='3'>
               <Competence
                 logo={[logoPhotoshop, logoIllustrator]}
-                name={['Photoshop', 'Illustrator']}
+                name={["Photoshop", "Illustrator"]}
               />
             </Col>
           </Row>
@@ -133,14 +128,13 @@ export default function Bio() {
       </Row>
       <Row className='justify-content-center'>
         <Col xs='auto'>
-          <button
-            type='button'
+          <a
+            href={resume}
+            download
             className='btn-download-resume hvr-sweep-to-right'
           >
-            <a href={resume} download className='link-unstyled'>
-              Télécharger mon CV
-            </a>
-          </button>
+            Télécharger mon CV
+          </a>
         </Col>
       </Row>
     </Container>

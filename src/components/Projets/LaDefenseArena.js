@@ -1,27 +1,27 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Container, Row, Col } from 'reactstrap';
-import { Pannellum } from 'pannellum-react';
-import laDefenseArenaImage1 from '../../assets/images/projets/3D/Pacifa/LaDefenseArena/1_LaDefenseArena_PanoRugby.jpg';
-import laDefenseArenaImage2 from '../../assets/images/projets/3D/Pacifa/LaDefenseArena/2_LaDefenseArena_PanoSalleConcert.jpg';
-import laDefenseArenaImage3 from '../../assets/images/projets/3D/Pacifa/LaDefenseArena/3_LaDefenseArena_PanoSalon2.jpg';
-import laDefenseArenaImage4 from '../../assets/images/projets/3D/Pacifa/LaDefenseArena/4_LaDefenseArena_PanoSalon3.jpg';
-import laDefenseArenaImage5 from '../../assets/images/projets/3D/Pacifa/LaDefenseArena/5_LaDefenseArena_PanoSalon1.jpg';
-import laDefenseArenaImage6 from '../../assets/images/projets/3D/Pacifa/LaDefenseArena/6_LaDefenseArena_PanoSalon4.jpg';
-import laDefenseArenaImage7 from '../../assets/images/projets/3D/Pacifa/LaDefenseArena/7_LaDefenseArena_PanoSalon5.jpg';
-import laDefenseArenaImage8 from '../../assets/images/projets/3D/Pacifa/LaDefenseArena/8_LaDefenseArena_PanoSalon6.jpg';
-import laDefenseArenaImage9 from '../../assets/images/projets/3D/Pacifa/LaDefenseArena/9_LaDefenseArena_PanoSalon8.jpg';
-import '../../scss/ProjetDetails.scss';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Container, Row, Col } from "reactstrap";
+import { Pannellum } from "pannellum-react";
+import laDefenseArenaImage1 from "../../assets/images/projets/3D/Pacifa/LaDefenseArena/1_LaDefenseArena_PanoRugby.jpg";
+import laDefenseArenaImage2 from "../../assets/images/projets/3D/Pacifa/LaDefenseArena/2_LaDefenseArena_PanoSalleConcert.jpg";
+import laDefenseArenaImage3 from "../../assets/images/projets/3D/Pacifa/LaDefenseArena/3_LaDefenseArena_PanoSalon2.jpg";
+import laDefenseArenaImage4 from "../../assets/images/projets/3D/Pacifa/LaDefenseArena/4_LaDefenseArena_PanoSalon3.jpg";
+import laDefenseArenaImage5 from "../../assets/images/projets/3D/Pacifa/LaDefenseArena/5_LaDefenseArena_PanoSalon1.jpg";
+import laDefenseArenaImage6 from "../../assets/images/projets/3D/Pacifa/LaDefenseArena/6_LaDefenseArena_PanoSalon4.jpg";
+import laDefenseArenaImage7 from "../../assets/images/projets/3D/Pacifa/LaDefenseArena/7_LaDefenseArena_PanoSalon5.jpg";
+import laDefenseArenaImage8 from "../../assets/images/projets/3D/Pacifa/LaDefenseArena/8_LaDefenseArena_PanoSalon6.jpg";
+import laDefenseArenaImage9 from "../../assets/images/projets/3D/Pacifa/LaDefenseArena/9_LaDefenseArena_PanoSalon8.jpg";
+import "../../scss/ProjetDetails.scss";
 
 export default function LaDefenseArena() {
   const stack = [
-    '3ds Max',
-    'Mental Ray',
-    'V-Ray',
-    'Max Script',
-    'Rail clone',
-    'Substance painter',
-    'Photoshop'
+    "3ds Max",
+    "Mental Ray",
+    "V-Ray",
+    "Max Script",
+    "Rail clone",
+    "Substance painter",
+    "Photoshop"
   ];
 
   return (
@@ -95,7 +95,7 @@ export default function LaDefenseArena() {
             disableKeyboardCtrl
             mouseZoom={false}
             autoLoad
-            autoRotate
+            autoRotate={2}
           />
         </Col>
         <Col xs='9' xl='6' className='p-1'>
@@ -110,7 +110,7 @@ export default function LaDefenseArena() {
             disableKeyboardCtrl
             mouseZoom={false}
             autoLoad
-            autoRotate
+            autoRotate={2}
           />
         </Col>
         <Col xs='9' xl='6' className='p-1'>
@@ -125,7 +125,7 @@ export default function LaDefenseArena() {
             disableKeyboardCtrl
             mouseZoom={false}
             autoLoad
-            autoRotate
+            autoRotate={2}
           />
         </Col>
         <Col xs='9' xl='6' className='p-1'>
@@ -140,7 +140,7 @@ export default function LaDefenseArena() {
             disableKeyboardCtrl
             mouseZoom={false}
             autoLoad
-            autoRotate
+            autoRotate={2}
           />
         </Col>
         <Col xs='9' xl='6' className='p-1'>
@@ -155,7 +155,7 @@ export default function LaDefenseArena() {
             disableKeyboardCtrl
             mouseZoom={false}
             autoLoad
-            autoRotate
+            autoRotate={2}
           />
         </Col>
         <Col xs='9' xl='6' className='p-1'>
@@ -170,7 +170,7 @@ export default function LaDefenseArena() {
             disableKeyboardCtrl
             mouseZoom={false}
             autoLoad
-            autoRotate
+            autoRotate={2}
           />
         </Col>
         <Col xs='9' xl='6' className='p-1'>
@@ -185,7 +185,7 @@ export default function LaDefenseArena() {
             disableKeyboardCtrl
             mouseZoom={false}
             autoLoad
-            autoRotate
+            autoRotate={2}
           />
         </Col>
         <Col xs='9' xl='6' className='p-1'>
@@ -200,7 +200,7 @@ export default function LaDefenseArena() {
             disableKeyboardCtrl
             mouseZoom={false}
             autoLoad
-            autoRotate
+            autoRotate={2}
           />
         </Col>
         <Col xs='9' xl='6' className='p-1'>
@@ -215,7 +215,7 @@ export default function LaDefenseArena() {
             disableKeyboardCtrl
             mouseZoom={false}
             autoLoad
-            autoRotate
+            autoRotate={2}
           />
         </Col>
       </Row>

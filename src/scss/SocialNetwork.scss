@@ -1,20 +1,18 @@
-@import './helpers/Media.scss';
+@import "./helpers/Media.scss";
 
 .container-social-network {
-  display: block;
   text-align: center;
 
   .logo-linked-in,
-  .logo-github,
-  .logo-codewars {
+  .logo-github {
     width: 30px;
-    margin: 20px;
+    margin: 16px;
     opacity: 0.5;
 
     @include lg {
       position: fixed;
-      width: 25px;
-      left: 30px;
+      width: 24px;
+      left: 24px;
       margin: 0;
       cursor: pointer;
     }
@@ -22,11 +20,11 @@
 
   @include lg {
     .logo-linked-in {
-      bottom: 60px;
+      bottom: 64px;
     }
 
     .logo-github {
-      bottom: 25px;
+      bottom: 24px;
     }
   }
 }

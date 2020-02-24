@@ -1,25 +1,25 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Container, Row, Col } from 'reactstrap';
-import { Pannellum } from 'pannellum-react';
-import Billeterie3DImage1 from '../../assets/images/projets/3D/Pacifa/1_Pacifa_Pano.jpg';
-import Billeterie3DImage2 from '../../assets/images/projets/3D/Pacifa/2_Pacifa_Pano.jpg';
-import Billeterie3DImage3 from '../../assets/images/projets/3D/Pacifa/3_Pacifa_Pano.jpg';
-import Billeterie3DImage4 from '../../assets/images/projets/3D/Pacifa/4_Pacifa_Pano.jpg';
-import Billeterie3DImage5 from '../../assets/images/projets/3D/Pacifa/5_Pacifa_Pano.jpg';
-import Billeterie3DImage6 from '../../assets/images/projets/3D/Pacifa/6_Pacifa_Pano.jpg';
-import '../../scss/ProjetDetails.scss';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Container, Row, Col } from "reactstrap";
+import { Pannellum } from "pannellum-react";
+import Billeterie3DImage1 from "../../assets/images/projets/3D/Pacifa/1_Pacifa_Pano.jpg";
+import Billeterie3DImage2 from "../../assets/images/projets/3D/Pacifa/2_Pacifa_Pano.jpg";
+import Billeterie3DImage3 from "../../assets/images/projets/3D/Pacifa/3_Pacifa_Pano.jpg";
+import Billeterie3DImage4 from "../../assets/images/projets/3D/Pacifa/4_Pacifa_Pano.jpg";
+import Billeterie3DImage5 from "../../assets/images/projets/3D/Pacifa/5_Pacifa_Pano.jpg";
+import Billeterie3DImage6 from "../../assets/images/projets/3D/Pacifa/6_Pacifa_Pano.jpg";
+import "../../scss/ProjetDetails.scss";
 
 export default function LaDefenseArena() {
   const stack = [
-    '3ds Max',
-    'Mental Ray',
-    'V-Ray',
-    'Max Script',
-    'Rail clone',
-    'Forest pack',
-    'Substance painter',
-    'Photoshop'
+    "3ds Max",
+    "Mental Ray",
+    "V-Ray",
+    "Max Script",
+    "Rail clone",
+    "Forest pack",
+    "Substance painter",
+    "Photoshop"
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function LaDefenseArena() {
         </Col>
       </Row>
       <Row className='text-details-projet justify-content-center'>
-        <Col xs='12' lg='6'>
+        <Col xs='12' lg='8'>
           <p>
             Pacifa Decision est le
             <b> leader Européen </b>
@@ -66,7 +66,7 @@ export default function LaDefenseArena() {
             aux clients de Pacifa Decision.
           </p>
         </Col>
-        <Col xs='12' lg='6'>
+        <Col xs='12' lg='4'>
           <Col xs='12' className='p-0'>
             <p>Année: 2015-2016</p>
           </Col>
@@ -104,7 +104,7 @@ export default function LaDefenseArena() {
             disableKeyboardCtrl
             mouseZoom={false}
             autoLoad
-            autoRotate
+            autoRotate={2}
           />
         </Col>
         <Col xs='9' xl='6' className='p-1'>
@@ -119,7 +119,7 @@ export default function LaDefenseArena() {
             disableKeyboardCtrl
             mouseZoom={false}
             autoLoad
-            autoRotate
+            autoRotate={2}
           />
         </Col>
         <Col xs='9' xl='6' className='p-1'>
@@ -134,7 +134,7 @@ export default function LaDefenseArena() {
             disableKeyboardCtrl
             mouseZoom={false}
             autoLoad
-            autoRotate
+            autoRotate={2}
           />
         </Col>
         <Col xs='9' xl='6' className='p-1'>
@@ -149,7 +149,7 @@ export default function LaDefenseArena() {
             disableKeyboardCtrl
             mouseZoom={false}
             autoLoad
-            autoRotate
+            autoRotate={2}
           />
         </Col>
         <Col xs='9' xl='6' className='p-1'>
@@ -164,7 +164,7 @@ export default function LaDefenseArena() {
             disableKeyboardCtrl
             mouseZoom={false}
             autoLoad
-            autoRotate
+            autoRotate={2}
           />
         </Col>
         <Col xs='9' xl='6' className='p-1'>
@@ -179,7 +179,7 @@ export default function LaDefenseArena() {
             disableKeyboardCtrl
             mouseZoom={false}
             autoLoad
-            autoRotate
+            autoRotate={2}
           />
         </Col>
       </Row>

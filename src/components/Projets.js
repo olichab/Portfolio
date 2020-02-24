@@ -1,19 +1,19 @@
-import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
-import Projet from './Projet';
-import thumbnailBOL from '../assets/images/projets/Thumbnails/Web/Thumbnail_BriefOnline.jpg';
-import thumbnaiHelloWorld from '../assets/images/projets/Thumbnails/Web/Thumbnail_HelloWorld.jpg';
-import thumbnailMooviz from '../assets/images/projets/Thumbnails/Web/Thumbnail_Mooviz.jpg';
-import thumbnailLaDefenseArena from '../assets/images/projets/Thumbnails/3D/Thumbnail_LaDefenseArena.jpg';
-import thumbnailBullit from '../assets/images/projets/Thumbnails/3D/Thumbnail_Bullit.jpg';
-import thumbnailArchitecture from '../assets/images/projets/Thumbnails/3D/Thumbnail_Archi.jpg';
-import thumbnailPacifa from '../assets/images/projets/Thumbnails/3D/Thumbnail_PacifaBasket.jpg';
-import thumbnailHellsKitchen from '../assets/images/projets/Thumbnails/3D/Thumbnail_HellsKitchen.jpg';
-import thumbnailUvsq from '../assets/images/projets/Thumbnails/2D/Thumbnail_Uvsq.jpg';
-import thumbnailBreakingBad from '../assets/images/projets/Thumbnails/2D/Thumbnail_BreakingBad.jpg';
-import thumbnailSketchMirodia from '../assets/images/projets/Thumbnails/2D/Thumbnail_SketchMirodia.jpg';
+import React from "react";
+import { Container, Row, Col } from "reactstrap";
+import Projet from "./Projet";
+import thumbnailBOL from "../assets/images/projets/Thumbnails/Web/Thumbnail_BriefOnline.jpg";
+import thumbnaiHelloWorld from "../assets/images/projets/Thumbnails/Web/Thumbnail_HelloWorld.jpg";
+import thumbnailMooviz from "../assets/images/projets/Thumbnails/Web/Thumbnail_Mooviz.jpg";
+import thumbnailLaDefenseArena from "../assets/images/projets/Thumbnails/3D/Thumbnail_LaDefenseArena.jpg";
+import thumbnailBullit from "../assets/images/projets/Thumbnails/3D/Thumbnail_Bullit.jpg";
+import thumbnailArchitecture from "../assets/images/projets/Thumbnails/3D/Thumbnail_Archi.jpg";
+import thumbnailPacifa from "../assets/images/projets/Thumbnails/3D/Thumbnail_PacifaBasket.jpg";
+import thumbnailHellsKitchen from "../assets/images/projets/Thumbnails/3D/Thumbnail_HellsKitchen.jpg";
+import thumbnailUvsq from "../assets/images/projets/Thumbnails/2D/Thumbnail_Uvsq.jpg";
+import thumbnailBreakingBad from "../assets/images/projets/Thumbnails/2D/Thumbnail_BreakingBad.jpg";
+import thumbnailSketchMirodia from "../assets/images/projets/Thumbnails/2D/Thumbnail_SketchMirodia.jpg";
 
-import '../scss/Projets.scss';
+import "../scss/Projets.scss";
 
 export default function Projets() {
   return (
@@ -23,7 +23,7 @@ export default function Projets() {
           <h1>PROJETS</h1>
         </Col>
       </Row>
-      <Row className='justify-content-center no-gutters'>
+      <Row className='justify-content-center  no-gutters'>
         <Col xs='12' md='6' lg='4'>
           <Projet
             thumbnail={thumbnailBOL}

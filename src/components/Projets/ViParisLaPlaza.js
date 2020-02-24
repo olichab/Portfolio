@@ -1,16 +1,16 @@
-import React, { useState, useCallback } from 'react';
-import { Link } from 'react-router-dom';
-import { Container, Row, Col } from 'reactstrap';
-import Gallery from 'react-photo-gallery';
-import Carousel, { Modal, ModalGateway } from 'react-images';
-import viParisLaPlazaImage1 from '../../assets/images/projets/3D/BullitStudio/1_Monuments.jpg';
-import viParisLaPlazaImage2 from '../../assets/images/projets/3D/BullitStudio/2_NotreDame.jpg';
-import viParisLaPlazaImage3 from '../../assets/images/projets/3D/BullitStudio/3_Invalides.jpg';
-import viParisLaPlazaImage4 from '../../assets/images/projets/3D/BullitStudio/4_SacreCoeur.jpg';
-import viParisLaPlazaImage5 from '../../assets/images/projets/3D/BullitStudio/5_ArcDeTriomphe.jpg';
-import viParisLaPlazaImage6 from '../../assets/images/projets/3D/BullitStudio/6_MonumentsWireFrame.jpg';
-import viParisLaPlazaImage7 from '../../assets/images/projets/3D/BullitStudio/7_Composition.jpg';
-import '../../scss/ProjetDetails.scss';
+import React, { useState, useCallback } from "react";
+import { Link } from "react-router-dom";
+import { Container, Row, Col } from "reactstrap";
+import Gallery from "react-photo-gallery";
+import Carousel, { Modal, ModalGateway } from "react-images";
+import viParisLaPlazaImage1 from "../../assets/images/projets/3D/BullitStudio/1_Monuments.jpg";
+import viParisLaPlazaImage2 from "../../assets/images/projets/3D/BullitStudio/2_NotreDame.jpg";
+import viParisLaPlazaImage3 from "../../assets/images/projets/3D/BullitStudio/3_Invalides.jpg";
+import viParisLaPlazaImage4 from "../../assets/images/projets/3D/BullitStudio/4_SacreCoeur.jpg";
+import viParisLaPlazaImage5 from "../../assets/images/projets/3D/BullitStudio/5_ArcDeTriomphe.jpg";
+import viParisLaPlazaImage6 from "../../assets/images/projets/3D/BullitStudio/6_MonumentsWireFrame.jpg";
+import viParisLaPlazaImage7 from "../../assets/images/projets/3D/BullitStudio/7_Composition.jpg";
+import "../../scss/ProjetDetails.scss";
 
 const photos = [
   {
@@ -51,7 +51,7 @@ const photos = [
 ];
 
 export default function ViParisLaPlaza() {
-  const stack = ['Maya', 'Arnold', 'Substance painter', 'Photoshop'];
+  const stack = ["Maya", "Arnold", "Substance painter", "Photoshop"];
 
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
@@ -74,7 +74,7 @@ export default function ViParisLaPlaza() {
         </Col>
       </Row>
       <Row className='text-details-projet justify-content-center'>
-        <Col xs='12' lg='6'>
+        <Col xs='12' lg='8'>
           <p>
             Au sein de
             <b> Bullit Studio</b>, en tant que
@@ -113,7 +113,7 @@ export default function ViParisLaPlaza() {
             <b> monument</b>.
           </p>
         </Col>
-        <Col xs='12' lg='6'>
+        <Col xs='12' lg='4'>
           <Col xs='12' className='p-0'>
             <p>Année: 2017</p>
           </Col>

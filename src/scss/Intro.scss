@@ -1,17 +1,10 @@
-@import './helpers/Colors.scss';
-@import './helpers/Media.scss';
+@import "./helpers/Colors.scss";
+@import "./helpers/Media.scss";
 
 .intro-container {
   height: 100vh;
-  h1 {
-    color: #fff;
-    font-size: 24px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  p {
-    font-size: 18px;
-    .text-yellow {
-      color: $main-yellow;
-    }
-  }
 }
