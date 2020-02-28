@@ -25,27 +25,28 @@ export default function Competence({ logo, name }) {
             <Media object src={logo[1]} />
           </Col>
         )}
+        <Col
+          xs='auto'
+          className={`caption ${showCaptionOnClick ? "caption-on-click" : ""}`}
+        >
+          <div className='blur' />
+          <div className='caption-text'>
+            <h2>
+              {name.length &&
+                name.map((e, i) =>
+                  i === 0 ? (
+                    e
+                  ) : (
+                    <Fragment key={e}>
+                      <br />
+                      {e}
+                    </Fragment>
+                  )
+                )}
+            </h2>
+          </div>
+        </Col>
       </Row>
-      <div
-        className={`caption ${showCaptionOnClick ? "caption-on-click" : ""}`}
-      >
-        <div className='blur' />
-        <div className='caption-text'>
-          <h2>
-            {name.length &&
-              name.map((e, i) =>
-                i === 0 ? (
-                  e
-                ) : (
-                  <Fragment key={e}>
-                    <br />
-                    {e}
-                  </Fragment>
-                )
-              )}
-          </h2>
-        </div>
-      </div>
     </div>
   );
 }
