@@ -1,9 +1,12 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { Container, Row, Col } from "reactstrap";
-import Typelighter from "./Typelighter";
-import IconScroll from "./IconScroll";
 import ParticlesBubbles from "./ParticlesBubbles";
+import Projet from "./Projet";
+import IconScroll from "./IconScroll";
+import thumbnailBOL from "../assets/images/projets/Thumbnails/Web/Thumbnail_BriefOnline.jpg";
+import thumbnaiHelloWorld from "../assets/images/projets/Thumbnails/Web/Thumbnail_HelloWorld.jpg";
+import thumbnailMooviz from "../assets/images/projets/Thumbnails/Web/Thumbnail_Mooviz.jpg";
 import "../scss/Intro.scss";
 
 export default function Home() {
@@ -12,35 +15,66 @@ export default function Home() {
       <Row className='d-none d-lg-block'>
         <ParticlesBubbles />
       </Row>
-      <Row className='p-md-3 p-xl-5'>
-        <Col xs='10'>
-          <h1>Hello world !</h1>
-          <br />
-          <h2>
-            Je suis <b>Olivier Chabot</b>
-            . Développeur front-end.
-            <br />
-            Bienvenue sur mon portfolio.
-          </h2>
+      <Container className='all-part'>
+        <Col xs='12' lg='4' xl='5'>
+          <Row className='left-part'>
+            <Col xs='auto'>
+              <h1 className='welcome-title'>WELCOME</h1>
+              <p>
+                Je suis <b>Olivier Chabot</b>
+                .
+                <br />
+                Développeur front-end.
+                <br />
+                Bienvenue sur mon portfolio.
+              </p>
+            </Col>
+          </Row>
         </Col>
-      </Row>
-      <Row className='d-none d-lg-block justify-content-center p-md-3 p-xl-5'>
-        <Col>
-          <Typelighter />
+        <Col xs='12' lg='8' xl='7' className='right-part p-0 pl-lg-5'>
+          <Row>
+            <Col xs='auto'>
+              <h2 className='last-roject-title'>Mes derniers projets</h2>
+            </Col>
+          </Row>
+          <Row className='no-gutters'>
+            <Col xs='6' xl='4'>
+              <Projet
+                thumbnail={thumbnailBOL}
+                title='Brief Online'
+                location='Altavia Connect'
+              />
+            </Col>
+            <Col xs='6' xl='4'>
+              <Projet
+                thumbnail={thumbnailMooviz}
+                title='Mooviz'
+                location='Projet personnel'
+              />
+            </Col>
+            <Col xs='6' xl='4' className='d-none d-xl-block'>
+              <Projet
+                thumbnail={thumbnaiHelloWorld}
+                title='Hello World'
+                location='Wild Code School'
+              />
+            </Col>
+          </Row>
+          <Row className='justify-content-center'>
+            <Col xs='auto'>
+              <Link className='nav-link' to='/#projets' smooth='true'>
+                <button
+                  type='button'
+                  className='btn-yellow hvr-bounce-to-bottom'
+                >
+                  Voir tous les projets
+                </button>
+              </Link>
+            </Col>
+          </Row>
         </Col>
-      </Row>
-      <Row className='justify-content-center justify-content-md-end p-3 p-xl-5'>
-        <Col xs='auto'>
-          <Link className='nav-link' to='/#contact' smooth='true'>
-            <button type='button' className='btn-yellow hvr-bounce-to-bottom'>
-              Dire bonjour
-            </button>
-          </Link>
-        </Col>
-      </Row>
-      <Row>
-        <IconScroll />
-      </Row>
+      </Container>
+      <IconScroll />
     </Container>
   );
 }

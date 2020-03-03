@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import '../scss/Typelighter.scss';
+import "../scss/Typelighter.scss";
 
 export default function Typelighter() {
   return (
-    <p>
-      <span className='typeWriter'>J&apos;aime </span>
+    <div className='typeWriter'>
+      <span>J&apos;aime </span>
       <span
         className='typeWriter'
         data-random='false'
@@ -22,6 +22,6 @@ export default function Typelighter() {
           "développer des interfaces pixel perfect"
         ]'
       />
-    </p>
+    </div>
   );
 }
