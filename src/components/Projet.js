@@ -30,13 +30,15 @@ export default function Projet({ thumbnail, title, location, path }) {
         <div className='caption-text'>
           <p className='caption-title'>{title}</p>
           <p className='caption-location'>{location}</p>
-          <Link
-            to={path}
-            className='link-unstyled btn-see-project hvr-sweep-to-right'
-            smooth='true'
-          >
-            Voir le projet
-          </Link>
+          {path && (
+            <Link
+              to={path}
+              className='link-unstyled btn-see-project hvr-sweep-to-right'
+              smooth='true'
+            >
+              Voir le projet
+            </Link>
+          )}
         </div>
       </div>
     </div>

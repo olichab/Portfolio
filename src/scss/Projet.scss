@@ -12,7 +12,7 @@
     height: 230px;
     object-fit: cover;
     filter: grayscale(0);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-out;
   }
 
   &:focus {
@@ -21,7 +21,7 @@
 
   @include hover-supported() {
     .thumbnails {
-      transform: scale(1.1, 1.1);
+      transform: scale(1.05, 1.05);
       filter: grayscale(1);
     }
 
@@ -36,7 +36,7 @@
     visibility: hidden;
     position: absolute;
     top: 0;
-    height: 230px;
+    height: 100%;
     width: 100%;
     opacity: 0;
     transition: all 0.45s ease-in-out;
@@ -44,7 +44,7 @@
     .blur {
       z-index: 2;
       position: absolute;
-      height: 230px;
+      height: 100%;
       width: 100%;
       background-color: rgba($main-grey, 0.85);
     }
@@ -58,10 +58,10 @@
       align-items: center;
       text-align: center;
       width: 100%;
-      height: 230px;
+      height: 100%;
 
       .caption-title {
-        width: 100%; // For IE
+        width: 90%; // For IE
         margin: 0;
         font-size: 2.6rem;
         font-weight: 600;
@@ -73,10 +73,12 @@
         font-size: 1.6rem;
         font-weight: 400;
         font-style: italic;
+        margin-bottom: 0;
       }
     }
 
     .btn-see-project {
+      margin-top: 10px;
       padding: 5px 8px;
       background-color: transparent;
       border: solid 1px $main-yellow;

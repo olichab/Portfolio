@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Media } from "reactstrap";
 import Competence from "./Competence";
+import Typelighter from "./Typelighter";
 import photo from "../assets/images/Photo_OC.jpg";
 import logoReact from "../assets/images/logos/react.svg";
 import logoRedux from "../assets/images/logos/redux.svg";
@@ -33,7 +34,7 @@ export default function Bio() {
         </Col>
       </Row>
       <Row className='justify-content-center'>
-        <Col xs='12' md='8' lg='7' className='offset-lg-1 about-text'>
+        <Col xs='12' md='8' className='offset-lg-1 about-text'>
           <p>
             Je m’appelle Olivier Chabot, j’ai 28 ans. Je suis diplômé de l’IUT
             de Vélizy-Villacoublay en Métiers du Multimédia et de l’Internet.
@@ -51,6 +52,12 @@ export default function Bio() {
             recherche de nouveaux défis et serais ravi de mettre à contribution
             mes compétences dans vos projets web.
           </p>
+          <Row className='d-none d-lg-block'>
+            <Col xs='12'>
+              <br />
+              <Typelighter />
+            </Col>
+          </Row>
         </Col>
         <Col xs='12' lg='3' className='about-photo'>
           <Media

@@ -24,6 +24,10 @@
   opacity: 0.85;
   visibility: visible;
   transition: all ease-in-out 0.5s;
+
+  @media only screen and (max-height:600px) {
+    visibility: hidden;
+  }
 }
 
 .hide-icon-scroll {
