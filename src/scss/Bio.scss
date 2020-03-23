@@ -42,22 +42,4 @@
       }
     }
   }
-
-  .btn-download-resume {
-    background-color: transparent;
-    color: $main-yellow;
-    border: none;
-    padding: 8px;
-    margin: 16px;
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: uppercase;
-
-    &:hover,
-    &:active,
-    &:focus {
-      color: $main-grey;
-      text-decoration: none;
-    }
-  }
 }

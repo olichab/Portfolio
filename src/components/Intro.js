@@ -7,6 +7,7 @@ import IconScroll from "./IconScroll";
 import thumbnailBOL from "../assets/images/projets/Thumbnails/Web/Thumbnail_BriefOnline.jpg";
 import thumbnaiHelloWorld from "../assets/images/projets/Thumbnails/Web/Thumbnail_HelloWorld.jpg";
 import thumbnailMooviz from "../assets/images/projets/Thumbnails/Web/Thumbnail_Mooviz.jpg";
+import resume from "../assets/docs/CV_Olivier_Chabot.pdf";
 import "../scss/Intro.scss";
 
 export default function Home() {
@@ -21,13 +22,22 @@ export default function Home() {
             <Col xs='auto'>
               <h1 className='welcome-title'>WELCOME</h1>
               <p>
-                Je suis <b>Olivier Chabot</b>
+                Je suis
+                {" "}
+                <b>Olivier Chabot</b>
                 .
                 <br />
                 Développeur front-end.
                 <br />
                 Bienvenue sur mon portfolio.
               </p>
+              <a
+                href={resume}
+                download
+                className='btn-download-resume hvr-sweep-to-right'
+              >
+                Télécharger mon CV
+              </a>
             </Col>
           </Row>
         </Col>
