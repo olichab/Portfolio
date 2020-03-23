@@ -21,7 +21,6 @@ import logoSketch from "../assets/images/logos/sketch.svg";
 import logoAdobeXD from "../assets/images/logos/adobexd.svg";
 import logoPhotoshop from "../assets/images/logos/photoshop.svg";
 import logoIllustrator from "../assets/images/logos/illustrator.svg";
-import resume from "../assets/docs/CV_Olivier_Chabot.pdf";
 
 import "../scss/Bio.scss";
 
@@ -36,7 +35,7 @@ export default function Bio() {
       <Row className='justify-content-center'>
         <Col xs='12' md='8' className='offset-lg-1 about-text'>
           <p>
-            Je m’appelle Olivier Chabot, j’ai 28 ans. Je suis diplômé de l’IUT
+            Je m’appelle Olivier Chabot, j’ai 29 ans. Je suis diplômé de l’IUT
             de Vélizy-Villacoublay en Métiers du Multimédia et de l’Internet.
             <br />
             <br />
@@ -131,17 +130,6 @@ export default function Bio() {
               />
             </Col>
           </Row>
-        </Col>
-      </Row>
-      <Row className='justify-content-center'>
-        <Col xs='auto'>
-          <a
-            href={resume}
-            download
-            className='btn-download-resume hvr-sweep-to-right'
-          >
-            Télécharger mon CV
-          </a>
         </Col>
       </Row>
     </Container>

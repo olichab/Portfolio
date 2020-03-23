@@ -54,6 +54,29 @@
         }
       }
 
+      .btn-download-resume {
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        padding: 8px;
+        margin: 8px 0 0 -8px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: $main-grey;
+          text-decoration: none;
+        }
+
+        @include lg {
+          margin: 32px 0 0 -8px;
+          font-size: 1.6rem !important;
+        }
+      }
+
       @include lg {
         &:after {
           content: '';
