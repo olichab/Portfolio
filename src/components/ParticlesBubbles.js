@@ -67,35 +67,35 @@ export default function ParticlesBubbles() {
               bounce: false,
             },
           },
-          interactivity: {
-            detect_on: "canvas",
-            events: {
-              onhover: {
-                enable: true,
-                mode: "repulse",
-              },
-              resize: true,
-            },
-            modes: {
-              grab: {
-                distance: 400,
-                line_linked: {
-                  opacity: 0.5,
-                },
-              },
-              bubble: {
-                distance: 400,
-                size: 4,
-                duration: 0.3,
-                opacity: 1,
-                speed: 3,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
-            },
-          },
+          // interactivity: {
+          //   detect_on: "canvas",
+          //   events: {
+          //     onhover: {
+          //       enable: true,
+          //       mode: "repulse",
+          //     },
+          //     resize: true,
+          //   },
+          //   modes: {
+          //     grab: {
+          //       distance: 400,
+          //       line_linked: {
+          //         opacity: 0.5,
+          //       },
+          //     },
+          //     bubble: {
+          //       distance: 400,
+          //       size: 4,
+          //       duration: 0.3,
+          //       opacity: 1,
+          //       speed: 3,
+          //     },
+          //     repulse: {
+          //       distance: 200,
+          //       duration: 0.4,
+          //     },
+          //   },
+          // },
           retina_detect: true,
         }}
       />
