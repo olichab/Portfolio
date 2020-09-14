@@ -1,44 +1,44 @@
-import React from 'react';
-import Particles from 'react-particles-js';
+import React from "react";
+import Particles from "react-particles-js";
 
-import '../scss/ParticlesBubbles.scss';
+import "../scss/ParticlesBubbles.scss";
 
 export default function ParticlesBubbles() {
   return (
     <>
       <Particles
-        className='particles-container'
+        className="particles-container"
         params={{
           particles: {
             number: {
               value: 60,
               density: {
                 enable: true,
-                value_area: 3235.5117139334156
-              }
+                value_area: 3235.5117139334156,
+              },
             },
             color: {
-              value: '#fcd02c'
+              value: "#fcd02c",
             },
             shape: {
-              type: 'circle',
+              type: "circle",
               stroke: {
                 width: 0,
-                color: '#000000'
+                color: "#000000",
               },
               polygon: {
-                nb_sides: 3
-              }
+                nb_sides: 3,
+              },
             },
             opacity: {
-              value: 0.3,
+              value: 0.4,
               random: true,
               anim: {
                 enable: false,
                 speed: 1,
                 opacity_min: 0.1,
-                sync: false
-              }
+                sync: false,
+              },
             },
             size: {
               value: 6,
@@ -47,56 +47,56 @@ export default function ParticlesBubbles() {
                 enable: false,
                 speed: 40,
                 size_min: 0.1,
-                sync: false
-              }
+                sync: false,
+              },
             },
             line_linked: {
               enable: false,
               distance: 500,
-              color: '#ffffff',
+              color: "#ffffff",
               opacity: 0.4,
-              width: 2
+              width: 2,
             },
             move: {
               enable: true,
               speed: 1,
-              direction: 'none',
+              direction: "none",
               random: true,
               straight: false,
-              out_mode: 'out',
-              bounce: false
-            }
+              out_mode: "out",
+              bounce: false,
+            },
           },
           interactivity: {
-            detect_on: 'canvas',
+            detect_on: "canvas",
             events: {
               onhover: {
                 enable: true,
-                mode: 'repulse'
+                mode: "repulse",
               },
-              resize: true
+              resize: true,
             },
             modes: {
               grab: {
                 distance: 400,
                 line_linked: {
-                  opacity: 0.5
-                }
+                  opacity: 0.5,
+                },
               },
               bubble: {
                 distance: 400,
                 size: 4,
                 duration: 0.3,
                 opacity: 1,
-                speed: 3
+                speed: 3,
               },
               repulse: {
                 distance: 200,
-                duration: 0.4
-              }
-            }
+                duration: 0.4,
+              },
+            },
           },
-          retina_detect: true
+          retina_detect: true,
         }}
       />
     </>

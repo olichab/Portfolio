@@ -48,10 +48,6 @@
       font-size: 2rem;
       cursor: pointer;
       outline: 0;
-
-      @include lg {
-        font-size: 1.8rem;
-      }
     }
 
     .link-unstyled {
