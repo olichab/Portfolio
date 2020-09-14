@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
 
-  @media only screen and (max-height:600px) {
+  @media only screen and (max-height: 600px) {
     height: 100%;
     justify-content: flex-start;
     padding-top: 75px;
@@ -36,20 +36,14 @@
         @include xl {
           font-size: 7.2rem !important;
         }
-
       }
 
       p {
-        font-size: 1.4rem !important;
-        line-height: 24px !important;
-
-        @include lg {
-          font-size: 1.8rem !important;
-          line-height: 30px !important;
-        }
+        font-size: 1.5rem !important;
+        line-height: 2rem !important;
 
         @include xl {
-          font-size: 2.4rem !important;
+          font-size: 2rem !important;
           line-height: 36px !important;
         }
       }
@@ -79,7 +73,7 @@
 
       @include lg {
         &:after {
-          content: '';
+          content: "";
           display: block;
           position: absolute;
           top: 0;
@@ -99,27 +93,27 @@
       }
 
       .last-roject-title {
-        margin-bottom: 16px;
-        margin-left: 16px;
+        margin-bottom: 2rem;
+        // margin-left: 2rem;
         color: $main-yellow;
         font-size: 2rem !important;
+        text-align: center;
 
+        @include md {
+          text-align: left;
+        }
         @include xl {
           font-size: 2.6rem !important;
-          margin-bottom: 32px;
-          margin-left: 24px;
+          margin-bottom: 3.2rem;
+          margin-left: 2.4rem;
         }
       }
 
       img {
-        height: 120px;
+        height: 100px;
 
         @include md {
           height: 140px;
-        }
-
-        @include xl {
-          height: 160px;
         }
       }
 
@@ -134,7 +128,6 @@
           margin-top: 48px;
         }
       }
-
     }
   }
 }
