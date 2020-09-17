@@ -3,7 +3,7 @@
 .icon-scroll,
 .icon-scroll:before {
   position: absolute;
-  left: 50%;
+  margin: auto;
 }
 
 .title-scroll {
@@ -12,7 +12,7 @@
   font-size: 0.8rem;
   font-weight: 600;
   top: 45px;
-  left: -4px;
+  left: -6px;
 }
 
 .icon-scroll {
@@ -41,21 +41,25 @@
   width: 6px;
   height: 6px;
   background: $main-yellow;
-  margin-left: -3px;
-  top: 30px;
+  margin-left: 7px;
+  top: 25px;
   border-radius: 4px;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: scroll;
 }
 
 @keyframes scroll {
   0% {
-    opacity: 1;
+    opacity: 0.75;
   }
 
+  70% {
+    opacity: 0;
+  }
+  71%,
   100% {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(-15px);
   }
 }

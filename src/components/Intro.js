@@ -4,10 +4,8 @@ import { Container, Row, Col } from "reactstrap";
 import ParticlesBubbles from "./ParticlesBubbles";
 import Projet from "./Projet";
 import IconScroll from "./IconScroll";
-import thumbnailBOL from "../assets/images/projets/Thumbnails/Web/Thumbnail_BriefOnline.jpg";
-import thumbnaiHelloWorld from "../assets/images/projets/Thumbnails/Web/Thumbnail_HelloWorld.jpg";
-import thumbnailMooviz from "../assets/images/projets/Thumbnails/Web/Thumbnail_Mooviz.jpg";
 import resume from "../assets/docs/CV_Olivier_Chabot.pdf";
+import PROJECTS_LIST from "./helpers/projectsList";
 import "../scss/Intro.scss";
 
 export default function Home() {
@@ -22,7 +20,8 @@ export default function Home() {
             <Col xs="auto">
               <h1 className="welcome-title">WELCOME</h1>
               <p>
-                Je suis <b>Olivier Chabot</b>
+                Je suis
+                <b> Olivier Chabot</b>
                 .
                 <br />
                 Développeur front-end.
@@ -46,27 +45,20 @@ export default function Home() {
             </Col>
           </Row>
           <Row className="no-gutters">
-            <Col xs="6" xl="4">
-              <Projet
-                thumbnail={thumbnailBOL}
-                title="Brief Online"
-                location="Altavia Connect"
-              />
-            </Col>
-            <Col xs="6" xl="4">
-              <Projet
-                thumbnail={thumbnailMooviz}
-                title="Mooviz"
-                location="Projet personnel"
-              />
-            </Col>
-            <Col xs="6" xl="4" className="d-none d-xl-block">
-              <Projet
-                thumbnail={thumbnaiHelloWorld}
-                title="Hello World"
-                location="Wild Code School"
-              />
-            </Col>
+            {PROJECTS_LIST.slice(0, 3).map((p, index) => (
+              <Col
+                key={p.id}
+                xs="6"
+                xl="4"
+                className={index === 2 ? "d-none d-xl-block" : ""}
+              >
+                <Projet
+                  thumbnail={p.thumbnail}
+                  title={p.title}
+                  location={p.location}
+                />
+              </Col>
+            ))}
           </Row>
           <Row className="justify-content-center">
             <Col xs="auto">
