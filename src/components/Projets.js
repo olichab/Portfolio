@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Projet from "./Projet";
-import listProjects from "./helpers/listProjects";
+import PROJECTS_LIST from "./helpers/projectsList";
 
 import "../scss/Projets.scss";
 
@@ -14,11 +14,11 @@ export default function Projets() {
         </Col>
       </Row>
       <Row className="justify-content-center  no-gutters">
-        {listProjects.map((project) => {
+        {PROJECTS_LIST.map((project) => {
           return (
             <Col xs="12" md="6" lg="4" key={project.title}>
               <Projet
-                thumbnail={project.urlThumbnail}
+                thumbnail={project.thumbnail}
                 title={project.title}
                 location={project.location}
                 path={project.path}

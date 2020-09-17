@@ -39,12 +39,12 @@
       }
 
       p {
-        font-size: 1.5rem !important;
+        font-size: 1.6rem !important;
         line-height: 2rem !important;
 
         @include xl {
           font-size: 2rem !important;
-          line-height: 36px !important;
+          line-height: 3rem !important;
         }
       }
 
@@ -94,7 +94,6 @@
 
       .last-roject-title {
         margin-bottom: 2rem;
-        // margin-left: 2rem;
         color: $main-yellow;
         font-size: 2rem !important;
         text-align: center;
@@ -110,10 +109,13 @@
       }
 
       img {
-        height: 100px;
+        height: 110px;
 
         @include md {
-          height: 140px;
+          height: 180px;
+        }
+        @include lg {
+          height: 160px;
         }
       }
 

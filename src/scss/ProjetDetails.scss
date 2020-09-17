@@ -1,7 +1,7 @@
-@import './helpers/Colors.scss';
-@import './helpers/Media.scss';
-@import './helpers/HoverSupported.scss';
-@import './helpers/Forms.scss';
+@import "./helpers/Colors.scss";
+@import "./helpers/Media.scss";
+@import "./helpers/HoverSupported.scss";
+@import "./helpers/Forms.scss";
 
 .details-projet-container {
   min-height: 100vh;
@@ -12,7 +12,7 @@
     margin: 10px;
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       position: relative;
       height: 2px;
@@ -33,13 +33,15 @@
       list-style-type: none;
 
       &:before {
-        content: '‣ ';
+        content: "‣ ";
       }
     }
 
     .link-unstyled {
       @include link-unstyled;
       font-size: 1.4rem !important;
+      border-bottom: solid 1px #fff;
+      padding-bottom: 0;
     }
   }
 
@@ -59,18 +61,14 @@
   }
 
   .link-switch-project {
-    margin: 15px;
+    margin: 1.6rem;
     padding: 8px;
     color: $main-yellow;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-
-    @include md {
-      font-size: 1.6rem;
-    }
   }
 }
 
