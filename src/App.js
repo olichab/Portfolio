@@ -14,9 +14,9 @@ function App({ props }) {
   return (
     <div className="App">
       <HashRouter basename="/">
-        <ScrollToTop />
         <Header />
         <Suspense fallback={<DelayedFallback />}>
+          <ScrollToTop />
           <Switch>
             <Route exact path="/" component={Homepage} />
             {PROJECTS_LIST.map((project) => {
