@@ -14,7 +14,7 @@ const PROJECTS_LIST = [
     },
     tags: ["React", "API Spotify", "Axios", "Sass", "Reactsrap"],
     description:
-      "<p> Chaque jour, <b> onedayonesong </b> vous permet de <b> découvrir une nouvelle musique </b> parmis le <b> 40 millions </b> de titres que compte la bibliothèque musicale de <b> Spotify</b> . <br /> <br /> Vous trouverai également les musiques proposées la semaine précèdente. </p>",
+      "<p> Chaque jour, <b> onedayonesong </b> vous permet de <b> découvrir une nouvelle musique </b> parmis le <b> 40 millions </b> de titres que compte la bibliothèque musicale de <b> Spotify</b> . <br /> <br /> Vous trouverez également les musiques proposées la semaine précèdente. </p>",
     images: [
       {
         src: require("../../assets/images/projets/Web/OneDayOneSong/1_ODOS.jpg"),
