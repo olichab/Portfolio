@@ -28,7 +28,7 @@ export default function ProjetDetails({ projectDetails }) {
         </Col>
       </Row>
       <Row className="text-details-projet justify-content-center">
-        <Col xs="12" lg="7">
+        <Col xs="12" lg="7" className="pb-4">
           {parse(description)}
         </Col>
         <Col xs="12" lg="4" className="offset-lg-1">
