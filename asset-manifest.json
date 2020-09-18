@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.51d06270.chunk.css",
-    "main.js": "/static/js/main.035d0311.chunk.js",
-    "main.js.map": "/static/js/main.035d0311.chunk.js.map",
+    "main.js": "/static/js/main.83768a89.chunk.js",
+    "main.js.map": "/static/js/main.83768a89.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c0c9f541.js",
     "runtime-main.js.map": "/static/js/runtime-main.c0c9f541.js.map",
     "static/css/2.17e5ed98.chunk.css": "/static/css/2.17e5ed98.chunk.css",
-    "static/js/2.98b658d6.chunk.js": "/static/js/2.98b658d6.chunk.js",
-    "static/js/2.98b658d6.chunk.js.map": "/static/js/2.98b658d6.chunk.js.map",
+    "static/js/2.130ed24f.chunk.js": "/static/js/2.130ed24f.chunk.js",
+    "static/js/2.130ed24f.chunk.js.map": "/static/js/2.130ed24f.chunk.js.map",
     "static/css/3.eba890c0.chunk.css": "/static/css/3.eba890c0.chunk.css",
     "static/js/3.4361941a.chunk.js": "/static/js/3.4361941a.chunk.js",
     "static/js/3.4361941a.chunk.js.map": "/static/js/3.4361941a.chunk.js.map",
@@ -15,13 +15,13 @@
     "static/js/4.878a14b5.chunk.js": "/static/js/4.878a14b5.chunk.js",
     "static/js/4.878a14b5.chunk.js.map": "/static/js/4.878a14b5.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6bbc7002fc4646166c20ea81b6f3bfbf.js": "/precache-manifest.6bbc7002fc4646166c20ea81b6f3bfbf.js",
+    "precache-manifest.2080189f1567bc8a1dca88b834c9f799.js": "/precache-manifest.2080189f1567bc8a1dca88b834c9f799.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/static/css/2.17e5ed98.chunk.css.map",
     "static/css/3.eba890c0.chunk.css.map": "/static/css/3.eba890c0.chunk.css.map",
     "static/css/4.9beb58da.chunk.css.map": "/static/css/4.9beb58da.chunk.css.map",
     "static/css/main.51d06270.chunk.css.map": "/static/css/main.51d06270.chunk.css.map",
-    "static/js/2.98b658d6.chunk.js.LICENSE": "/static/js/2.98b658d6.chunk.js.LICENSE",
+    "static/js/2.130ed24f.chunk.js.LICENSE": "/static/js/2.130ed24f.chunk.js.LICENSE",
     "static/js/3.4361941a.chunk.js.LICENSE": "/static/js/3.4361941a.chunk.js.LICENSE",
     "static/media/10_Depliant1.jpg": "/static/media/10_Depliant1.c659e75f.jpg",
     "static/media/11_Depliant2.jpg": "/static/media/11_Depliant2.c87c529c.jpg",
@@ -128,8 +128,8 @@
   "entrypoints": [
     "static/js/runtime-main.c0c9f541.js",
     "static/css/2.17e5ed98.chunk.css",
-    "static/js/2.98b658d6.chunk.js",
+    "static/js/2.130ed24f.chunk.js",
     "static/css/main.51d06270.chunk.css",
-    "static/js/main.035d0311.chunk.js"
+    "static/js/main.83768a89.chunk.js"
   ]
 }
