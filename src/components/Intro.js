@@ -1,6 +1,7 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { Container, Row, Col } from "reactstrap";
+import Div100vh from "react-div-100vh";
 import ParticlesBubbles from "./ParticlesBubbles";
 import Projet from "./Projet";
 import IconScroll from "./IconScroll";
@@ -10,7 +11,7 @@ import "../scss/Intro.scss";
 
 export default function Home() {
   return (
-    <Container className="intro-container" id="home">
+    <Div100vh className="container intro-container" id="home">
       <Row className="d-none d-lg-block">
         <ParticlesBubbles />
       </Row>
@@ -75,6 +76,6 @@ export default function Home() {
         </Col>
       </Container>
       <IconScroll />
-    </Container>
+    </Div100vh>
   );
 }

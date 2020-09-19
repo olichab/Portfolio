@@ -1,8 +1,8 @@
-@import './helpers/Colors.scss';
+@import "./helpers/Colors.scss";
 
 .footer-container {
   font-size: 1.2rem;
-  padding: 20px;
+  padding: 10px;
 
   a {
     color: #fff;
@@ -13,11 +13,11 @@
   }
 
   &:before {
-    content: '';
+    content: "";
     display: block;
     position: relative;
     height: 1px;
-    top: -20px;
+    top: -10px;
     width: 65%;
     margin: auto;
     background-color: rgba($main-yellow, 0.25);
