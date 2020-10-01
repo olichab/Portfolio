@@ -27,7 +27,7 @@ export default function Home() {
                 Développeur front-end.
                 <br />
                 Bienvenue sur mon
-                <span className="word-yellow">portfolio</span>.
+                <span className="word-yellow"> portfolio</span>.
               </p>
             </div>
           </Col>
