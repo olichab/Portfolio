@@ -15,7 +15,11 @@ export default function SocialNetwork() {
         alt="logo linkedin"
         className="logo-linked-in hvr-grow"
         onClick={() =>
-          window.open("https://www.linkedin.com/in/olichab", "_blank")
+          window.open(
+            "https://www.linkedin.com/in/olichab",
+            "_blank",
+            "noopener"
+          )
         }
       />
       <Media
@@ -23,7 +27,9 @@ export default function SocialNetwork() {
         src={logoGithub}
         alt="logo github"
         className="logo-github hvr-grow"
-        onClick={() => window.open("https://github.com/olichab", "_blank")}
+        onClick={() =>
+          window.open("https://github.com/olichab", "_blank", "noopener")
+        }
       />
       <Media
         object
@@ -31,7 +37,11 @@ export default function SocialNetwork() {
         alt="logo instagram"
         className="logo-instagram hvr-grow"
         onClick={() =>
-          window.open("https://www.instagram.com/devandco/", "_blank")
+          window.open(
+            "https://www.instagram.com/devandco/",
+            "_blank",
+            "noopener"
+          )
         }
       />
     </div>
