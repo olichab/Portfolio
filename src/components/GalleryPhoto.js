@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
+import { Row, Col } from "reactstrap";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import PropTypes from "prop-types";
 
@@ -22,23 +23,25 @@ export default function GalleryPhoto({ images }) {
   });
 
   return (
-    <>
-      <Gallery photos={photos} onClick={openLightbox} />
-      <ModalGateway>
-        {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
-            <Carousel
-              currentIndex={currentImage}
-              views={photos.map((x) => ({
-                ...x,
-                srcset: x.srcSet,
-                caption: x.title,
-              }))}
-            />
-          </Modal>
-        ) : null}
-      </ModalGateway>
-    </>
+    <Row>
+      <Col>
+        <Gallery photos={photos} onClick={openLightbox} />
+        <ModalGateway>
+          {viewerIsOpen ? (
+            <Modal onClose={closeLightbox}>
+              <Carousel
+                currentIndex={currentImage}
+                views={photos.map((x) => ({
+                  ...x,
+                  srcset: x.srcSet,
+                  caption: x.title,
+                }))}
+              />
+            </Modal>
+          ) : null}
+        </ModalGateway>
+      </Col>
+    </Row>
   );
 }
 

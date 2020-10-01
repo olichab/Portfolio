@@ -1,6 +1,29 @@
 /* eslint-disable global-require */
 const PROJECTS_LIST = [
   {
+    id: 13,
+    thumbnail: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_Set.jpg"),
+    title: "SET",
+    location: "Projet personnel",
+    path: "/set",
+    year: "2020",
+    category: "Développement web",
+    website: {
+      name: "github.com/olichab/Set",
+      url: "https://github.com/olichab/Set",
+    },
+    tags: ["React Native"],
+    description:
+      "<p>Ce projet consiste à adapter le jeu de société SET (édité par Gigamic) pour mobile et tablettes.<br/><br/> Le but du jeu consiste à observer les cartes exposées sur la table pour être le plus rapide à identifier un SET. </p><p> Chaque carte présente des symboles qui combinent 4 caractéristiques: <ul> <li>COULEUR (rouge, vert ou mauve)</li> <li>FORME (ovale, vague ou losange)</li> <li> NOMBRE (un, deux ou trois symboles)</li> <li>REMPLISSAGE (plein, hachuré ou vide)</li> </ul> </p> <p> Un SET est un ensemble de 3 cartes dont chacune des 4 caractéristiques est soit totalement identique, soit totalement différente aux 2 autres cartes. </p> <br /> <br /> <p> <strong>EN COURS DE DEVELOPPEMENT </strong> </p>",
+    images: [
+      {
+        src: require("../../assets/images/projets/Web/Set/Set.jpg"),
+        width: 2,
+        height: 1,
+      },
+    ],
+  },
+  {
     id: 12,
     thumbnail: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_ODOS.jpg"),
     title: "One Day One Song",
@@ -14,7 +37,7 @@ const PROJECTS_LIST = [
     },
     tags: ["React", "API Spotify", "Axios", "Sass", "Reactsrap"],
     description:
-      "<p> Chaque jour, <b> onedayonesong </b> vous permet de <b> découvrir une nouvelle musique </b> parmis le <b> 40 millions </b> de titres que compte la bibliothèque musicale de <b> Spotify</b> . <br /> <br /> Vous trouverai également les musiques proposées la semaine précèdente. </p>",
+      "<p> Chaque jour, <b> onedayonesong </b> vous permet de <b> découvrir une nouvelle musique </b> parmis les <b> 40 millions </b> de titres que compte la bibliothèque musicale de <b> Spotify</b> . <br /> <br /> Vous trouverez également les musiques proposées la semaine précèdente. </p>",
     images: [
       {
         src: require("../../assets/images/projets/Web/OneDayOneSong/1_ODOS.jpg"),
@@ -201,7 +224,7 @@ const PROJECTS_LIST = [
     },
     tags: ["React", "NodeJS", "React Simple Map", "Material UI"],
     description:
-      '<p> <b>Hello World</b> est un projet réalisé durant ma formation à la Wild Code School. <br /> Ce site web responsive permet de découvrir ou redécouvrir les{" "} <b>pays du monde</b> à travers une <b>carte interactive</b> et des{" "} <b>quizz </b> de géographie. <br /> <br /> L&apos;objectif de ce projet est l&apos;utilisation et l&apos;exploitation d&apos; <b>API externes</b> commme: <b> REST Countries</b>, <b> Google Custom Search</b> ou encore <b> Open Trivia.</b> </p>',
+      "<p> <b>Hello World</b> est un projet réalisé durant ma formation à la Wild Code School. <br /> Ce site web responsive permet de découvrir ou redécouvrir les <b>pays du monde</b> à travers une <b>carte interactive</b> et des <b>quizz </b> de géographie. <br /> <br /> L&apos;objectif de ce projet est l&apos;utilisation et l&apos;exploitation d&apos; <b>API externes</b> commme: <b> REST Countries</b>, <b> Google Custom Search</b> ou encore <b> Open Trivia.</b> </p>",
     images: [
       {
         src: require("../../assets/images/projets/Web/HelloWorld/1_HelloWorld.jpg"),

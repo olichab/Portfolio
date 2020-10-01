@@ -19,17 +19,17 @@ export default function Header() {
   smoothscroll.polyfill();
 
   return (
-    <Navbar expand='lg' fixed='top' className='header-container'>
-      <NavLink to='/#home' smooth='true'>
+    <Navbar expand="lg" fixed="top" className="header-container">
+      <NavLink to="/#home" smooth="true">
         <Media
           object
           src={logo}
-          className='logo-oc'
-          alt='logo olivier chabot'
+          className="logo-oc"
+          alt="logo olivier chabot"
         />
       </NavLink>
       <button
-        type='button'
+        type="button"
         className={`btn-menu ${isOpen ? "active" : "not-active"}`}
         onClick={toggleNavbar}
       >
@@ -38,24 +38,24 @@ export default function Header() {
         <span />
       </button>
       <Collapse isOpen={isOpen} navbar>
-        <Nav className='ml-auto' navbar>
-          <NavItem onClick={closeMenu} className='m-2'>
-            <NavLink className='nav-link' to='/#home' smooth='true'>
-              <Media object src={home} alt='home' className='picto-home' />
+        <Nav className="ml-auto" navbar>
+          <NavItem onClick={closeMenu} className="m-2">
+            <NavLink className="nav-link" to="/#home" smooth="true">
+              <Media object src={home} alt="home" className="picto-home" />
             </NavLink>
           </NavItem>
-          <NavItem onClick={closeMenu} className='m-2'>
-            <NavLink className='nav-link' to='/#bio' smooth='true'>
+          <NavItem onClick={closeMenu} className="m-2">
+            <NavLink className="nav-link" to="/#bio" smooth="true">
               BIO
             </NavLink>
           </NavItem>
-          <NavItem onClick={closeMenu} className='m-2'>
-            <NavLink className='nav-link' to='/#projets' smooth='true'>
+          <NavItem onClick={closeMenu} className="m-2">
+            <NavLink className="nav-link" to="/#projets" smooth="true">
               PROJETS
             </NavLink>
           </NavItem>
-          <NavItem onClick={closeMenu} className='m-2'>
-            <NavLink className='nav-link' to='/#contact' smooth='true'>
+          <NavItem onClick={closeMenu} className="m-2">
+            <NavLink className="nav-link" to="/#contact" smooth="true">
               CONTACT
             </NavLink>
           </NavItem>

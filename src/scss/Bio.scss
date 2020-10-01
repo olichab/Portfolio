@@ -1,36 +1,45 @@
 @import "./helpers/Colors.scss";
 @import "./helpers/Media.scss";
 @import "./helpers/Forms.scss";
+@import "./helpers//HoverSupported.scss";
 
 .bio-container {
-  padding-top: 50px;
+  padding-top: 5rem;
+  h1 {
+    padding: 3rem 0 3rem 0;
+  }
 
   .about-text {
     z-index: 1;
-    padding: 32px;
-    background: rgba($main-yellow, 0.25);
-    border-radius: 2px;
+    padding: 4rem;
+    background-color: $main-yellow;
+    p {
+      color: $main-grey;
+      font-weight: 500;
+    }
+    box-shadow: 0px -10px 20px -6px rgba(0, 0, 0, 0.5);
 
-    @include lg {
-      padding-right: 100px;
-      background: rgba($main-yellow, 0.1);
+    @include md {
+      padding: 6rem;
+      border-radius: 2px;
     }
   }
 
   .about-photo {
     display: flex;
+    justify-content: center;
+    @include lg {
+      justify-content: flex-end;
+    }
     .photo {
-      z-index: 2;
-      width: 200px;
-      height: 200px;
-      display: block;
-      margin: auto;
-      border-radius: 2px;
+      margin-bottom: -1rem;
+      z-index: 0;
+      width: 275px;
+      height: 220px;
 
       @include lg {
-        width: 250px;
-        height: 250px;
-        margin-left: -75px;
+        width: 325px;
+        height: 260px;
       }
     }
   }

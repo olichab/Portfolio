@@ -9,7 +9,7 @@ export default function GalleryPano({ images }) {
   return (
     <Row className="justify-content-center">
       {images.map((img) => (
-        <Col xs="9" xl="6" className="p-1" key={uuid()}>
+        <Col xs="10" xl="6" className="p-1" key={uuid()}>
           <Pannellum
             width="100%"
             height="320px"

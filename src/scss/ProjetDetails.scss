@@ -4,7 +4,7 @@
 @import "./helpers/Forms.scss";
 
 .details-projet-container {
-  min-height: 100vh;
+  min-height: calc(100vh - 45px);
   position: relative;
   padding-top: 75px;
 

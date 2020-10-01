@@ -19,7 +19,7 @@ export default function Projet({ thumbnail, title, location, path }) {
       <Media
         object
         src={thumbnail}
-        alt="Project thumbnail"
+        alt={`Project ${title}`}
         className={`thumbnails ${
           showCaptionOnClick ? "thumbnails-on-click" : ""
         }`}
