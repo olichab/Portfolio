@@ -1,34 +1,35 @@
 @import "./helpers/Media.scss";
+@import "./helpers/Colors.scss";
 
 .container-social-network {
-  text-align: center;
+  margin: auto;
+
+  @include lg {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 1rem;
+    top: 50vh;
+    &:before {
+      content: "";
+      width: 0.8rem;
+      height: 0.1rem;
+      position: absolute;
+      left: -1rem;
+      top: 50%;
+      background-color: $main-yellow;
+    }
+  }
 
   .logo-linked-in,
   .logo-github,
   .logo-instagram {
-    width: 32px;
-    margin: 16px;
-    opacity: 1;
+    width: 2.4rem;
+    margin: 0.8rem;
 
     @include lg {
-      position: fixed;
-      width: 24px;
-      left: 24px;
-      margin: 0;
+      width: 1.8rem;
       cursor: pointer;
-    }
-  }
-
-  @include lg {
-    .logo-linked-in {
-      bottom: 10.4rem;
-    }
-
-    .logo-github {
-      bottom: 6.4rem;
-    }
-    .logo-instagram {
-      bottom: 2.4rem;
     }
   }
 }
