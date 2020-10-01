@@ -1,8 +1,11 @@
-@import './helpers/Colors.scss';
-@import './helpers/Media.scss';
+@import "./helpers/Colors.scss";
+@import "./helpers/Media.scss";
 
 .container-projets {
-  padding-top: 50px;
+  padding-top: 5rem;
+  h1 {
+    padding-bottom: 3rem;
+  }
 
   img {
     margin: auto;

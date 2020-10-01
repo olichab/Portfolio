@@ -13,7 +13,7 @@ export default function Projets() {
           <h1>PROJETS</h1>
         </Col>
       </Row>
-      <Row className="justify-content-center  no-gutters">
+      <Row className="justify-content-center no-gutters">
         {PROJECTS_LIST.map((project) => {
           return (
             <Col xs="12" md="6" lg="4" key={project.title}>

@@ -1,5 +1,8 @@
-@import './helpers/Media.scss';
+@import "./helpers/Media.scss";
+@import "./helpers//Colors.scss";
 
 .typeWriter {
   font-size: 1.6rem;
+  color: $main-grey;
+  font-weight: 500;
 }

@@ -1,52 +1,45 @@
-import React, { Fragment, useState } from "react";
-import { Row, Col, Media } from "reactstrap";
+import React, { Fragment } from "react";
+import { Container, Row, Col, Media } from "reactstrap";
+import PropTypes from "prop-types";
+import uuid from "react-uuid";
 
 import "../scss/Competence.scss";
 
-export default function Competence({ logo, name }) {
-  const [showCaptionOnClick, setShowCaptionOnClick] = useState(false);
-
-  const toggleCaption = () => setShowCaptionOnClick(!showCaptionOnClick);
-
+export default function Competence({ srcLogo, name }) {
   return (
-    <div
-      className='competence-container mb-5'
-      onClick={toggleCaption}
-      onKeyDown={toggleCaption}
-      role='button'
-      tabIndex={0}
-    >
-      <Row>
-        <Col xs='auto' className='p-2'>
-          <Media object src={logo[0]} />
-        </Col>
-        {logo[1] && (
-          <Col xs='auto' className='p-2'>
-            <Media object src={logo[1]} />
-          </Col>
-        )}
-        <Col
-          xs='auto'
-          className={`caption ${showCaptionOnClick ? "caption-on-click" : ""}`}
-        >
-          <div className='blur' />
-          <div className='caption-text'>
-            <h2>
-              {name.length &&
-                name.map((e, i) =>
-                  i === 0 ? (
-                    e
-                  ) : (
-                    <Fragment key={e}>
-                      <br />
-                      {e}
-                    </Fragment>
-                  )
-                )}
-            </h2>
-          </div>
+    <Container className="competence-container">
+      <Row className="h-50">
+        <Col xs="auto">
+          <Media object src={srcLogo[0]} />
+          {srcLogo[1] && <Media object src={srcLogo[1]} />}
         </Col>
       </Row>
-    </div>
+      <Row className="h-50 align-items-end">
+        <Col xs="12" className="caption">
+          {name.length &&
+            name.map((e, i) =>
+              i === 0 ? (
+                <Fragment key={uuid()}>
+                  <h2>{e}</h2>
+                </Fragment>
+              ) : (
+                <Fragment key={uuid()}>
+                  <h2>{e}</h2>
+                </Fragment>
+              )
+            )}
+        </Col>
+      </Row>
+    </Container>
   );
 }
+
+Competence.defaultProps = {
+  srcLogo: [],
+  name: [],
+};
+
+Competence.propTypes = {
+  srcLogo: PropTypes.arrayOf(PropTypes.string),
+  name: PropTypes.arrayOf(PropTypes.string),
+};

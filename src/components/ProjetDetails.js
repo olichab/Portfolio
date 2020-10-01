@@ -28,7 +28,7 @@ export default function ProjetDetails({ projectDetails }) {
         </Col>
       </Row>
       <Row className="text-details-projet justify-content-center">
-        <Col xs="12" lg="7" className="pb-4">
+        <Col xs="12" lg="7" className="pb-5">
           {parse(description)}
         </Col>
         <Col xs="12" lg="4" className="offset-lg-1">
@@ -43,7 +43,7 @@ export default function ProjetDetails({ projectDetails }) {
               {website.name}
             </a>
           </Col>
-          <Row className="align-items-center mt-4">
+          <Row className="justify-content-center align-items-center mt-5">
             {tags.length &&
               tags.map((t) => (
                 <Col xs="auto" className="p-2" key={t}>
@@ -53,10 +53,14 @@ export default function ProjetDetails({ projectDetails }) {
           </Row>
         </Col>
       </Row>
-      {type === "pano" ? (
-        <GalleryPano images={images} />
+      {type ? (
+        <Container className="p-0">
+          <GalleryPano images={images} />
+        </Container>
       ) : (
-        <GalleryPhoto images={images} />
+        <Container>
+          <GalleryPhoto images={images} />
+        </Container>
       )}
       <Pagination currentId={id} />
     </Container>

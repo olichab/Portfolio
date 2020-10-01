@@ -67,11 +67,13 @@
       transition: all 0.35s cubic-bezier(1, 0.25, 0, 0.75);
     }
 
-    @include hover-supported {
-      &:before {
-        z-index: -1;
-        transform: scaleX(0.9);
-        visibility: visible;
+    @include lg {
+      @include hover-supported {
+        &:before {
+          z-index: -1;
+          transform: scaleX(0.9);
+          visibility: visible;
+        }
       }
     }
   }

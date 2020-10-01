@@ -1,6 +1,7 @@
 @import "./scss//helpers/Colors.scss";
 
 .App {
+  overflow: hidden;
   color: #fff;
   font-family: "Maitree";
   background-color: #1e1d1f;
@@ -18,31 +19,33 @@
     color: $main-yellow;
     font-size: 2.6rem;
     font-family: "JosefinSlab";
-    font-weight: 600;
+    font-weight: 400;
   }
 
   h2 {
     font-size: 1.8rem;
     line-height: 28px;
+    font-weight: 400;
   }
 
   p,
   li {
     font-size: 1.6rem;
-    font-weight: 400;
     line-height: 28px;
+    font-weight: 300;
   }
 
   .btn-yellow {
-    background-color: transparent;
+    background-color: $main-grey;
     border: solid 1px $main-yellow;
     color: $main-yellow;
-    padding: 1.25rem;
-    font-size: 1.5rem;
+    padding: 1rem;
+    font-size: 1.6em;
     font-weight: 400;
+    border-radius: 1px;
   }
 
-  .hvr-bounce-to-bottom,
+  .hvr-sweep-to-bottom,
   .hvr-sweep-to-right,
   .hvr-sweep-to-left {
     &:hover {

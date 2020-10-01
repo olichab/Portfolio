@@ -1,13 +1,14 @@
 import React from "react";
 import { Container, Row, Col, Media } from "reactstrap";
+import uuid from "react-uuid";
 import Competence from "./Competence";
 import Typelighter from "./Typelighter";
-import photo from "../assets/images/Photo_OC.jpg";
+import photo from "../assets/images/Photo_OC.png";
+import sentence from "../assets/images/Sentence.png";
 import logoReact from "../assets/images/logos/react.svg";
 import logoRedux from "../assets/images/logos/redux.svg";
 import logoNodeJS from "../assets/images/logos/nodejs.svg";
 import logoApi from "../assets/images/logos/api.svg";
-import logoPostman from "../assets/images/logos/postman.svg";
 import logoTypescript from "../assets/images/logos/typescript.svg";
 import logoGit from "../assets/images/logos/git.svg";
 import logoGithub from "../assets/images/logos/github.svg";
@@ -24,114 +25,102 @@ import logoIllustrator from "../assets/images/logos/illustrator.svg";
 
 import "../scss/Bio.scss";
 
+const competences = [
+  {
+    srcLogo: [logoReact, logoRedux],
+    name: ["React", "Redux"],
+  },
+  { srcLogo: [logoTypescript], name: ["Typescript", "PropTypes"] },
+  { srcLogo: [logoNodeJS], name: ["NodeJS", "SQL"] },
+  { srcLogo: [logoApi], name: ["API Rest", "Postman"] },
+  { srcLogo: [logoGit, logoGithub], name: ["Git", "Github"] },
+  { srcLogo: [logoJira, logoBitbucket], name: ["Jira", "Bitbucket"] },
+  { srcLogo: [logoAgile], name: ["Méthode agile"] },
+  { srcLogo: [logoBootstrap], name: ["Bootstrap"] },
+  { srcLogo: [logoHtml], name: ["Html 5"] },
+  { srcLogo: [logoCss], name: ["Css 3"] },
+  { srcLogo: [logoSketch, logoAdobeXD], name: ["Sketch", "AdobeXD"] },
+  {
+    srcLogo: [logoPhotoshop, logoIllustrator],
+    name: ["Photoshop", "Illustrator"],
+  },
+];
+
 export default function Bio() {
   return (
-    <Container className='bio-container' id='bio'>
-      <Row className='p-3 p-md-5'>
+    <Container className="bio-container" id="bio">
+      <Row className="p-3 p-md-5">
         <Col>
           <h1>BIO</h1>
         </Col>
       </Row>
-      <Row className='justify-content-center'>
-        <Col xs='12' md='8' className='offset-lg-1 about-text'>
+      <Row className="justify-content-center align-items-end">
+        <Col xs="12" lg="5" xl="4" className="d-none d-lg-block">
+          <Media object src={sentence} alt="sentence" className="sentence" />
+        </Col>
+        <Col xs="12" md="8" lg="4" className="about-photo">
+          <Media
+            object
+            src={photo}
+            alt="photo olivier chabot"
+            className="photo"
+          />
+        </Col>
+      </Row>
+      <Row>
+        <Col xs="12" md="8" className="offset-md-2 about-text ">
           <p>
-            Je m’appelle Olivier Chabot, j’ai 29 ans. Je suis diplômé de l’IUT
-            de Vélizy-Villacoublay en Métiers du Multimédia et de l’Internet.
-            <br />
-            <br />
-            Je me suis ensuite orienté vers des études en infographie 3D et ai
-            excercé dans ce domaine.
-            <br />
-            J’ai décidé, quelques années plus tard, de renouer avec ma première
-            passion: le développement web.
-            <br />
-            <br />
-            Après un bootcamp de 5 mois à la Wild Code School et une première
-            expérience réussie au sein d&apos;Altavia connect, je suis à la
-            recherche de nouveaux défis et serais ravi de mettre à contribution
-            mes compétences dans vos projets web.
+            Fasciné depuis petit par la technologie et les possibilités infinies
+            qu’elle offre, c’est naturellement que je me suis orienté vers le
+            domaine du numérique.
           </p>
-          <Row className='d-none d-lg-block'>
-            <Col xs='12'>
-              <br />
+          <br />
+          <p>
+            Durant mon DUT MMI (Métiers du Multimédia et de l’Internet) et mes
+            études en infographie 3D, j’ai pu développer ma sensibilité
+            artistique et essayer de satisfaire ma curiosité sans limite.
+          </p>
+          <br />
+          <p>
+            Bien qu’ayant travaillé sur des projets captivants en tant
+            qu’infographiste 3D, j’ai décidé, quelques années plus tard, de
+            renouer avec ma première passion: le développement web.
+          </p>
+          <br />
+          <p>
+            Après un bootcamp à la Wild Code School et une première expérience
+            réussie au sein d’Altavia connect, je suis à la recherche de
+            nouveaux défis et serais ravi de mettre à contribution mes
+            compétences dans vos projets web.
+          </p>
+          <br />
+          <Row className="d-none d-lg-block">
+            <Col xs="12">
               <Typelighter />
             </Col>
           </Row>
         </Col>
-        <Col xs='12' lg='3' className='about-photo'>
-          <Media
-            object
-            src={photo}
-            alt='photo olivier chabot'
-            className='photo'
-          />
-        </Col>
       </Row>
-      <Row className='p-3 p-md-5 mt-5'>
+      <Row className="p-3 p-md-5 mt-5">
         <Col>
           <h1>COMPÉTENCES</h1>
         </Col>
       </Row>
-      <Row className='justify-content-center'>
-        <Col xs='11' md='9' lg='8'>
-          <Row>
-            <Col xs='6' md='4' lg='3'>
-              <Competence
-                logo={[logoReact, logoRedux]}
-                name={["React", "Redux"]}
-              />
-            </Col>
-            <Col xs='6' md='4' lg='3'>
-              <Competence logo={[logoNodeJS]} name={["NodeJS"]} />
-            </Col>
-            <Col xs='6' md='4' lg='3'>
-              <Competence
-                logo={[logoApi, logoPostman]}
-                name={["API Rest", "Postman", "SQL"]}
-              />
-            </Col>
-            <Col xs='6' md='4' lg='3'>
-              <Competence logo={[logoTypescript]} name={["Typescript"]} />
-            </Col>
-            <Col xs='6' md='4' lg='3'>
-              <Competence
-                logo={[logoGit, logoGithub]}
-                name={["Git", "Github"]}
-              />
-            </Col>
-            <Col xs='6' md='4' lg='3'>
-              <Competence
-                logo={[logoJira, logoBitbucket]}
-                name={["Jira", "Bitbucket"]}
-              />
-            </Col>
-            <Col xs='6' md='4' lg='3'>
-              <Competence logo={[logoAgile]} name={["Méthode agile"]} />
-            </Col>
-            <Col xs='6' md='4' lg='3'>
-              <Competence logo={[logoBootstrap]} name={["Bootstrap"]} />
-            </Col>
-            <Col xs='6' md='4' lg='3'>
-              <Competence logo={[logoHtml]} name={["Html 5"]} />
-            </Col>
-            <Col xs='6' md='4' lg='3'>
-              <Competence logo={[logoCss]} name={["Css 3"]} />
-            </Col>
-            <Col xs='6' md='4' lg='3'>
-              <Competence
-                logo={[logoSketch, logoAdobeXD]}
-                name={["Sketch", "Adobe XD"]}
-              />
-            </Col>
-            <Col xs='6' md='4' lg='3'>
-              <Competence
-                logo={[logoPhotoshop, logoIllustrator]}
-                name={["Photoshop", "Illustrator"]}
-              />
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+      <Container>
+        <Row className="justify-content-center">
+          <Col xs="11" md="9" lg="8">
+            <Row>
+              {competences.map((c) => {
+                return (
+                  <Col xs="6" md="4" lg="3" key={uuid()}>
+                    <Competence srcLogo={c.srcLogo} name={c.name} />
+                  </Col>
+                );
+              })}
+            </Row>
+          </Col>
+        </Row>
+      </Container>
     </Container>
   );
 }

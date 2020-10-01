@@ -3,37 +3,28 @@
 @import "./helpers/Media.scss";
 
 .competence-container {
-  z-index: 0;
-  width: 120px;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+  width: 130px !important;
+  height: 130px !important;
   border: solid 1px rgba($main-yellow, 0.35);
+  margin-bottom: 3rem;
 
-
-  @include md {
+  @include lg {
     width: 150px;
     height: 150px;
   }
 
   img {
-    width: 40px;
-    height: 40px;
-    margin: auto;
-    transition: all 0.25s ease-in-out;
+    width: 25px;
+    height: 25px;
+    margin-top: 1.6rem;
 
-    @include md {
-      width: 45px;
-      height: 45px;
+    &:first-of-type {
+      margin-right: 0.8rem;
     }
-  }
 
-  @include hover-supported() {
-    img {
-      opacity: 1;
-      transform: scale(1.25, 1.25);
+    @include lg {
+      width: 30px;
+      height: 30px;
     }
   }
 
@@ -42,52 +33,16 @@
   }
 
   .caption {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: all 0.45s ease-in-out;
+    text-align: right;
+    color: $main-yellow;
+    margin-bottom: 0.8rem;
+    h2 {
+      margin: 0;
+      font-size: 1.4rem;
 
-    @include hover-supported() {
-      opacity: 1;
-    }
-
-    .blur {
-      z-index: 2;
-      position: absolute;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      background-color: rgba($main-grey, 0.9);
-    }
-
-    .caption-text {
-      z-index: 3;
-      position: relative;
-      width: 120px;
-      height: 120px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-      text-align: right;
-      margin: auto;
-
-      @include md {
-        width: 150px;
-        height: 150px;
-      }
-
-      h2 {
-        padding: 8px;
-        margin: 0;
-        color: $main-yellow;
+      @include lg {
+        font-size: 1.6rem;
       }
     }
-  }
-
-  .caption-on-click {
-    opacity: 1;
   }
 }

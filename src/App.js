@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Homepage from "./components/Homepage";
 import Footer from "./components/Footer";
 import DelayedFallback from "./components/helpers/DelayedFallback";
+import ScrollToTop from "./components/helpers/ScrollToTop";
 import PROJECTS_LIST from "./components/helpers/projectsList";
 import "./App.scss";
 
@@ -14,6 +15,7 @@ function App({ props }) {
     <div className="App">
       <Header />
       <Suspense fallback={<DelayedFallback />}>
+        <ScrollToTop />
         <Switch>
           <Route exact path="/" component={Homepage} />
           {PROJECTS_LIST.map((project) => {

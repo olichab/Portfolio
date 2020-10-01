@@ -1,5 +1,4 @@
 @mixin link-unstyled {
-
   &,
   &:visited,
   &:hover,
@@ -10,5 +9,6 @@
     color: inherit;
     font-size: inherit;
     text-decoration: none;
+    outline: none;
   }
 }
