@@ -1,4 +1,4 @@
-@import 'Breakpoint.scss';
+@import "Breakpoint.scss";
 
 // Small devices
 @mixin sm {
@@ -10,6 +10,13 @@
 // Medium devices
 @mixin md {
   @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Max Medium devices
+@mixin max-lg {
+  @media (max-width: #{$screen-lg-min}) {
     @content;
   }
 }
@@ -30,7 +37,7 @@
 
 // Custom devices
 @mixin rwd($screen) {
-  @media (min-width: $screen+'px') {
+  @media (min-width: $screen+"px") {
     @content;
   }
 }

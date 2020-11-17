@@ -1,47 +1,100 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { Media } from "reactstrap";
+import React, { useState, useRef, useEffect, useCallback } from "react";
+import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
+import { Col } from "reactstrap";
+import LazyLoad from "react-lazyload";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { playTlProjet } from "../timelines";
+
+import pictoChevron from "../assets/images/pictos/chevron.svg";
 import "../scss/Projet.scss";
 
-export default function Projet({ thumbnail, title, location, path }) {
-  const [showCaptionOnClick, setShowCaptionOnClick] = useState(false);
+const Projet = ({ id, thumbnail, title, location, path }) => {
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const refProjet = useRef(null);
+  const refcaptionContainer = useRef(null);
+  const refTitle = useRef(null);
+  const refLocation = useRef(null);
+  const refButton = useRef(null);
 
-  const toggleCaption = () => setShowCaptionOnClick(!showCaptionOnClick);
+  const imgIsLoaded = useCallback(() => {
+    setImgLoaded(true);
+    ScrollTrigger.refresh();
+  }, []);
+
+  useEffect(() => {
+    playTlProjet(
+      refProjet,
+      refTitle,
+      refLocation,
+      refButton,
+      refcaptionContainer
+    );
+    return () => {
+      ScrollTrigger.getAll().forEach((st) => st.kill());
+    };
+  }, []);
 
   return (
-    <div
-      className="container-projet"
-      onClick={toggleCaption}
-      onKeyDown={toggleCaption}
-      role="button"
-      tabIndex={0}
-    >
-      <Media
-        object
-        src={thumbnail}
-        alt={`Project ${title}`}
-        className={`thumbnails ${
-          showCaptionOnClick ? "thumbnails-on-click" : ""
-        }`}
-      />
-      <div
-        className={`caption ${showCaptionOnClick ? "caption-on-click" : ""}`}
-      >
-        <div className="blur" />
-        <div className="caption-text">
-          <p className="caption-title">{title}</p>
-          <p className="caption-location">{location}</p>
-          {path && (
-            <Link
-              to={path}
-              className="link-unstyled btn-see-project hvr-sweep-to-right"
-              smooth="true"
-            >
+    <div className="row projet" ref={refProjet}>
+      <Col xs="12" md="7" lg="6" xl="8" className="p-0">
+        <LazyLoad height={thumbnail.height} offset={1000}>
+          <img
+            src={imgLoaded ? thumbnail.url : thumbnail.urlSD}
+            alt={`Project ${title}`}
+            className="thumbnails"
+            onLoad={imgIsLoaded}
+          />
+        </LazyLoad>
+      </Col>
+      <Col xs="12" md="3" lg="4" className="col-projet-caption">
+        <div className="row caption" ref={refcaptionContainer}>
+          <Col xs="10" md="12" className="p-3">
+            <h1 className="caption-title" ref={refTitle}>
+              {title}
+            </h1>
+            <p className="caption-location" ref={refLocation}>
+              {location}
+            </p>
+          </Col>
+          <Col xs="2" className="col-projet-chevron d-md-none">
+            <NavLink to={path} className="link-unstyled">
+              <img src={pictoChevron} alt="chevron" className="chevron" />
+            </NavLink>
+          </Col>
+          <div
+            className="col col-md-12 d-none d-md-flex justify-content-end"
+            ref={refButton}
+          >
+            <NavLink to={path} className="link-unstyled btn-see-project">
               Voir le projet
-            </Link>
-          )}
+            </NavLink>
+          </div>
         </div>
-      </div>
+      </Col>
     </div>
   );
-}
+};
+
+Projet.defaultProps = {
+  id: 0,
+  thumbnail: {},
+  title: "",
+  location: "",
+  path: "",
+};
+
+Projet.propTypes = {
+  id: PropTypes.number,
+  thumbnail: PropTypes.shape({
+    url: PropTypes.string,
+    urlSD: PropTypes.string,
+    width: PropTypes.number,
+    height: PropTypes.number,
+  }),
+  title: PropTypes.string,
+  location: PropTypes.string,
+  path: PropTypes.string,
+};
+
+export default Projet;

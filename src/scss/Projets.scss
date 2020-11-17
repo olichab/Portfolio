@@ -1,13 +1,17 @@
-@import "./helpers/Colors.scss";
 @import "./helpers/Media.scss";
+@import "./helpers/Colors.scss";
 
-.container-projets {
-  padding-top: 5rem;
-  h1 {
-    padding-bottom: 3rem;
-  }
+.progress-bar-projects{
+  z-index: 10;
+  display: inline-block;
+  position: fixed;
+  margin-top: 5.5rem;
+  height: 2px;
+  width:0%;
+  background-color:$main-yellow;
+}
+.projets-container {
+  padding-top: 5.5rem;
+  padding-bottom: 3rem;
 
-  img {
-    margin: auto;
-  }
 }

@@ -6,19 +6,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   @media only screen and (max-height: 600px) and (orientation: landscape) {
     margin-top: 8rem;
   }
 
   .welcome-title {
-    position: relative;
+    text-transform: uppercase;
     z-index: 0;
-    color: #fff;
     font-size: 5rem !important;
+    font-weight: 600;
 
     @include lg {
-      margin-bottom: 2rem;
       font-size: 6rem !important;
     }
     @include xl {
@@ -27,34 +25,32 @@
   }
 
   .text-intro {
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 1rem;
-      width: 100%;
-      border-bottom: 1px solid #fff;
-    }
-
     p {
-      padding: 2.4rem 0 2.4rem 0;
-      font-family: JosefinSlab;
+      padding: 0.8rem 0 2.4rem 0;
+      font-family: "Playfair Display";
+      font-weight: 400;
       font-size: 4rem !important;
-      line-height: 4rem !important;
-
+      line-height: 5rem !important;
+      color: rgba($main-white, 0.85);
       @include lg {
         font-size: 5rem !important;
-        line-height: 5rem !important;
+        line-height: 6rem !important;
       }
       @include xl {
-        font-size: 7.2rem !important;
-        line-height: 9rem !important;
+        font-size: 6rem !important;
+        line-height: 7rem !important;
       }
 
       .word-yellow {
         color: $main-yellow;
+        font-weight: 600;
       }
     }
+  }
+
+  hr {
+    height: 1px;
+    background-color: $main-white;
   }
 
   .buttons-row {
@@ -63,6 +59,7 @@
       padding: 4.8rem;
     }
     button {
+      opacity:0;
       &:last-child {
         margin-left: 2.4rem;
       }

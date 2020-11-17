@@ -21,49 +21,55 @@ export default function ProjetDetails({ projectDetails }) {
   } = projectDetails;
 
   return (
-    <Container className="details-projet-container">
-      <Row>
-        <Col xs="auto">
-          <h1 className="title-details-projet">{title}</h1>
-        </Col>
-      </Row>
-      <Row className="text-details-projet justify-content-center">
-        <Col xs="12" lg="7" className="pb-5">
-          {parse(description)}
-        </Col>
-        <Col xs="12" lg="4" className="offset-lg-1">
-          <Col xs="12" className="p-0">
-            <p>Année : {year}</p>
-          </Col>
-          <Col xs="12" className="p-0">
-            <p>Catégorie : {category}</p>
-          </Col>
-          <Col xs="12" className="p-0">
-            <a href={website.url} className="link-unstyled">
-              {website.name}
-            </a>
-          </Col>
-          <Row className="justify-content-center align-items-center mt-5">
-            {tags.length &&
-              tags.map((t) => (
-                <Col xs="auto" className="p-2" key={t}>
-                  <p className="label-stack">{t}</p>
-                </Col>
-              ))}
-          </Row>
-        </Col>
-      </Row>
-      {type ? (
-        <Container className="p-0">
-          <GalleryPano images={images} />
+    <>
+      <Container fluid className="all-part-container">
+        <Container fluid className="details-projet">
+          <Container>
+            <Row className="title-details-projet">
+              <Col xs="auto" className="w-100">
+                <h1>{title}</h1>
+              </Col>
+              <Col xs="12" className="p-0">
+                <p>
+                  {category} - {year}
+                </p>
+              </Col>
+              <Col xs="12">
+                {website.url && (
+                  <a href={website.url} className="link-unstyled">
+                    {website.name}
+                  </a>
+                )}
+              </Col>
+            </Row>
+            <Row className="text-details-projet justify-content-center">
+              <Col xs="12" md="10" lg="8" xl="7">
+                {parse(description)}
+              </Col>
+            </Row>
+            <Row className="stack">
+              {tags.length &&
+                tags.map((t) => (
+                  <Col xs="auto" className="p-2" key={t}>
+                    <p className="label-stack">{t}</p>
+                  </Col>
+                ))}
+            </Row>
+          </Container>
         </Container>
-      ) : (
-        <Container>
-          <GalleryPhoto images={images} />
-        </Container>
-      )}
-      <Pagination currentId={id} />
-    </Container>
+        {type ? (
+          <Container className="gallery-pano">
+            <GalleryPano images={images} />
+          </Container>
+        ) : (
+          <Container className="gallery-photo">
+            <GalleryPhoto images={images} />
+          </Container>
+        )}
+
+        <Pagination currentId={id} />
+      </Container>
+    </>
   );
 }
 

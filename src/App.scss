@@ -1,10 +1,9 @@
 @import "./scss//helpers/Colors.scss";
 
 .App {
-  overflow: hidden;
-  color: #fff;
+  color: $main-white;
   font-family: "Maitree";
-  background-color: #1e1d1f;
+  background-color: $main-blue;
 
   button,
   input,
@@ -16,10 +15,9 @@
   }
 
   h1 {
-    color: $main-yellow;
-    font-size: 2.6rem;
-    font-family: "JosefinSlab";
-    font-weight: 400;
+    font-size: 3rem;
+    font-family: "Playfair Display";
+    font-weight: 600;
   }
 
   h2 {
@@ -30,33 +28,32 @@
 
   p,
   li {
-    font-size: 1.6rem;
-    line-height: 28px;
-    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 24px;
+    font-weight: 400;
   }
 
   .btn-yellow {
-    background-color: $main-grey;
+    background-color: $main-blue;
     border: solid 1px $main-yellow;
     color: $main-yellow;
     padding: 1rem;
     font-size: 1.6em;
     font-weight: 400;
     border-radius: 1px;
-  }
+    transition: all linear 0.25s;
 
-  .hvr-sweep-to-bottom,
-  .hvr-sweep-to-right,
-  .hvr-sweep-to-left {
-    &:hover {
-      color: $main-grey;
+    svg {
+      fill: $main-yellow;
     }
-
-    &:before,
-    &:active:before,
-    &:focus:before,
-    &:hover:before {
+    &:hover{
       background-color: $main-yellow;
+      color: $main-blue;
+      transition: all linear 0.25s;
+
+      svg {
+        fill: $main-blue;
+      }
     }
   }
 }

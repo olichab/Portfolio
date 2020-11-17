@@ -23,7 +23,7 @@ export default function GalleryPhoto({ images }) {
   });
 
   return (
-    <Row>
+    <Row className="justify-content-center">
       <Col>
         <Gallery photos={photos} onClick={openLightbox} />
         <ModalGateway>

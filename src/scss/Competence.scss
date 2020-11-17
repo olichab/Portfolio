@@ -1,14 +1,14 @@
-@import "./helpers//Colors.scss";
+@import "./helpers/Colors.scss";
 @import "./helpers/HoverSupported.scss";
 @import "./helpers/Media.scss";
 
 .competence-container {
-  width: 130px !important;
-  height: 130px !important;
+  width: 125px !important;
+  height: 125px !important;
   border: solid 1px rgba($main-yellow, 0.35);
   margin-bottom: 3rem;
 
-  @include lg {
+  @include xl {
     width: 150px;
     height: 150px;
   }
@@ -22,7 +22,7 @@
       margin-right: 0.8rem;
     }
 
-    @include lg {
+    @include xl {
       width: 30px;
       height: 30px;
     }
@@ -40,7 +40,7 @@
       margin: 0;
       font-size: 1.4rem;
 
-      @include lg {
+      @include xl {
         font-size: 1.6rem;
       }
     }

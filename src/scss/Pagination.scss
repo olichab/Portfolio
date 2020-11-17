@@ -1,0 +1,38 @@
+@import "./helpers/Colors.scss";
+@import "./helpers/Media.scss";
+
+.pagination-container {
+  @include lg {
+    position: sticky;
+    bottom: 0;
+  }
+
+  img {
+    height: 20px;
+  }
+
+  .link-switch-project-left, .link-switch-project-right {
+    background-color: $main-yellow;
+    outline: none;
+    padding: 1.2rem;
+    color: $main-blue;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .link-switch-project-left {
+    &:before {
+      content:"";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background-color: $main-blue;
+    }
+  }
+}
