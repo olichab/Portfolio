@@ -1,27 +1,46 @@
-import React from "react";
-import { HashLink as Link } from "react-router-hash-link";
+import React, { useRef, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import Div100vh from "react-div-100vh";
-import ParticlesBubbles from "./ParticlesBubbles";
-import IconScroll from "./IconScroll";
+import SocialNetwork from "./SocialNetwork";
+import { useViewport } from "../hooks/useViewport";
+import { playTlIntro } from "../timelines";
 import resume from "../assets/docs/CV_Olivier_Chabot.pdf";
-import pictoDownload from "../assets/images/pictos/download.svg";
 import "../scss/Intro.scss";
+import "../scss/SocialNetwork.scss";
 
-export default function Home() {
+const Home = () => {
+  const refTitle = useRef(null);
+  const refText = useRef(null);
+  const refBar = useRef(null);
+  const refButtonResume = useRef(null);
+  const refButtonSeeProjects = useRef(null);
+  const { width } = useViewport();
+  const breakpoint = 992;
+
+  useEffect(() => {
+    playTlIntro(
+      refTitle,
+      refText,
+      refBar,
+      refButtonResume,
+      refButtonSeeProjects
+    );
+  }, []);
   return (
-    <Div100vh id="home" className="container intro-container">
-      <span className="d-none d-lg-block">
-        <ParticlesBubbles />
-      </span>
+    <Div100vh className="intro-container" id="home">
+      {width > breakpoint && <SocialNetwork />}
+
       <Container>
         <Row className="justify-content-center">
           <Col xs="11" md="10" lg="8">
-            <h1 className="welcome-title">Welcome</h1>
-            <div className="text-intro">
+            <h1 className="welcome-title" ref={refTitle}>
+              Welcome
+            </h1>
+            <div className="text-intro" ref={refText}>
               <p>
                 Je suis
-                <b className="word-yellow"> Olivier Chabot</b>
+                <span className="word-yellow"> Olivier Chabot</span>
                 .
                 <br />
                 Développeur front-end.
@@ -30,6 +49,7 @@ export default function Home() {
                 <span className="word-yellow"> portfolio</span>.
               </p>
             </div>
+            <hr ref={refBar} />
           </Col>
         </Row>
         <Row className="buttons-row justify-content-center">
@@ -39,25 +59,40 @@ export default function Home() {
             lg="8"
             className=" d-flex justify-content-center justify-content-md-end"
           >
-            <button type="button" className="btn-yellow hvr-icon-hang">
+            <button type="button" className="btn-yellow" ref={refButtonResume}>
               <a href={resume} download className="link-unstyled">
                 CV
-                <img
-                  src={pictoDownload}
-                  className="hvr-icon"
-                  alt="picto download"
-                />
+                <svg
+                  x="0px"
+                  y="0px"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                >
+                  <title>download</title>
+                  <g>
+                    <path
+                      className="st0"
+                      d="M19,9h-4V3H9v6H5l7,7L19,9z M5,18v2h14v-2H5z"
+                    />
+                  </g>
+                </svg>
               </a>
             </button>
-            <Link className="link-unstyled" to="/#projets" smooth="true">
-              <button type="button" className="btn-yellow hvr-sweep-to-bottom">
+            <NavLink className="link-unstyled" to="/projets">
+              <button
+                type="button"
+                className="btn-yellow"
+                ref={refButtonSeeProjects}
+              >
                 Voir les projets
               </button>
-            </Link>
+            </NavLink>
           </Col>
         </Row>
-        <IconScroll />
       </Container>
     </Div100vh>
   );
-}
+};
+
+export default Home;

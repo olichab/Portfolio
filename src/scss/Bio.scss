@@ -1,46 +1,79 @@
 @import "./helpers/Colors.scss";
 @import "./helpers/Media.scss";
 @import "./helpers/Forms.scss";
-@import "./helpers//HoverSupported.scss";
+@import "./helpers/HoverSupported.scss";
 
 .bio-container {
-  padding-top: 5rem;
-  h1 {
-    padding: 3rem 0 3rem 0;
-  }
+  padding-top: 5.5rem;
 
-  .about-text {
-    z-index: 1;
-    padding: 4rem;
-    background-color: $main-yellow;
-    p {
-      color: $main-grey;
-      font-weight: 500;
-    }
-    box-shadow: 0px -10px 20px -6px rgba(0, 0, 0, 0.5);
-
-    @include md {
-      padding: 6rem;
-      border-radius: 2px;
-    }
-  }
-
-  .about-photo {
+  .bio-left-part,
+  .bio-right-part {
     display: flex;
     justify-content: center;
-    @include lg {
-      justify-content: flex-end;
-    }
-    .photo {
-      margin-bottom: -1rem;
-      z-index: 0;
-      width: 275px;
-      height: 220px;
-
-      @include lg {
-        width: 325px;
-        height: 260px;
+    align-items: center;
+    min-height: calc(100vh - 55px);
+  }
+  .bio-right-part {
+    align-items: start;
+    .container-title-competences {
+      background-color: $main-yellow;
+      padding: 1rem 5rem;
+      display: flex;
+      align-items: flex-end;
+      min-height: 25vh;
+      @include md {
+        min-height: auto;
+      }
+      svg {
+        width: 100%;
+        fill: $main-blue;
+        text {
+          stroke-width: 0.15;
+          font-family: "Display fair";
+          font-weight: 400;
+        }
       }
     }
+  }
+
+  .bio-left-part {
+    background-color: $main-white;
+    .about-text {
+      background-color: $main-blue;
+      z-index: 2;
+      padding: 3rem;
+      p {
+        color: $main-yellow;
+      }
+      box-shadow: 0px -10px 10px -6px rgba(0, 0, 0, 0.25);
+
+      @include md {
+        padding: 6rem;
+        border-radius: 2px;
+      }
+    }
+
+    .about-photo {
+      z-index: 0;
+      display: flex;
+      justify-content: center;
+      .photo {
+        z-index: 1;
+        width: 380px;
+        height: auto;
+
+        @include lg {
+          width: 350px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .sentence {
+    width: 280px;
+    height: auto;
+    display: block;
+    margin-left: auto;
   }
 }

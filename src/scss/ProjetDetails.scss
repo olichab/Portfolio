@@ -3,72 +3,76 @@
 @import "./helpers/HoverSupported.scss";
 @import "./helpers/Forms.scss";
 
-.details-projet-container {
-  min-height: calc(100vh - 45px);
-  position: relative;
-  padding-top: 75px;
+.all-part-container {
+  min-height: calc(100vh - 75px);
+  margin: 0;
+  padding: 0;
+
+.details-projet {
+  padding: 10rem 0 7.5rem 0;
+  color: $main-blue;
+  background-color: $main-white;
+  @include lg {
+    padding: 15rem 0 7.5rem 0;
+  }
 
   .title-details-projet {
-    margin: 10px;
-
-    &::after {
-      content: "";
-      display: block;
-      position: relative;
-      height: 2px;
-      top: 12px;
-      background-color: $main-yellow;
-      width: 100%;
-    }
+    text-align: center;
+     p {
+       font-size: 1.4rem;
+       &:before, &:after {
+         content:'';
+         display: inline-block;
+         vertical-align: middle;
+         margin: 0 1rem;
+         width: 10%;
+         height: 1px;
+         background-color: $main-blue;
+       }
+     }
   }
 
   .text-details-projet {
-    padding: 25px 25px 10px 25px;
-
-    @include md {
-      padding: 30px 75px 20px 75px;
+    margin: 4rem 0;
+    text-align: justify;
+    ul {
+      padding-left: 1.6rem;
     }
 
     li {
       list-style-type: none;
-
       &:before {
         content: "‣ ";
       }
     }
-
-    .link-unstyled {
-      @include link-unstyled;
-      font-size: 1.4rem !important;
-      border-bottom: solid 1px #fff;
-      padding-bottom: 0;
-    }
   }
 
-  .label-stack {
-    padding: 3px 8px 3px 8px;
-    border: solid 1px rgba($main-yellow, 0.25);
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-align: center;
-    color: $main-yellow;
+      .link-unstyled {
+        @include link-unstyled;
+        font-size: 1.4rem !important;
+        border-bottom: solid 1px rgba($main-blue, 0.25);
+      }
+
+      .stack {
+        justify-content: center;
+        margin: auto;
+        .label-stack {
+          padding: 0.3rem 0.8rem;
+          border: solid 1px $main-blue;
+          color: $main-blue;
+          font-size: 1.2rem;
+          font-weight: 400;
+          text-align: center;
+        }
   }
 
-  .react-photo-gallery--gallery {
-    @include md {
-      margin: 30px;
-    }
-  }
 
-  .link-switch-project {
-    margin: 1.6rem;
-    padding: 8px;
-    color: $main-yellow;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
+}
+
+.gallery-photo, .gallery-pano {
+  margin: 10rem auto;
+  img {
+    padding: 0.3rem !important;
   }
 }
 
@@ -76,7 +80,7 @@
 // Slide button
 .css-1h82jk3,
 .css-xfk84m {
-  background-color: rgba($main-grey, 0.8) !important;
+  background-color: rgba($main-blue, 0.8) !important;
 }
 
 // Arrow slide button + close cross
@@ -89,3 +93,5 @@
 .react-images__header_button--fullscreen {
   display: none !important;
 }
+}
+

@@ -5,6 +5,7 @@
   margin: auto;
 
   @include lg {
+    margin: auto;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -12,7 +13,7 @@
     top: 50vh;
     &:before {
       content: "";
-      width: 0.8rem;
+      width: 0.6rem;
       height: 0.1rem;
       position: absolute;
       left: -1rem;
@@ -21,13 +22,24 @@
     }
   }
 
+  button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    &:hover {
+      scale: 1.25;
+      transition: scale 0.25s ease-in-out;
+    }
+  }
+
   .logo-linked-in,
   .logo-github,
   .logo-instagram {
-    width: 2.4rem;
-    margin: 0.8rem;
+    width: 2.2rem;
+    margin: 2.2rem;
 
     @include lg {
+      margin: 0.8rem 0.3rem;
       width: 1.8rem;
       cursor: pointer;
     }

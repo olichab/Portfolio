@@ -3,7 +3,7 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FCD02C;}
+	.st0{fill:#FFB600;}
 	.st1{fill:url(#SVGID_1_);}
 	.st2{fill:url(#SVGID_2_);}
 </style>
@@ -11,16 +11,16 @@
 	<path class="st0" d="M244.7,0h-123c0,14.7,5.8,28.8,16.3,39.2s24.5,16.3,39.2,16.3h22.6v21.9c0,30.6,24.8,55.4,55.5,55.5V10.7
 		C255.3,4.8,250.5,0,244.7,0z"/>
 	
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-367.243" y1="626.2054" x2="-367.6345" y2="625.7993" gradientTransform="matrix(133.6178 0 0 -132.8356 49262.0703 83243.8281)">
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-735.4664" y1="-246.2944" x2="-735.8578" y2="-245.8883" gradientTransform="matrix(133.6178 0 0 132.8356 98463.2734 32778.1367)">
 		<stop  offset="0.18" style="stop-color:#CC9900"/>
-		<stop  offset="1" style="stop-color:#FCD02C"/>
+		<stop  offset="1" style="stop-color:#FFB600"/>
 	</linearGradient>
 	<path class="st1" d="M183.8,61.3h-123c0,30.6,24.8,55.4,55.5,55.5H139v21.9c0,30.6,24.9,55.4,55.5,55.4V71.9
 		C194.5,66,189.7,61.3,183.8,61.3z"/>
 	
-		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-367.2168" y1="626.2026" x2="-367.6695" y2="625.7598" gradientTransform="matrix(133.6178 0 0 -132.8356 49201.1992 83305.0547)">
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-735.4399" y1="-246.2914" x2="-735.8926" y2="-245.8487" gradientTransform="matrix(133.6178 0 0 132.8356 98402.3984 32839.3633)">
 		<stop  offset="0.18" style="stop-color:#CC9900"/>
-		<stop  offset="1" style="stop-color:#FCD02C"/>
+		<stop  offset="1" style="stop-color:#FFB600"/>
 	</linearGradient>
 	<path class="st2" d="M123,122.5H0C0,153.1,24.8,178,55.5,178h22.7v21.9c0,30.6,24.8,55.4,55.4,55.5V133.2
 		C133.6,127.3,128.8,122.5,123,122.5z"/>

@@ -1,8 +1,8 @@
-import React from "react";
-import { Container, Row, Col, Media } from "reactstrap";
+import React, { useRef, useEffect } from "react";
+import { Container, Row, Col } from "reactstrap";
 import uuid from "react-uuid";
+import { playTlBio } from "../timelines";
 import Competence from "./Competence";
-import Typelighter from "./Typelighter";
 import photo from "../assets/images/Photo_OC.png";
 import sentence from "../assets/images/Sentence.png";
 import logoReact from "../assets/images/logos/react.svg";
@@ -46,81 +46,91 @@ const competences = [
   },
 ];
 
-export default function Bio() {
+const Bio = () => {
+  const refPartText = useRef([]);
+  const refSentence = useRef(null);
+  const refContainerCompetence = useRef([]);
+
+  useEffect(() => {
+    playTlBio(refPartText, refSentence, refContainerCompetence);
+  }, []);
   return (
-    <Container className="bio-container" id="bio">
-      <Row className="p-3 p-md-5">
-        <Col>
-          <h1>BIO</h1>
-        </Col>
-      </Row>
-      <Row className="justify-content-center align-items-end">
-        <Col xs="12" lg="5" xl="4" className="d-none d-lg-block">
-          <Media object src={sentence} alt="sentence" className="sentence" />
-        </Col>
-        <Col xs="12" md="8" lg="4" className="about-photo">
-          <Media
-            object
-            src={photo}
-            alt="photo olivier chabot"
-            className="photo"
-          />
-        </Col>
-      </Row>
+    <Container fluid id="bio" className="bio-container">
       <Row>
-        <Col xs="12" md="8" className="offset-md-2 about-text ">
-          <p>
-            Fasciné depuis petit par la technologie et les possibilités infinies
-            qu’elle offre, c’est naturellement que je me suis orienté vers le
-            domaine du numérique.
-          </p>
-          <br />
-          <p>
-            Durant mon DUT MMI (Métiers du Multimédia et de l’Internet) et mes
-            études en infographie 3D, j’ai pu développer ma sensibilité
-            artistique et essayer de satisfaire ma curiosité sans limite.
-          </p>
-          <br />
-          <p>
-            Bien qu’ayant travaillé sur des projets captivants en tant
-            qu’infographiste 3D, j’ai décidé, quelques années plus tard, de
-            renouer avec ma première passion: le développement web.
-          </p>
-          <br />
-          <p>
-            Après un bootcamp à la Wild Code School et une première expérience
-            réussie au sein d’Altavia connect, je suis à la recherche de
-            nouveaux défis et serais ravi de mettre à contribution mes
-            compétences dans vos projets web.
-          </p>
-          <br />
-          <Row className="d-none d-lg-block">
-            <Col xs="12">
-              <Typelighter />
-            </Col>
-          </Row>
-        </Col>
-      </Row>
-      <Row className="p-3 p-md-5 mt-5">
-        <Col>
-          <h1>COMPÉTENCES</h1>
-        </Col>
-      </Row>
-      <Container>
-        <Row className="justify-content-center">
-          <Col xs="11" md="9" lg="8">
-            <Row>
-              {competences.map((c) => {
-                return (
-                  <Col xs="6" md="4" lg="3" key={uuid()}>
-                    <Competence srcLogo={c.srcLogo} name={c.name} />
-                  </Col>
-                );
-              })}
+        <Col xs="12" lg="6" className="bio-left-part">
+          <Container>
+            <Row className="justify-content-center align-items-center">
+              <Col xs="12" md="8" className="about-photo">
+                <img src={photo} alt="olivier chabot" className="photo" />
+              </Col>
+              <div className="col-xs-12 col-md-10 col-xl-8 about-text">
+                <p ref={(el) => (refPartText.current[0] = el)}>
+                  Fasciné depuis petit par la technologie et les possibilités
+                  infinies qu’elle offre, c’est naturellement que je me suis
+                  orienté vers le domaine du numérique.
+                </p>
+                <br />
+                <p ref={(el) => (refPartText.current[1] = el)}>
+                  Durant mon DUT MMI (Métiers du Multimédia et de l’Internet) et
+                  mes études en infographie 3D, j’ai pu développer ma
+                  sensibilité artistique et essayer de satisfaire ma curiosité
+                  sans limite.
+                </p>
+                <br />
+                <p ref={(el) => (refPartText.current[2] = el)}>
+                  Bien qu’ayant travaillé sur des projets captivants en tant
+                  qu’infographiste 3D, j’ai décidé, quelques années plus tard,
+                  de renouer avec ma première passion: le développement web.
+                </p>
+                <br />
+                <p ref={(el) => (refPartText.current[3] = el)}>
+                  Après un bootcamp à la Wild Code School et une première
+                  expérience réussie au sein d’Altavia connect, je suis à la
+                  recherche de nouveaux défis et serais ravi de mettre à
+                  contribution mes compétences dans vos projets web.
+                </p>
+                <br />
+                <img
+                  src={sentence}
+                  alt="sentence"
+                  className="sentence"
+                  ref={refSentence}
+                />
+              </div>
             </Row>
-          </Col>
-        </Row>
-      </Container>
+          </Container>
+        </Col>
+        <Col xs="12" lg="6" className="bio-right-part p-0">
+          <Container fluid className="d-flex h-100">
+            <Row className="justify-content-center">
+              <Col xs="12" className="container-title-competences">
+                <svg viewBox="0 0 72 16">
+                  <text x="0" y="15">
+                    COMPÉTENCES
+                  </text>
+                </svg>
+              </Col>
+              <Col xs="12" lg="9" xl="8" className="d-flex align-items-center">
+                <Row className="p-5 p-md-3">
+                  {competences.map((c, i) => {
+                    return (
+                      <div
+                        className="col col-xs-6 col-md-3 col-lg-6 col-xl-4 p-0 mt-2"
+                        key={uuid()}
+                        ref={(el) => (refContainerCompetence.current[i] = el)}
+                      >
+                        <Competence srcLogo={c.srcLogo} name={c.name} />
+                      </div>
+                    );
+                  })}
+                </Row>
+              </Col>
+            </Row>
+          </Container>
+        </Col>
+      </Row>
     </Container>
   );
-}
+};
+
+export default Bio;

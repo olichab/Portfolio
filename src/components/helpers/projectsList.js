@@ -2,7 +2,12 @@
 const PROJECTS_LIST = [
   {
     id: 13,
-    thumbnail: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_Set.jpg"),
+    thumbnail: {
+      url: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_Set.jpg"),
+      urlSD: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_Set_SD.jpg"),
+      width: 1000,
+      height: 667,
+    },
     title: "SET",
     location: "Projet personnel",
     path: "/set",
@@ -17,6 +22,11 @@ const PROJECTS_LIST = [
       "<p>Ce projet consiste à adapter le jeu de société SET (édité par Gigamic) pour mobile et tablettes.<br/><br/> Le but du jeu consiste à observer les cartes exposées sur la table pour être le plus rapide à identifier un SET. </p><p> Chaque carte présente des symboles qui combinent 4 caractéristiques: <ul> <li>COULEUR (rouge, vert ou mauve)</li> <li>FORME (ovale, vague ou losange)</li> <li> NOMBRE (un, deux ou trois symboles)</li> <li>REMPLISSAGE (plein, hachuré ou vide)</li> </ul> </p> <p> Un SET est un ensemble de 3 cartes dont chacune des 4 caractéristiques est soit totalement identique, soit totalement différente aux 2 autres cartes. </p> <br /> <br /> <p> <strong>EN COURS DE DEVELOPPEMENT </strong> </p>",
     images: [
       {
+        src: require("../../assets/images/projets/Web/Set/Logo_Set.jpg"),
+        width: 2,
+        height: 1,
+      },
+      {
         src: require("../../assets/images/projets/Web/Set/Set.jpg"),
         width: 2,
         height: 1,
@@ -25,7 +35,12 @@ const PROJECTS_LIST = [
   },
   {
     id: 12,
-    thumbnail: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_ODOS.jpg"),
+    thumbnail: {
+      url: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_ODOS.jpg"),
+      urlSD: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_ODOS_SD.jpg"),
+      width: 1000,
+      height: 706,
+    },
     title: "One Day One Song",
     location: "Projet personnel",
     path: "/one-day-one-song",
@@ -58,7 +73,12 @@ const PROJECTS_LIST = [
   },
   {
     id: 11,
-    thumbnail: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_MetricsServer.jpg"),
+    thumbnail: {
+      url: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_MetricsServer.jpg"),
+      urlSD: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_MetricsServer_SD.jpg"),
+      width: 1000,
+      height: 750,
+    },
     title: "Metrics server",
     location: "Projet personnel",
     path: "/metrics-server",
@@ -100,7 +120,12 @@ const PROJECTS_LIST = [
   },
   {
     id: 10,
-    thumbnail: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_BriefOnline.jpg"),
+    thumbnail: {
+      url: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_BriefOnline.jpg"),
+      urlSD: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_BriefOnline_SD.jpg"),
+      width: 1000,
+      height: 554,
+    },
     title: "Brief Online",
     location: "Altavia Connect",
     path: "/brief-online",
@@ -146,7 +171,12 @@ const PROJECTS_LIST = [
   },
   {
     id: 9,
-    thumbnail: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_Mooviz.jpg"),
+    thumbnail: {
+      url: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_Mooviz.jpg"),
+      urlSD: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_Mooviz_SD.jpg"),
+      width: 1000,
+      height: 545,
+    },
     title: "Mooviz",
     location: "Projet personnel",
     path: "/mooviz",
@@ -180,8 +210,8 @@ const PROJECTS_LIST = [
       },
       {
         src: require("../../assets/images/projets/Web/Mooviz/2_Mooviz.jpg"),
-        width: 2,
-        height: 4,
+        width: 3,
+        height: 5,
       },
       {
         src: require("../../assets/images/projets/Web/Mooviz/3_Mooviz.jpg"),
@@ -212,7 +242,12 @@ const PROJECTS_LIST = [
   },
   {
     id: 8,
-    thumbnail: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_HelloWorld.jpg"),
+    thumbnail: {
+      url: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_HelloWorld.jpg"),
+      urlSD: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_HelloWorld_SD.jpg"),
+      width: 1000,
+      height: 689,
+    },
     title: "Hello world",
     location: "Wild Code School",
     path: "/hello-world",
@@ -238,19 +273,24 @@ const PROJECTS_LIST = [
       },
       {
         src: require("../../assets/images/projets/Web/HelloWorld/3_HelloWorld.jpg"),
-        width: 3,
-        height: 4,
+        width: 4,
+        height: 5,
       },
       {
         src: require("../../assets/images/projets/Web/HelloWorld/4_HelloWorld.jpg"),
-        width: 3,
-        height: 4,
+        width: 4,
+        height: 5,
       },
     ],
   },
   {
     id: 7,
-    thumbnail: require("../../assets/images/projets/Thumbnails/3D/Thumbnail_Bullit.jpg"),
+    thumbnail: {
+      url: require("../../assets/images/projets/Thumbnails/3D/Thumbnail_Bullit.png"),
+      urlSD: require("../../assets/images/projets/Thumbnails/3D/Thumbnail_Bullit_SD.jpg"),
+      width: 1200,
+      height: 646,
+    },
     title: "Viparis La Plaza",
     location: "Bullit studio",
     path: "/viparis-la-plaza",
@@ -291,19 +331,24 @@ const PROJECTS_LIST = [
       },
       {
         src: require("../../assets/images/projets/3D/BullitStudio/6_MonumentsWireFrame.jpg"),
-        width: 5,
-        height: 1,
+        width: 9,
+        height: 2,
       },
       {
         src: require("../../assets/images/projets/3D/BullitStudio/7_Composition.jpg"),
-        width: 6,
-        height: 1,
+        width: 9,
+        height: 2,
       },
     ],
   },
   {
     id: 6,
-    thumbnail: require("../../assets/images/projets/Thumbnails/3D/Thumbnail_LaDefenseArena.jpg"),
+    thumbnail: {
+      url: require("../../assets/images/projets/Thumbnails/3D/Thumbnail_LaDefenseArena.jpg"),
+      urlSD: require("../../assets/images/projets/Thumbnails/3D/Thumbnail_LaDefenseArena_SD.jpg"),
+      width: 800,
+      height: 793,
+    },
     title: "La Défense Arena",
     location: "Pacifa Decision",
     path: "/la-defense-arena",
@@ -366,7 +411,12 @@ const PROJECTS_LIST = [
   },
   {
     id: 5,
-    thumbnail: require("../../assets/images/projets/Thumbnails/3D/Thumbnail_Archi.jpg"),
+    thumbnail: {
+      url: require("../../assets/images/projets/Thumbnails/3D/Thumbnail_Archi.jpg"),
+      urlSD: require("../../assets/images/projets/Thumbnails/3D/Thumbnail_Archi_SD.jpg"),
+      width: 800,
+      height: 668,
+    },
     title: "Architecture 3D",
     location: "Projets personnels",
     path: "/architecture-3d",
@@ -409,7 +459,12 @@ const PROJECTS_LIST = [
   },
   {
     id: 4,
-    thumbnail: require("../../assets/images/projets/Thumbnails/3D/Thumbnail_PacifaBasket.jpg"),
+    thumbnail: {
+      url: require("../../assets/images/projets/Thumbnails/3D/Thumbnail_Vues3D.jpg"),
+      urlSD: require("../../assets/images/projets/Thumbnails/3D/Thumbnail_Vues3D_SD.jpg"),
+      width: 1200,
+      height: 600,
+    },
     title: "Vues 3D pour billeteries",
     location: "Pacifa Decision",
     path: "/billeterie-3D",
@@ -461,7 +516,12 @@ const PROJECTS_LIST = [
   },
   {
     id: 3,
-    thumbnail: require("../../assets/images/projets/Thumbnails/2D/Thumbnail_Uvsq.jpg"),
+    thumbnail: {
+      url: require("../../assets/images/projets/Thumbnails/2D/Thumbnail_Uvsq.png"),
+      urlSD: require("../../assets/images/projets/Thumbnails/2D/Thumbnail_Uvsq_SD.jpg"),
+      width: 700,
+      height: 855,
+    },
     title: "Maquettes et illustrations",
     location: "UVSQ",
     path: "/maquettes-et-illustrations",
@@ -492,8 +552,8 @@ const PROJECTS_LIST = [
       },
       {
         src: require("../../assets/images/projets/2D/Uvsq/4_Affiche3.jpg"),
-        width: 3,
-        height: 1,
+        width: 5,
+        height: 2,
       },
       {
         src: require("../../assets/images/projets/2D/Uvsq/5_Affiche4.jpg"),
@@ -544,7 +604,12 @@ const PROJECTS_LIST = [
   },
   {
     id: 2,
-    thumbnail: require("../../assets/images/projets/Thumbnails/3D/Thumbnail_HellsKitchen.jpg"),
+    thumbnail: {
+      url: require("../../assets/images/projets/Thumbnails/3D/Thumbnail_HellsKitchen.jpg"),
+      urlSD: require("../../assets/images/projets/Thumbnails/3D/Thumbnail_HellsKitchen_SD.jpg"),
+      width: 800,
+      height: 800,
+    },
     title: "Hell's Kitchen",
     location: "Projet personnel",
     path: "/hells-kitchen",
@@ -572,7 +637,12 @@ const PROJECTS_LIST = [
   },
   {
     id: 1,
-    thumbnail: require("../../assets/images/projets/Thumbnails/2D/Thumbnail_BreakingBad.jpg"),
+    thumbnail: {
+      url: require("../../assets/images/projets/Thumbnails/2D/Thumbnail_BreakingBad.jpg"),
+      urlSD: require("../../assets/images/projets/Thumbnails/2D/Thumbnail_BreakingBad_SD.jpg"),
+      width: 800,
+      height: 450,
+    },
     title: "Heisenberg",
     location: "Projet personnel",
     path: "/heisenberg",

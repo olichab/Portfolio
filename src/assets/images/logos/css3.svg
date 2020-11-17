@@ -3,13 +3,12 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 2000 2000" style="enable-background:new 0 0 2000 2000;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FDD02C;}
+	.st0{fill:#FFB600;}
 	.st1{opacity:0.3;fill:#FFFFFF;enable-background:new    ;}
-	.st2{fill:#1E1E1E;enable-background:new    ;}
+	.st2{fill:#1E1E1E;}
 	.st3{opacity:0.1;}
 	.st4{fill:#EBEBEB;}
 	.st5{opacity:0.3;fill:#EBEBEB;enable-background:new    ;}
-	.st6{fill:#EBEBEB;enable-background:new    ;}
 </style>
 <g>
 	<polygon class="st0" points="1658.6,1725.7 1008.7,1900.7 358.8,1725.7 208.7,100.8 1808.7,100.8 	"/>
@@ -21,11 +20,11 @@
 	<g class="st3">
 		<polygon class="st4" points="1006.9,832.3 1008.1,832.3 1008.7,832.3 1008.7,831.5 1008.1,831.8 		"/>
 		<polygon class="st5" points="1008.7,627.5 1008.7,638.4 1034.8,627.5 		"/>
-		<polygon class="st6" points="1008.1,832.3 1006.9,832.3 1008.1,831.8 1008.7,831.5 1008.7,638.4 1008.1,638.6 543,832.3 
+		<polygon class="st4" points="1008.1,832.3 1006.9,832.3 1008.1,831.8 1008.7,831.5 1008.7,638.4 1008.1,638.6 543,832.3 
 			558.5,1024.2 580.4,1024.3 1008.7,1025.6 1008.7,832.3 		"/>
-		<polygon class="st6" points="1008.1,1345.6 1008.1,1345.5 1006.4,1345.9 788.3,1291 775.3,1132.2 774.5,1132.2 572.3,1132.2 
+		<polygon class="st4" points="1008.1,1345.6 1008.1,1345.5 1006.4,1345.9 788.3,1291 775.3,1132.2 774.5,1132.2 572.3,1132.2 
 			571.8,1132.2 598.1,1438.8 1008.1,1559.9 1008.1,1559.6 1008.7,1559.8 1008.7,1345.5 		"/>
-		<polygon class="st6" points="1008.1,431.3 501.2,431.3 525.4,627.5 1008.1,627.5 1008.7,627.5 1008.7,431.3 		"/>
+		<polygon class="st4" points="1008.1,431.3 501.2,431.3 525.4,627.5 1008.1,627.5 1008.7,627.5 1008.7,431.3 		"/>
 	</g>
 </g>
 </svg>

@@ -1,36 +1,38 @@
-import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import React from "react";
+import { Container, Row, Col } from "reactstrap";
 
-import '../scss/Footer.scss';
+import "../scss/Footer.scss";
 
 export default function Footer() {
   return (
-    <Container className='footer-container' fluid>
-      <Row className='justify-content-center text-center'>
-        <Col>
-          Tous droits reservés &copy; 2020 ∙ Powered by Olivier Chabot ∙{' '}
+    <Container fluid className="footer-container">
+      <Row className="justify-content-center text-center">
+        <Col xs="12">
+          Tous droits reservés &copy; 2020 ∙ Powered by Olivier Chabot
+        </Col>
+        <Col xs="12">
           <a
-            href='https://github.com/olichab'
-            target='_blank'
-            rel='noopener noreferrer'
+            href="https://github.com/olichab"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Github
-          </a>{' '}
-          ∙{' '}
+          </a>{" "}
+          ∙{" "}
           <a
-            href='https://www.linkedin.com/in/olichab'
-            target='_blank'
-            rel='noopener noreferrer'
+            href="https://www.linkedin.com/in/olichab"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Linked in
-          </a>{' '}
-          ∙{' '}
+          </a>{" "}
+          ∙{" "}
           <a
-            href='https://www.codewars.com/users/olichab'
-            target='_blank'
-            rel='noopener noreferrer'
+            href="https://www.instagram.com/devandco/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Codewars
+            Instagram
           </a>
         </Col>
       </Row>
