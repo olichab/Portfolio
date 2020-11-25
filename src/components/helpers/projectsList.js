@@ -19,7 +19,7 @@ const PROJECTS_LIST = [
     },
     tags: ["React Native"],
     description:
-      "<p>Ce projet consiste à adapter le jeu de société SET (édité par Gigamic) pour mobile et tablettes.<br/><br/> Le but du jeu consiste à observer les cartes exposées sur la table pour être le plus rapide à identifier un SET. </p><p> Chaque carte présente des symboles qui combinent 4 caractéristiques: <ul> <li>COULEUR (rouge, vert ou mauve)</li> <li>FORME (ovale, vague ou losange)</li> <li> NOMBRE (un, deux ou trois symboles)</li> <li>REMPLISSAGE (plein, hachuré ou vide)</li> </ul> </p> <p> Un SET est un ensemble de 3 cartes dont chacune des 4 caractéristiques est soit totalement identique, soit totalement différente aux 2 autres cartes. </p> <br /> <br /> <p> <strong>EN COURS DE DEVELOPPEMENT </strong> </p>",
+      "<p>Ce projet consiste à adapter le <b>jeu de société SET</b> (édité par Gigamic) pour <b>mobiles</b> et <b>tablettes</b>.<br/><br/> Le but du jeu consiste à <b>observer</b> les cartes exposées sur la table pour être <b>le plus rapide</b> à identifier un <b>SET</b>. </p><p> Chaque carte présente des <b>symboles</b> qui combinent <b>4 caractéristiques</b>: <ul> <li><b>COULEUR</b> (rouge, vert ou mauve)</li> <li><b>FORME</b> (ovale, vague ou losange)</li> <li> <b>NOMBRE</b> (un, deux ou trois symboles)</li> <li><b>REMPLISSAGE</b> (plein, hachuré ou vide)</li> </ul> </p> <p> Un <b>SET</b> est un ensemble de <b>3 cartes</b> dont chacune des <b>4 caractéristiques</b> est soit totalement <b>identique</b>, soit totalement <b>différente</b> des 2 autres cartes. </p> <br /> <br /> <p> <strong>EN COURS DE DEVELOPPEMENT </strong> </p>",
     images: [
       {
         src: require("../../assets/images/projets/Web/Set/Logo_Set.jpg"),
@@ -99,7 +99,7 @@ const PROJECTS_LIST = [
       "Reactsrap",
     ],
     description:
-      "<p> A partir d&apos;un <b>relevé de métriques</b> collecté sur un <b>serveur</b>, le but était de créer un <b>dashboard </b>permettant à l&apos;utilisateur de pouvoir <b> analyser facilement et rapidement </b> les <b> informations systèmes </b> (réseau, disque, cpu, mémoire,…) en vue d&apos;identifier <b> d&apos;éventuels problèmes</b> . <br /> <br /> Il est possible de <b> filtrer </b> les données par <b> date </b>,<b> fichiers </b> ou <b> inodes </b> mais également de détecter les entrées ayant un <b> temps de chargement </b> supérieur aux autres afin d&apos;obtenir les <b> détails </b> sur la <b> consommation CPU </b> de celle-ci. </p>",
+      "<p> A partir d&apos;un <b>relevé de métriques</b> collecté sur un <b>serveur</b>, le but était de créer un <b>dashboard </b>permettant à l&apos;utilisateur de pouvoir <b> analyser facilement et rapidement </b> les <b> informations systèmes </b> (réseau, disque, cpu, mémoire,…) en vue d&apos;identifier <b> d&apos;éventuels problèmes</b> . <br /> <br /> Il est possible de <b> filtrer </b> les données par <b>date</b>, <b>fichiers</b> ou <b>inodes</b> mais également de détecter les entrées ayant un <b> temps de chargement </b> supérieur aux autres afin d&apos;obtenir les <b> détails </b> sur la <b> consommation CPU </b> de celle-ci. </p>",
     images: [
       {
         src: require("../../assets/images/projets/Web/MetricsServer/1_MetricsServer.jpg"),
@@ -145,7 +145,7 @@ const PROJECTS_LIST = [
       "Material Design",
     ],
     description:
-      "<p> La web application « <b>Brief Online</b> » permet aux clients d’Altavia d’envoyer un <b>brief de leurs besoins</b> et d’avoir un <b> suivi</b> de leurs projets. <br /> Le client peut gérer ses <b> campagnes </b> et y inclure des <b> supports </b> (brochure, catalogue, affiche, roll-up, PLV...) qu&apos;il pourra <b> paramétrer </b>à souhait. </p> <p> Voici une liste non exhaustive des <b>tâches réalisées</b> sur ce projet: </p> <ul> <li> Stabilisation de la version 3 de Brief Online (debugging, amélioration des performances) </li> <li> Refonte de la partie workflow permettant aux clients de suivre l&apos;avancement de leurs projets </li> <li>Réalisation de maquettes</li> <li> Développement du contrôle en amont des fichiers PDF (Preflight) </li> <li>Mise en place de la messagerie interne</li> <li>Upload et encodage des fichiers envoyés</li> <li>Création de template d’emails et gestion de leur envoi</li> <li>Écriture de tests fonctionnels et unitaires</li> <li>Rédaction de documentation</li> <li>Support de l&apos;application</li> </ul",
+      "<p> La web application « <b>Brief Online</b> » permet aux clients d’Altavia d’envoyer un <b>brief de leurs besoins</b> et d’avoir un <b> suivi</b> de leurs projets. <br /> Le client peut gérer ses <b> campagnes </b> et y inclure des <b> supports </b> (brochure, catalogue, affiche, roll-up, PLV...) qu&apos;il pourra <b> paramétrer </b>à souhait. </p> <p> Voici une liste non exhaustive des <b>tâches réalisées</b> sur ce projet: </p> <ul> <li> Stabilisation de la version 3 de Brief Online (debugging, amélioration des performances) </li> <li> Refonte de la partie workflow permettant aux clients de suivre l&apos;avancement de leurs projets </li> <li>Réalisation de maquettes</li> <li> Développement du contrôle en amont des fichiers PDF (Preflight) </li> <li>Mise en place de la messagerie interne</li> <li>Upload et encodage des fichiers envoyés</li> <li>Création de templates d’emails et gestion de leurs envois</li> <li>Écriture de tests fonctionnels et unitaires</li> <li>Rédaction de documentation</li> <li>Support de l&apos;application</li> </ul",
     images: [
       {
         src: require("../../assets/images/projets/Web/BriefOnline/1_Bol_OngoingProject.jpg"),
@@ -259,7 +259,7 @@ const PROJECTS_LIST = [
     },
     tags: ["React", "NodeJS", "React Simple Map", "Material UI"],
     description:
-      "<p> <b>Hello World</b> est un projet réalisé durant ma formation à la Wild Code School. <br /> Ce site web responsive permet de découvrir ou redécouvrir les <b>pays du monde</b> à travers une <b>carte interactive</b> et des <b>quizz </b> de géographie. <br /> <br /> L&apos;objectif de ce projet est l&apos;utilisation et l&apos;exploitation d&apos; <b>API externes</b> commme: <b> REST Countries</b>, <b> Google Custom Search</b> ou encore <b> Open Trivia.</b> </p>",
+      "<p> <b>Hello World</b> est un projet réalisé durant ma formation à la Wild Code School. <br /> Ce site web responsive permet de découvrir ou redécouvrir les <b>pays du monde</b> à travers une <b>carte interactive</b> et des <b>quizz </b> de géographie. <br /> <br /> L&apos;objectif de ce projet est l&apos;utilisation et l&apos;exploitation d&apos;<b>API externes</b> comme : <b> REST Countries</b>, <b> Google Custom Search</b> ou encore <b> Open Trivia.</b> </p>",
     images: [
       {
         src: require("../../assets/images/projets/Web/HelloWorld/1_HelloWorld.jpg"),
@@ -302,7 +302,7 @@ const PROJECTS_LIST = [
     },
     tags: ["Maya", "Arnold", "Substance painter", "Photoshop"],
     description:
-      "<p> Au sein de <b> Bullit Studio</b>, en tant que <b> 3D Generalist</b>, j&apos;ai été amené à travailler sur la modélisation, le texturing, le lighting et le rendu 3D des principaux monuments de Paris pour le compte de <b> ViParis La Plaza</b> . <br /> <br /> <b>L&apos;écran de la Plaza</b> situé porte de Versailles, de par sa forme unique, permet une <b> orientation à 360°</b>. Utilisé pour indiquer quels <b> événements</b> se déroulent dans quels <b> pavillons</b>, l&apos;écran peut étendre son pouvoir d&apos;indication au niveau <b> parisien</b>,<b> national </b> et même <b> mondial</b> . <br /> Dans un écrin autant graphique que pédagogique, <b> l&apos;écran de la Plaza</b> permet d&apos;affirmer <b> l&apos;identité visuelle de Viparis</b>, tout en offrant une <b> fenêtre culturelle</b> aux visiteurs. <br /> <br /> Dans ce projet, l&apos;écran de la Plaza indique la direction où se trouvent les principaux <b> monuments parisiens</b>, accompagnée de la <b> distance</b> à vol d&apos;oiseau, en <b> kilomètres</b> et en <b> miles</b>, qui sépare <b> la Plaza </b> du <b> monument</b>. </p>",
+      "<p> Au sein de <b> Bullit Studio</b>, en tant que <b> 3D Generalist</b>, j&apos;ai été amené à travailler sur la modélisation, le texturing, le lighting et le rendu 3D des principaux monuments de Paris pour le compte de <b> ViParis La Plaza</b>. <br /> <br /> <b>L&apos;écran de la Plaza</b> situé porte de Versailles, de par sa forme unique, permet une <b> orientation à 360°</b>. Utilisé pour indiquer quels <b> événements</b> se déroulent dans quels <b> pavillons</b>, l&apos;écran peut étendre son pouvoir d&apos;indication au niveau <b> parisien</b>,<b> national </b> et même <b> mondial</b>. <br /><br /> Dans un écrin autant graphique que pédagogique, <b> l&apos;écran de la Plaza</b> permet d&apos;affirmer <b> l&apos;identité visuelle de Viparis</b>, tout en offrant une <b> fenêtre culturelle</b> aux visiteurs. <br /> <br /> Dans ce projet, l&apos;écran de la Plaza indique la direction où se trouvent les principaux <b> monuments parisiens</b>, accompagnée de la <b> distance</b> à vol d&apos;oiseau, en <b> kilomètres</b> et en <b> miles</b>, qui sépare <b> la Plaza </b> du <b> monument</b>. </p>",
     images: [
       {
         src: require("../../assets/images/projets/3D/BullitStudio/1_Monuments.jpg"),
@@ -533,7 +533,7 @@ const PROJECTS_LIST = [
     },
     tags: ["Photoshop", "Illustrator", "Indesign"],
     description:
-      "<p> Durant mon stage de deuxième année de DUT, au <b> pôle communication </b> de <b> l&apos;Université de Versailles Saint-Quentin en Yvelines</b> , j&apos;ai pu assiter la directrice de communication. <br /> <br /> Mes missions étaient variées, allant de la création <b> d&apos;affiche</b>,<b> kakemono</b>,<b> leaflet</b>, <b> totem</b>,<b> plan d&apos;orientation </b> en passant par des <b> bannières web </b> et des <b> pictogrammes</b> . <br /> <br /> J&apos;ai également pu épauler le <b> chargé de production audiovisuelle</b> sur différents tournages de <b>vidéos institutionelles</b>. </p>",
+      "<p> Durant mon stage de deuxième année de DUT, au <b> pôle communication </b> de <b> l&apos;Université de Versailles Saint-Quentin en Yvelines</b> , j&apos;ai pu assiter la directrice de communication. <br /> <br /> Mes missions étaient variées, allant de la création <b>d&apos;affiches</b>, <b>kakemonos</b>, <b>leaflets</b>, <b>totems</b>, <b>plans d&apos;orientation</b> en passant par des <b> bannières web </b> et des <b> pictogrammes</b> . <br /> <br /> J&apos;ai également pu épauler le <b> chargé de production audiovisuelle</b> sur différents tournages de <b>vidéos institutionelles</b>. </p>",
     images: [
       {
         src: require("../../assets/images/projets/2D/Uvsq/1_Affiche0.jpg"),

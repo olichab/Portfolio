@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { NavLink } from "react-router-dom";
-import { Collapse, Navbar, Nav, NavItem } from "reactstrap";
 import { playTlHeader } from "../timelines";
 import { useViewport } from "../hooks/useViewport";
 import SocialNetwork from "./SocialNetwork";
 import logo from "../assets/images/logos/logo_oc.svg";
-import home from "../assets/images/pictos/home.svg";
 import "../scss/Header.scss";
 
 const routes = [
@@ -24,40 +22,51 @@ export default function Header() {
 
   const toggleNavbar = useCallback(() => {
     if (width < breakpoint) {
+      document.getElementById("navbarContent").style.display = "none";
       setIsOpen(!isOpen);
     }
   }, [isOpen, width]);
 
   useEffect(() => {
-    if (isOpen && width < breakpoint) {
+    if (isOpen) {
+      document.getElementById("navbarContent").style.display = "block";
       playTlHeader(refCollapse, refNavLink, refSocialNetworks);
     }
-  });
+  }, [isOpen]);
 
   return (
-    <Navbar expand="lg" fixed="top" className="header-container">
+    <nav className="navbar navbar-expand-lg fixed-top header-container">
       <NavLink to="/" className="mr-auto">
         <img src={logo} className="logo-oc" alt="logo olivier chabot" />
       </NavLink>
       <button
         type="button"
-        className={`btn-menu ${isOpen ? "active" : "not-active"}`}
+        className={`btn-menu ${
+          isOpen ? "active" : "not-active"
+        } navbar-toggler`}
         onClick={toggleNavbar}
+        data-toggle="collapse"
+        data-target="#navbarContent"
+        aria-controls="navbarContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
         <span />
         <span />
         <span />
       </button>
-      <Collapse isOpen={isOpen} navbar innerRef={refCollapse}>
-        <Nav navbar className="ml-lg-auto">
-          <NavItem>
-            <NavLink className="nav-link m-2" to="/" onClick={toggleNavbar}>
-              <img src={home} alt="home" className="picto-home" />
-            </NavLink>
-          </NavItem>
+
+      <div
+        className="collapse navbar-collapse"
+        id="navbarContent"
+        ref={refCollapse}
+      >
+        <ul
+          className={`navbar-nav ${width > breakpoint ? "ml-auto" : "m-auto"}`}
+        >
           {routes.map(({ to, label }, i) => {
             return (
-              <NavItem key={to}>
+              <li className="nav-item" key={to}>
                 <NavLink
                   className="nav-link"
                   to={to}
@@ -67,7 +76,7 @@ export default function Header() {
                 >
                   {label}
                 </NavLink>
-              </NavItem>
+              </li>
             );
           })}
           {width < breakpoint && (
@@ -75,8 +84,8 @@ export default function Header() {
               <SocialNetwork />
             </div>
           )}
-        </Nav>
-      </Collapse>
-    </Navbar>
+        </ul>
+      </div>
+    </nav>
   );
 }

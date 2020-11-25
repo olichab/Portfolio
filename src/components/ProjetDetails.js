@@ -36,7 +36,12 @@ export default function ProjetDetails({ projectDetails }) {
               </Col>
               <Col xs="12">
                 {website.url && (
-                  <a href={website.url} className="link-unstyled">
+                  <a
+                    href={website.url}
+                    className="link-unstyled"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {website.name}
                   </a>
                 )}

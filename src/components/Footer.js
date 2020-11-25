@@ -6,7 +6,7 @@ import "../scss/Footer.scss";
 export default function Footer() {
   return (
     <Container fluid className="footer-container">
-      <Row className="justify-content-center text-center">
+      <Row>
         <Col xs="12">
           Tous droits reservés &copy; 2020 ∙ Powered by Olivier Chabot
         </Col>

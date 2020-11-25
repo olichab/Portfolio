@@ -2,48 +2,61 @@
 @import "./helpers/Media.scss";
 
 .contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   @media only screen and (max-height: 600px) and (orientation: landscape) {
-    margin-top: 8rem;
+    min-height: 140vh;
   }
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 5.5rem;
 
-  // For IE
-  .row {
-    flex: 1 0 100%;
-  }
+    @media only screen and (max-height: 600px) and (orientation: landscape) {
+      top: 0;
+      transform: translate(-50%,0);
+    }
+
+    // For IE
+    .row, .col{
+      flex: 1 0 100%;
+    }
 
   h1 {
+    margin: 0;
     color: $main-yellow !important;
     text-transform: uppercase;
-    font-size: 4rem !important;
+    font-size: 3.2rem !important;
+    visibility: hidden;
+
     @include md {
-      font-size: 5.1rem !important;
+      font-size: 4.2rem !important;
+      margin-bottom: 2.4rem;
     }
     @include lg {
-      font-size: 5.4rem !important;
+      font-size: 4.8rem !important;
     }
     @include xl {
-      font-size: 5.9rem !important;
+      font-size: 5.4rem !important;
     }
   }
   p {
     color: $main-white;
-    padding: 1.6rem;
-    margin: 0;
+    font-size: 1.6rem !important;
+    margin: 1.6rem 0 !important;
+    visibility: hidden;
   }
 
   .infos-contact {
     p {
       display: inline-block;
-      padding: 1.25rem;
-      margin: 0.25rem;
+      padding: 1.6rem;
+      margin: 0.8rem 0 !important;
       color: $main-blue !important;
       background-color: $main-white;
       font-size: 1.8rem;
       font-weight: 600;
     }
   }
+}
 }
