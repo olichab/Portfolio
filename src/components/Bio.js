@@ -1,7 +1,9 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useLayoutEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import uuid from "react-uuid";
+import { useViewport } from "../hooks/useViewport";
 import { playTlBio } from "../timelines";
+import SocialNetwork from "./SocialNetwork";
 import Competence from "./Competence";
 import photo from "../assets/images/Photo_OC.png";
 import sentence from "../assets/images/Sentence.png";
@@ -49,19 +51,24 @@ const competences = [
 const Bio = () => {
   const refPartText = useRef([]);
   const refSentence = useRef(null);
+  const refTitleSkills = useRef(null);
   const refContainerCompetence = useRef([]);
+  const { width } = useViewport();
+  const breakpoint = 992;
 
-  useEffect(() => {
-    playTlBio(refPartText, refSentence, refContainerCompetence);
+  useLayoutEffect(() => {
+    playTlBio(refPartText, refSentence, refTitleSkills, refContainerCompetence);
   }, []);
+
   return (
-    <Container fluid id="bio" className="bio-container">
+    <Container fluid className="bio-container">
+      {width > breakpoint && <SocialNetwork />}
       <Row>
         <Col xs="12" lg="6" className="bio-left-part">
           <Container>
             <Row className="justify-content-center align-items-center">
-              <Col xs="12" md="8" className="about-photo">
-                <img src={photo} alt="olivier chabot" className="photo" />
+              <Col xs="12">
+                <img src={photo} alt="olivier chabot" />
               </Col>
               <div className="col-xs-12 col-md-10 col-xl-8 about-text">
                 <p ref={(el) => (refPartText.current[0] = el)}>
@@ -101,21 +108,26 @@ const Bio = () => {
           </Container>
         </Col>
         <Col xs="12" lg="6" className="bio-right-part p-0">
-          <Container fluid className="d-flex h-100">
+          <Container fluid>
             <Row className="justify-content-center">
-              <Col xs="12" className="container-title-competences">
-                <svg viewBox="0 0 72 16">
-                  <text x="0" y="15">
-                    COMPÉTENCES
-                  </text>
-                </svg>
+              <Col
+                xs="12"
+                lg="9"
+                xl="8"
+                className="container-title-competences"
+              >
+                <h1 ref={refTitleSkills}>
+                  Compétences <br />
+                  techniques <br />
+                  et outils
+                </h1>
               </Col>
-              <Col xs="12" lg="9" xl="8" className="d-flex align-items-center">
-                <Row className="p-5 p-md-3">
+              <Col xs="12" lg="9" xl="8">
+                <Row className="p-5">
                   {competences.map((c, i) => {
                     return (
                       <div
-                        className="col col-xs-6 col-md-3 col-lg-6 col-xl-4 p-0 mt-2"
+                        className="col col-md-3 col-lg-6 col-xl-4 p-0 mt-2 competence"
                         key={uuid()}
                         ref={(el) => (refContainerCompetence.current[i] = el)}
                       >

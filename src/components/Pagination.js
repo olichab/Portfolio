@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { playTlPagination } from "../timelines";
 import ArrowLeft from "../assets/images/pictos/arrow_Left.svg";
 import ArrowRight from "../assets/images/pictos/arrow_right.svg";
@@ -22,6 +23,9 @@ export default function Pagination({ currentId }) {
 
   useEffect(() => {
     playTlPagination(refLast, refNext);
+    return () => {
+      ScrollTrigger.getAll().forEach((st) => st.kill());
+    };
   }, []);
 
   return (

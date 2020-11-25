@@ -8,11 +8,6 @@
   border: solid 1px rgba($main-yellow, 0.35);
   margin-bottom: 3rem;
 
-  @include xl {
-    width: 150px;
-    height: 150px;
-  }
-
   img {
     width: 25px;
     height: 25px;
@@ -20,11 +15,6 @@
 
     &:first-of-type {
       margin-right: 0.8rem;
-    }
-
-    @include xl {
-      width: 30px;
-      height: 30px;
     }
   }
 
@@ -39,10 +29,6 @@
     h2 {
       margin: 0;
       font-size: 1.4rem;
-
-      @include xl {
-        font-size: 1.6rem;
-      }
     }
   }
 }

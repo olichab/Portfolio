@@ -2,21 +2,23 @@
 @import "./helpers/Colors.scss";
 
 .container-social-network {
+  z-index:99;
   margin: auto;
+  visibility: hidden;
 
   @include lg {
     margin: auto;
     display: flex;
     flex-direction: column;
     position: fixed;
-    left: 1rem;
+    right: 1rem;
     top: 50vh;
     &:before {
       content: "";
       width: 0.6rem;
       height: 0.1rem;
       position: absolute;
-      left: -1rem;
+      right: -1rem;
       top: 50%;
       background-color: $main-yellow;
     }
@@ -35,12 +37,12 @@
   .logo-linked-in,
   .logo-github,
   .logo-instagram {
-    width: 2.2rem;
+    width: 3rem;
     margin: 2.2rem;
 
     @include lg {
       margin: 0.8rem 0.3rem;
-      width: 1.8rem;
+      width: 2.6rem;
       cursor: pointer;
     }
   }

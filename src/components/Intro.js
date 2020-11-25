@@ -28,15 +28,12 @@ const Home = () => {
     );
   }, []);
   return (
-    <Div100vh className="intro-container" id="home">
+    <Div100vh className="intro-container">
       {width > breakpoint && <SocialNetwork />}
-
       <Container>
         <Row className="justify-content-center">
           <Col xs="11" md="10" lg="8">
-            <h1 className="welcome-title" ref={refTitle}>
-              Welcome
-            </h1>
+            <h1 ref={refTitle}>Bienvenue</h1>
             <div className="text-intro" ref={refText}>
               <p>
                 Je suis
@@ -45,7 +42,7 @@ const Home = () => {
                 <br />
                 Développeur front-end.
                 <br />
-                Bienvenue sur mon
+                Découvrez mon
                 <span className="word-yellow"> portfolio</span>.
               </p>
             </div>
@@ -57,18 +54,16 @@ const Home = () => {
             xs="12"
             md="10"
             lg="8"
-            className=" d-flex justify-content-center justify-content-md-end"
+            className=" d-flex justify-content-center justify-content-md-end flex-wrap"
           >
-            <button type="button" className="btn-yellow" ref={refButtonResume}>
+            <button
+              type="button"
+              className="btn-yellow-empty"
+              ref={refButtonResume}
+            >
               <a href={resume} download className="link-unstyled">
                 CV
-                <svg
-                  x="0px"
-                  y="0px"
-                  width="20px"
-                  height="20px"
-                  viewBox="0 0 24 24"
-                >
+                <svg x="0px" y="0px" viewBox="0 0 20 20">
                   <title>download</title>
                   <g>
                     <path

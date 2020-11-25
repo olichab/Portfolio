@@ -1,11 +1,19 @@
 @import "./helpers/Colors.scss";
 
 .footer-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   margin: 0;
   font-size: 1.2rem;
   padding: 2rem;
   color: $main-blue;
   background-color: $main-white;
+
+  // For IE
+  .row, .col {
+    flex: 1 0 100%;
+  }
 
   a {
     outline:none;

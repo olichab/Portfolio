@@ -5,26 +5,19 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const playTlHeader = (refCollapse, refNavLink, refSocialNetworks) => {
   const tlHeader = gsap.timeline({ default: { ease: Power1.easeOut } });
-
   tlHeader
     .from(refCollapse.current, {
+      delay: 0.2,
+      autoAlpha: 0,
       duration: 0.5,
       xPercent: -100,
     })
     .from(
-      refNavLink.current,
+      [refNavLink.current, refSocialNetworks.current],
       {
-        opacity: 0,
+        autoAlpha: 0,
         xPercent: -30,
         stagger: 0.15,
-      },
-      "-=0.4"
-    )
-    .from(
-      refSocialNetworks.current,
-      {
-        opacity: 0,
-        xPercent: -30,
       },
       "-=0.4"
     );
@@ -41,18 +34,19 @@ export const playTlIntro = (
 
   tlIntro
     .from(refBar.current, 1, {
+      autoAlpha: 0,
       scaleX: 0,
       ease: "power2",
       transformOrigin: "center",
     })
     .from(refText.current, 0.75, {
-      opacity: 0,
+      autoAlpha: 0,
       y: 40,
     })
     .from(
       refTitle.current,
       {
-        opacity: 0,
+        autoAlpha: 0,
         y: 15,
         rotation: 3,
         scaleY: 0.8,
@@ -61,66 +55,56 @@ export const playTlIntro = (
       },
       "-=0.25"
     )
-    .to(
+    .from(
       [refButtonResume.current, refButtonSeeProjects.current],
       {
-        opacity: 1,
-        yPercent: -20,
+        autoAlpha: 0,
+        yPercent: -15,
         stagger: 0.25,
       },
       "-=0.25"
     );
 };
-export const playTlSocialNetworks = (
-  wrapperLogo,
-  refLogoLinkedin,
-  refLogoGithub,
-  refLogoInstagram
+
+export const playTlBio = (
+  refPartText,
+  refSentence,
+  refTitleSkills,
+  refContainerCompetence
 ) => {
-  const tlSocialNetworks = gsap.timeline();
-
-  tlSocialNetworks
-    .from(wrapperLogo.current, 0.15, {
-      x: -40,
-      delay: 2.5,
-    })
-    .from(
-      [
-        refLogoLinkedin.current,
-        refLogoGithub.current,
-        refLogoInstagram.current,
-      ],
-      {
-        scale: 1.15,
-        opacity: 0,
-        stagger: 0.25,
-      }
-    );
-};
-
-export const playTlBio = (refPartText, refSentence, refContainerCompetence) => {
   const tlBioLeft = gsap.timeline({
-    defaults: { ease: "power1.inOut" },
+    defaults: { ease: "power1.easeOut" },
   });
   const tlBioRight = gsap.timeline({
-    defaults: { ease: "power1.inOut" },
+    defaults: { ease: "power1.easeOut" },
   });
+
   tlBioLeft
     .from(refPartText.current, {
-      opacity: 0,
-      y: 15,
+      autoAlpha: 0,
+      yPercent: 15,
       stagger: 0.15,
     })
     .from(refSentence.current, {
-      opacity: 0,
-      y: 15,
+      autoAlpha: 0,
+      yPercent: 15,
     });
-  tlBioRight.from(refContainerCompetence.current, {
-    opacity: 0,
-    y: 10,
-    scale: 0.85,
-    stagger: 0.15,
-  });
+  tlBioRight
+    .from(refTitleSkills.current, {
+      autoAlpha: 0,
+      yPercent: 50,
+      rotation: 3,
+      scaleY: 0.8,
+      transformOrigin: "bottom left",
+    })
+    .from(refContainerCompetence.current, {
+      autoAlpha: 0,
+      yPercent: 15,
+      scale: 0.9,
+      stagger: {
+        amount: 1.25,
+      },
+    });
 };
 
 export const playTlProgressBar = (refProgressBarProjects) => {
@@ -144,38 +128,40 @@ export const playTlProjet = (
   ScrollTrigger.matchMedia({
     // desktop
     "(min-width: 768px)": function() {
-      const tlProjet = gsap.timeline({
-        default: { ease: Power1.easeOut },
-        scrollTrigger: {
-          trigger: refProjet.current,
-          start: "top top+=10%",
-          end: "bottom+=10% top+=10%",
-          scrub: 0.3,
-        },
-      });
-      tlProjet
-        .to(refProjet.current, {
-          scale: 0.95,
-        })
-        .to([refTitle.current, refLocation.current], {
-          duration: 0.15,
-          opacity: 0,
-          y: -20,
-          stagger: 0.1,
-        })
-        .to(
-          refButton.current,
-          {
+      if (refProjet.current) {
+        const tlProjet = gsap.timeline({
+          default: { ease: Power1.easeOut },
+          scrollTrigger: {
+            trigger: refProjet.current,
+            start: "top top+=10%",
+            end: "bottom+=10% top+=10%",
+            scrub: 0.3,
+          },
+        });
+        tlProjet
+          .to(refProjet.current, {
+            scale: 0.95,
+          })
+          .to([refTitle.current, refLocation.current], {
             duration: 0.15,
             opacity: 0,
-            y: 30,
-          },
-          "-=0.2"
-        )
-        .to(refcaptionContainer.current, {
-          scaleX: 0,
-          transformOrigin: "left",
-        });
+            y: -20,
+            stagger: 0.1,
+          })
+          .to(
+            refButton.current,
+            {
+              duration: 0.15,
+              opacity: 0,
+              y: 30,
+            },
+            "-=0.2"
+          )
+          .to(refcaptionContainer.current, {
+            scaleX: 0,
+            transformOrigin: "left",
+          });
+      }
     },
   });
 };
@@ -190,19 +176,19 @@ export const playTlContact = (
 
   tlContact
     .from(refTitle.current, {
-      opacity: 0,
+      autoAlpha: 0,
       y: 15,
       rotation: 3,
       scaleY: 0.8,
       transformOrigin: "bottom left",
     })
     .from(refText.current, {
+      autoAlpha: 0,
       y: 10,
-      opacity: 0,
     })
     .from([refMail.current, refTel.current, refLocation.current], {
+      autoAlpha: 0,
       y: 15,
-      opacity: 0,
       stagger: 0.25,
     });
 };
@@ -217,19 +203,66 @@ export const playTlPagination = (refLast, refNext) => {
       scrub: 3,
     },
   });
-  tlPagination
-    .from(
+  if (refLast.current && refNext.current) {
+    tlPagination
+      .from(
+        refLast.current,
+        {
+          x: 100,
+        },
+        0
+      )
+      .from(
+        refNext.current,
+        {
+          x: -80,
+        },
+        0
+      );
+  } else if (refLast.current) {
+    tlPagination.from(
       refLast.current,
       {
         x: 100,
       },
       0
-    )
-    .from(
+    );
+  } else {
+    tlPagination.from(
       refNext.current,
       {
         x: -80,
       },
       0
+    );
+  }
+};
+
+export const playTlSocialNetworks = (
+  wrapperLogo,
+  refLogoLinkedin,
+  refLogoGithub,
+  refLogoInstagram
+) => {
+  const tlSocialNetworks = gsap.timeline();
+
+  tlSocialNetworks
+    .from(wrapperLogo.current, {
+      duration: 0.15,
+      autoAlpha: 0,
+      x: 40,
+      delay: 2.5,
+    })
+    .from(
+      [
+        refLogoLinkedin.current,
+        refLogoGithub.current,
+        refLogoInstagram.current,
+      ],
+      {
+        scale: 1.15,
+        autoAlpha: 0,
+        stagger: 0.25,
+      }
     );
 };

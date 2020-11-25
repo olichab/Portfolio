@@ -33,46 +33,49 @@ const Projet = ({ id, thumbnail, title, location, path }) => {
     return () => {
       ScrollTrigger.getAll().forEach((st) => st.kill());
     };
-  }, []);
+  }, [refProjet, refTitle, refLocation, refButton, refcaptionContainer]);
 
   return (
-    <div className="row projet" ref={refProjet}>
-      <Col xs="12" md="7" lg="6" xl="8" className="p-0">
-        <LazyLoad height={thumbnail.height} offset={1000}>
-          <img
-            src={imgLoaded ? thumbnail.url : thumbnail.urlSD}
-            alt={`Project ${title}`}
-            className="thumbnails"
-            onLoad={imgIsLoaded}
-          />
-        </LazyLoad>
-      </Col>
-      <Col xs="12" md="3" lg="4" className="col-projet-caption">
-        <div className="row caption" ref={refcaptionContainer}>
-          <Col xs="10" md="12" className="p-3">
-            <h1 className="caption-title" ref={refTitle}>
-              {title}
-            </h1>
-            <p className="caption-location" ref={refLocation}>
-              {location}
-            </p>
-          </Col>
-          <Col xs="2" className="col-projet-chevron d-md-none">
-            <NavLink to={path} className="link-unstyled">
-              <img src={pictoChevron} alt="chevron" className="chevron" />
-            </NavLink>
-          </Col>
-          <div
-            className="col col-md-12 d-none d-md-flex justify-content-end"
-            ref={refButton}
-          >
-            <NavLink to={path} className="link-unstyled btn-see-project">
-              Voir le projet
-            </NavLink>
+    <>
+      <div className="row projet" ref={refProjet}>
+        <Col xs="12" md="7" lg="6" xl="8" className="p-0">
+          <LazyLoad height={thumbnail.height} offset={1000}>
+            <img
+              src={imgLoaded ? thumbnail.url : thumbnail.urlSD}
+              alt={`Project ${title}`}
+              className="thumbnails"
+              onLoad={imgIsLoaded}
+            />
+          </LazyLoad>
+        </Col>
+        <Col xs="12" md="3" lg="4" className="col-projet-caption">
+          <div className="row caption" ref={refcaptionContainer}>
+            <Col xs="10" md="12" className="p-3">
+              <h1 className="caption-title" ref={refTitle}>
+                {title}
+              </h1>
+              <p className="caption-location" ref={refLocation}>
+                {location}
+              </p>
+            </Col>
+            <Col xs="2" className="col-projet-chevron d-md-none">
+              <NavLink to={path} className="link-unstyled">
+                <img src={pictoChevron} alt="chevron" className="chevron" />
+              </NavLink>
+            </Col>
+            <div
+              className="col col-md-12 d-none d-md-flex justify-content-end"
+              ref={refButton}
+            >
+              <NavLink to={path} className="link-unstyled btn-see-project">
+                Voir le projet
+              </NavLink>
+            </div>
           </div>
-        </div>
-      </Col>
-    </div>
+        </Col>
+      </div>
+      <hr />
+    </>
   );
 };
 

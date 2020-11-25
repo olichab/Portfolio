@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Switch, Route, HashRouter } from "react-router-dom";
 import { ViewportProvider } from "./hooks/useViewport";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -16,7 +16,7 @@ const ProjetDetails = React.lazy(() => import("./components/ProjetDetails.js"));
 
 const App = (props) => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ViewportProvider>
         <div className="App">
           <Header />
@@ -42,7 +42,7 @@ const App = (props) => {
           <Footer />
         </div>
       </ViewportProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

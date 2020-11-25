@@ -3,18 +3,32 @@
 @import "./helpers/Forms.scss";
 
 .intro-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   @media only screen and (max-height: 600px) and (orientation: landscape) {
-    margin-top: 8rem;
+    min-height: 115vh;
   }
 
-  .welcome-title {
-    text-transform: uppercase;
-    z-index: 0;
-    font-size: 5rem !important;
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 5.5rem;
+
+    @media only screen and (max-height: 600px) and (orientation: landscape) {
+      top: 0;
+      transform: translate(-50%,0);
+    }
+
+    // For IE
+    .row, .col{
+      flex: 1 0 100%;
+    }
+
+
+  h1 {
+    font-size: 3.6rem !important;
     font-weight: 600;
+    visibility: hidden;
 
     @include lg {
       font-size: 6rem !important;
@@ -25,12 +39,13 @@
   }
 
   .text-intro {
+    visibility: hidden;
     p {
       padding: 0.8rem 0 2.4rem 0;
       font-family: "Playfair Display";
       font-weight: 400;
-      font-size: 4rem !important;
-      line-height: 5rem !important;
+      font-size: 3.6rem !important;
+      line-height: 4rem !important;
       color: rgba($main-white, 0.85);
       @include lg {
         font-size: 5rem !important;
@@ -51,28 +66,32 @@
   hr {
     height: 1px;
     background-color: $main-white;
+    visibility: hidden;
   }
 
   .buttons-row {
-    padding: 2.4rem;
+    padding: 1.6rem;
     @include xl {
       padding: 4.8rem;
     }
     button {
-      opacity:0;
+      visibility: hidden;
       &:last-child {
         margin-left: 2.4rem;
       }
     }
 
-    img {
+    svg {
+      vertical-align: middle;
       height: 18px;
       width: 18px;
-      margin-left: 0.8rem;
+      margin-left: 0.5rem;
     }
 
     .link-unstyled {
       @include link-unstyled;
     }
   }
+}
+
 }
