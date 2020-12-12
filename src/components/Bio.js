@@ -91,6 +91,14 @@ const Bio = () => {
                 </p>
                 <br />
                 <p ref={(el) => (refPartText.current[3] = el)}>
+                  J’ai choisi de m’orienter vers le développement front-end car
+                  en tant qu’ancien infographiste, je porte une attention
+                  particulière aux interfaces et à l’expérience utilisateur. Une
+                  approche centrée sur l&apos;humain est pour moi un enjeu
+                  majeur en 2020.
+                </p>
+                <br />
+                <p ref={(el) => (refPartText.current[4] = el)}>
                   Après un bootcamp à la Wild Code School et une première
                   expérience réussie au sein d’Altavia connect, je suis à la
                   recherche de nouveaux défis et serais ravi de mettre à
