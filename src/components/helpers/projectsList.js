@@ -18,8 +18,8 @@ const PROJECTS_LIST = [
       url: "https://www.altavia-group.com/fr/",
     },
     tags: [
+      "React",
       "AngularJS",
-      "Java",
       "Javascript",
       "MySQL",
       "Sass",
