@@ -2,7 +2,7 @@
 @import "./helpers/Colors.scss";
 
 .container-social-network {
-  z-index:99;
+  z-index: 99;
   margin: auto;
   visibility: hidden;
 
@@ -37,12 +37,11 @@
   .logo-linked-in,
   .logo-github,
   .logo-instagram {
-    width: 3rem;
+    width: 30px;
     margin: 2.2rem;
 
     @include lg {
       margin: 0.8rem 0.3rem;
-      width: 2.6rem;
       cursor: pointer;
     }
   }

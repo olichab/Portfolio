@@ -1,4 +1,5 @@
 import React, { useRef, useLayoutEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Container, Row, Col } from "reactstrap";
 import uuid from "react-uuid";
 import { useViewport } from "../hooks/useViewport";
@@ -62,6 +63,13 @@ const Bio = () => {
 
   return (
     <Container fluid className="bio-container">
+      <Helmet>
+        <title>Bio</title>
+        <meta
+          name="description"
+          content="Apprenez en plus sur mon parcours, mes compétences techniques et les outils que j'utilise au quotidien"
+        />
+      </Helmet>
       {width > breakpoint && <SocialNetwork />}
       <Row>
         <Col xs="12" lg="6" className="bio-left-part">
@@ -107,6 +115,8 @@ const Bio = () => {
                 <br />
                 <img
                   src={sentence}
+                  width="280px"
+                  height="68px"
                   alt="sentence"
                   className="sentence"
                   ref={refSentence}

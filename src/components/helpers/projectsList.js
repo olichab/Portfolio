@@ -19,8 +19,9 @@ const PROJECTS_LIST = [
     },
     tags: [
       "React",
+      "Redux",
+      "Typescript",
       "AngularJS",
-      "Javascript",
       "MySQL",
       "Sass",
       "Gulp",

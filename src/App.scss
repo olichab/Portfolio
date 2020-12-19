@@ -33,13 +33,14 @@
     font-weight: 400;
   }
 
-  .btn-yellow-empty, .btn-yellow {
+  .btn-yellow-empty,
+  .btn-yellow {
     background-color: $main-blue;
     border: solid 1px $main-yellow;
     border-radius: 1px;
     padding: 1.6rem;
     font-size: 1.6em;
-    font-weight: 400;
+    font-weight: 600;
     transition: all linear 0.25s;
   }
 
@@ -49,7 +50,7 @@
     svg {
       fill: $main-yellow;
     }
-    &:hover{
+    &:hover {
       background-color: $main-yellow;
       color: $main-blue;
       transition: all linear 0.25s;
@@ -62,7 +63,7 @@
   .btn-yellow {
     background-color: $main-yellow;
     color: $main-blue;
-    &:hover{
+    &:hover {
       background-color: $main-blue;
       color: $main-yellow;
       transition: all linear 0.25s;
