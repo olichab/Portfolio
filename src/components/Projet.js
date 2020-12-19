@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
+import { Helmet } from "react-helmet";
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 import { Col } from "reactstrap";
@@ -38,13 +39,21 @@ const Projet = ({ id, thumbnail, title, location, path }) => {
   return (
     <>
       <div className="row projet" ref={refProjet}>
+        <Helmet>
+          <title>Projets</title>
+          <meta
+            name="description"
+            content="Développement web ou infographie 3D, retrouvez les projets sur lesquels j'ai pu travailler et m'exercer."
+          />
+        </Helmet>
         <Col xs="12" md="7" lg="6" xl="8" className="p-0">
           <LazyLoad height={thumbnail.height} offset={1000}>
             <img
               src={imgLoaded ? thumbnail.url : thumbnail.urlSD}
               alt={`Project ${title}`}
-              className="thumbnails"
               onLoad={imgIsLoaded}
+              width="320px"
+              height="180px"
             />
           </LazyLoad>
         </Col>
@@ -60,7 +69,13 @@ const Projet = ({ id, thumbnail, title, location, path }) => {
             </Col>
             <Col xs="2" className="col-projet-chevron d-md-none">
               <NavLink to={path} className="link-unstyled">
-                <img src={pictoChevron} alt="chevron" className="chevron" />
+                <img
+                  src={pictoChevron}
+                  alt="chevron"
+                  className="chevron"
+                  width="25px"
+                  height="25px"
+                />
               </NavLink>
             </Col>
             <div

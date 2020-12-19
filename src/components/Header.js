@@ -37,7 +37,13 @@ export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg fixed-top header-container">
       <NavLink to="/" className="mr-auto">
-        <img src={logo} className="logo-oc" alt="logo olivier chabot" />
+        <img
+          src={logo}
+          className="logo-oc"
+          alt="logo olivier chabot"
+          width="120px"
+          height="30px"
+        />
       </NavLink>
       <button
         type="button"

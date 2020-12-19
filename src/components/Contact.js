@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Container, Row, Col } from "reactstrap";
 import Div100vh from "react-div-100vh";
 import SocialNetwork from "./SocialNetwork";
@@ -21,6 +22,13 @@ const Contact = () => {
   }, []);
   return (
     <Div100vh className="contact-container">
+      <Helmet>
+        <title>Contact</title>
+        <meta
+          name="description"
+          content="Restons en contact ! Vous avez une demande particulière en développement web ? N'hésitez pas à vous rapprocher de moi pour que l'on étudie ça ensemble."
+        />
+      </Helmet>
       {width > breakpoint && <SocialNetwork />}
       <Container>
         <Row className="justify-content-center">
