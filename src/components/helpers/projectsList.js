@@ -80,7 +80,7 @@ const PROJECTS_LIST = [
       "Reactsrap",
     ],
     description:
-      "<p> A partir d&apos;un <b>relevé de métriques</b> collecté sur un <b>serveur</b>, le but était de créer un <b>dashboard </b>permettant à l&apos;utilisateur de pouvoir <b> analyser facilement et rapidement </b> les <b> informations systèmes </b> (réseau, disque, cpu, mémoire,…) en vue d&apos;identifier <b> d&apos;éventuels problèmes</b> . <br /> <br /> Il est possible de <b> filtrer </b> les données par <b>date</b>, <b>fichiers</b> ou <b>inodes</b> mais également de détecter les entrées ayant un <b> temps de chargement </b> supérieur aux autres afin d&apos;obtenir les <b> détails </b> sur la <b> consommation CPU </b> de celle-ci. </p>",
+      "<p> A partir d&apos;un <b>relevé de métriques</b> collectées sur un <b>serveur</b>, le but était de créer un <b>dashboard </b>permettant à l&apos;utilisateur de pouvoir <b> analyser facilement et rapidement </b> les <b> informations systèmes </b> (réseau, disque, cpu, mémoire,…) en vue d&apos;identifier <b> d&apos;éventuels problèmes</b> . <br /> <br /> Il est possible de <b> filtrer </b> les données par <b>date</b>, <b>fichiers</b> ou <b>inodes</b> mais également de détecter les entrées ayant un <b> temps de chargement </b> supérieur aux autres afin d&apos;obtenir les <b> détails </b> sur la <b> consommation CPU </b> de celle-ci. </p>",
     images: [
       {
         src: require("../../assets/images/projets/Web/MetricsServer/1_MetricsServer.jpg"),
