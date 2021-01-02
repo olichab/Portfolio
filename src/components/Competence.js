@@ -10,8 +10,22 @@ export default function Competence({ srcLogo, name }) {
     <Container className="competence-container">
       <Row className="h-50">
         <Col xs="auto">
-          <Media object src={srcLogo[0]} />
-          {srcLogo[1] && <Media object src={srcLogo[1]} />}
+          <Media
+            object
+            src={srcLogo[0]}
+            alt={`logo ${name[0]}`}
+            height="25"
+            width="25"
+          />
+          {srcLogo[1] && (
+            <Media
+              object
+              src={srcLogo[1]}
+              alt={`logo ${name[1]}`}
+              height="25"
+              width="25"
+            />
+          )}
         </Col>
       </Row>
       <Row className="h-50 align-items-end">

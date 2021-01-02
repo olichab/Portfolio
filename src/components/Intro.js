@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Container, Row, Col } from "reactstrap";
 import Div100vh from "react-div-100vh";
 import SocialNetwork from "./SocialNetwork";
@@ -29,6 +30,13 @@ const Home = () => {
   }, []);
   return (
     <Div100vh className="intro-container">
+      <Helmet>
+        <title>Accueil</title>
+        <meta
+          name="description"
+          content="Je suis Olivier chabot, développeur front-end, passionné et créatif. Venez découvrir mon portfolio."
+        />
+      </Helmet>
       {width > breakpoint && <SocialNetwork />}
       <Container>
         <Row className="justify-content-center">

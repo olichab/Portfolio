@@ -1,4 +1,5 @@
 import React, { useRef, useLayoutEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Container, Row, Col } from "reactstrap";
 import uuid from "react-uuid";
 import { useViewport } from "../hooks/useViewport";
@@ -9,6 +10,7 @@ import photo from "../assets/images/Photo_OC.png";
 import sentence from "../assets/images/Sentence.png";
 import logoReact from "../assets/images/logos/react.svg";
 import logoRedux from "../assets/images/logos/redux.svg";
+import logoJest from "../assets/images/logos/Jest.svg";
 import logoNodeJS from "../assets/images/logos/nodejs.svg";
 import logoApi from "../assets/images/logos/api.svg";
 import logoTypescript from "../assets/images/logos/typescript.svg";
@@ -18,6 +20,7 @@ import logoJira from "../assets/images/logos/jira.svg";
 import logoBitbucket from "../assets/images/logos/bitbucket.svg";
 import logoAgile from "../assets/images/logos/agile.svg";
 import logoBootstrap from "../assets/images/logos/bootstrap.svg";
+import logoTailwindCSS from "../assets/images/logos/TailwindCSS.svg";
 import logoHtml from "../assets/images/logos/html5.svg";
 import logoCss from "../assets/images/logos/css3.svg";
 import logoSketch from "../assets/images/logos/sketch.svg";
@@ -33,14 +36,17 @@ const competences = [
     name: ["React", "Redux"],
   },
   { srcLogo: [logoTypescript], name: ["Typescript", "PropTypes"] },
+  { srcLogo: [logoJest], name: ["Jest"] },
+  { srcLogo: [logoHtml, logoCss], name: ["Html 5", "Css 3"] },
+  {
+    srcLogo: [logoBootstrap, logoTailwindCSS],
+    name: ["Bootstrap", "Tailwind CSS"],
+  },
   { srcLogo: [logoNodeJS], name: ["NodeJS", "SQL"] },
   { srcLogo: [logoApi], name: ["API Rest", "Postman"] },
   { srcLogo: [logoGit, logoGithub], name: ["Git", "Github"] },
   { srcLogo: [logoJira, logoBitbucket], name: ["Jira", "Bitbucket"] },
   { srcLogo: [logoAgile], name: ["Méthode agile"] },
-  { srcLogo: [logoBootstrap], name: ["Bootstrap"] },
-  { srcLogo: [logoHtml], name: ["Html 5"] },
-  { srcLogo: [logoCss], name: ["Css 3"] },
   { srcLogo: [logoSketch, logoAdobeXD], name: ["Sketch", "AdobeXD"] },
   {
     srcLogo: [logoPhotoshop, logoIllustrator],
@@ -62,6 +68,13 @@ const Bio = () => {
 
   return (
     <Container fluid className="bio-container">
+      <Helmet>
+        <title>Bio</title>
+        <meta
+          name="description"
+          content="Apprenez en plus sur mon parcours, mes compétences techniques et les outils que j'utilise au quotidien"
+        />
+      </Helmet>
       {width > breakpoint && <SocialNetwork />}
       <Row>
         <Col xs="12" lg="6" className="bio-left-part">
@@ -91,6 +104,14 @@ const Bio = () => {
                 </p>
                 <br />
                 <p ref={(el) => (refPartText.current[3] = el)}>
+                  J’ai choisi de m’orienter vers le développement front-end car
+                  en tant qu’ancien infographiste, je porte une attention
+                  particulière aux interfaces et à l’expérience utilisateur. Une
+                  approche centrée sur l&apos;humain est pour moi un enjeu
+                  majeur en 2021.
+                </p>
+                <br />
+                <p ref={(el) => (refPartText.current[4] = el)}>
                   Après un bootcamp à la Wild Code School et une première
                   expérience réussie au sein d’Altavia connect, je suis à la
                   recherche de nouveaux défis et serais ravi de mettre à
@@ -99,6 +120,8 @@ const Bio = () => {
                 <br />
                 <img
                   src={sentence}
+                  width="280px"
+                  height="68px"
                   alt="sentence"
                   className="sentence"
                   ref={refSentence}

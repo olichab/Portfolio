@@ -3,6 +3,105 @@ const PROJECTS_LIST = [
   {
     id: 13,
     thumbnail: {
+      url: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_BriefOnline.jpg"),
+      urlSD: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_BriefOnline_SD.jpg"),
+      width: 1000,
+      height: 554,
+    },
+    title: "Brief Online",
+    location: "Altavia Connect",
+    path: "/brief-online",
+    year: "2019",
+    category: "Développement web",
+    website: {
+      name: "www.altavia-group.com",
+      url: "https://www.altavia-group.com/fr/",
+    },
+    tags: [
+      "React",
+      "Redux",
+      "Typescript",
+      "AngularJS",
+      "MySQL",
+      "Sass",
+      "Gulp",
+      "Material Design",
+    ],
+    description:
+      "<p> La web application « <b>Brief Online</b> » permet aux clients d’Altavia d’envoyer un <b>brief de leurs besoins</b> et d’avoir un <b> suivi</b> de leurs projets. <br /> Le client peut gérer ses <b> campagnes </b> et y inclure des <b> supports </b> (brochure, catalogue, affiche, roll-up, PLV...) qu&apos;il pourra <b> paramétrer </b>à souhait. </p> <p> Voici une liste non exhaustive des <b>tâches réalisées</b> sur ce projet:</p><ul><li>Passage de la version 2 à la version 3 de Brief Online (intégration de material design, debugging)</li><li>Refonte de la partie workflow permettant aux clients de suivre l&apos;avancement de leurs projets</li><li>Réalisation de maquettes sur AdobeXD</li><li>Développement du contrôle en amont des fichiers PDF (Preflight)</li><li>Mise en place de la messagerie interne</li><li>Upload et encodage des fichiers envoyés</li><li>Création de templates d’emails (sur Thymleaf) et gestion de leurs envois</li><li>Écriture de tests unitaires</li><li>Rédaction de documentation</li><li>Support de l&apos;application sur Kibana</li></ul",
+    images: [
+      {
+        src: require("../../assets/images/projets/Web/BriefOnline/1_Bol_OngoingProject.jpg"),
+        width: 4,
+        height: 2,
+      },
+      {
+        src: require("../../assets/images/projets/Web/BriefOnline/2_Bol_AddSupport.jpg"),
+        width: 4,
+        height: 2,
+      },
+      {
+        src: require("../../assets/images/projets/Web/BriefOnline/3_Bol_Support.jpg"),
+        width: 4,
+        height: 2,
+      },
+      {
+        src: require("../../assets/images/projets/Web/BriefOnline/4_Bol_Workflow.jpg"),
+        width: 4,
+        height: 2,
+      },
+    ],
+  },
+  {
+    id: 12,
+    thumbnail: {
+      url: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_MetricsServer.jpg"),
+      urlSD: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_MetricsServer_SD.jpg"),
+      width: 1000,
+      height: 750,
+    },
+    title: "Metrics server",
+    location: "Projet personnel",
+    path: "/metrics-server",
+    year: "2020",
+    category: "Développement web",
+    website: {
+      name: "olichab.github.io/MetricsServer",
+      url: "https://olichab.github.io/MetricsServer/",
+    },
+    tags: [
+      "React",
+      "Redux",
+      "React-virtualized",
+      "React-vis",
+      "React-select",
+      "React-infinite-calendar",
+      "Sass",
+      "Reactsrap",
+    ],
+    description:
+      "<p> A partir d&apos;un <b>relevé de métriques</b> collectées sur un <b>serveur</b>, le but était de créer un <b>dashboard </b>permettant à l&apos;utilisateur de pouvoir <b> analyser facilement et rapidement </b> les <b> informations systèmes </b> (réseau, disque, cpu, mémoire,…) en vue d&apos;identifier <b> d&apos;éventuels problèmes</b> . <br /> <br /> Il est possible de <b> filtrer </b> les données par <b>date</b>, <b>fichiers</b> ou <b>inodes</b> mais également de détecter les entrées ayant un <b> temps de chargement </b> supérieur aux autres afin d&apos;obtenir les <b> détails </b> sur la <b> consommation CPU </b> de celle-ci. </p>",
+    images: [
+      {
+        src: require("../../assets/images/projets/Web/MetricsServer/1_MetricsServer.jpg"),
+        width: 3,
+        height: 2,
+      },
+      {
+        src: require("../../assets/images/projets/Web/MetricsServer/2_MetricsServer.jpg"),
+        width: 1,
+        height: 2,
+      },
+      {
+        src: require("../../assets/images/projets/Web/MetricsServer/3_MetricsServer.jpg"),
+        width: 1,
+        height: 4,
+      },
+    ],
+  },
+  {
+    id: 11,
+    thumbnail: {
       url: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_Set.jpg"),
       urlSD: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_Set_SD.jpg"),
       width: 1000,
@@ -34,7 +133,7 @@ const PROJECTS_LIST = [
     ],
   },
   {
-    id: 12,
+    id: 10,
     thumbnail: {
       url: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_ODOS.jpg"),
       urlSD: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_ODOS_SD.jpg"),
@@ -68,104 +167,6 @@ const PROJECTS_LIST = [
         src: require("../../assets/images/projets/Web/OneDayOneSong/3_ODOS.jpg"),
         width: 1,
         height: 5,
-      },
-    ],
-  },
-  {
-    id: 11,
-    thumbnail: {
-      url: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_MetricsServer.jpg"),
-      urlSD: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_MetricsServer_SD.jpg"),
-      width: 1000,
-      height: 750,
-    },
-    title: "Metrics server",
-    location: "Projet personnel",
-    path: "/metrics-server",
-    year: "2020",
-    category: "Développement web",
-    website: {
-      name: "olichab.github.io/MetricsServer",
-      url: "https://olichab.github.io/MetricsServer/",
-    },
-    tags: [
-      "React",
-      "Redux",
-      "React-virtualized",
-      "React-vis",
-      "React-select",
-      "React-infinite-calendar",
-      "Sass",
-      "Reactsrap",
-    ],
-    description:
-      "<p> A partir d&apos;un <b>relevé de métriques</b> collecté sur un <b>serveur</b>, le but était de créer un <b>dashboard </b>permettant à l&apos;utilisateur de pouvoir <b> analyser facilement et rapidement </b> les <b> informations systèmes </b> (réseau, disque, cpu, mémoire,…) en vue d&apos;identifier <b> d&apos;éventuels problèmes</b> . <br /> <br /> Il est possible de <b> filtrer </b> les données par <b>date</b>, <b>fichiers</b> ou <b>inodes</b> mais également de détecter les entrées ayant un <b> temps de chargement </b> supérieur aux autres afin d&apos;obtenir les <b> détails </b> sur la <b> consommation CPU </b> de celle-ci. </p>",
-    images: [
-      {
-        src: require("../../assets/images/projets/Web/MetricsServer/1_MetricsServer.jpg"),
-        width: 3,
-        height: 2,
-      },
-      {
-        src: require("../../assets/images/projets/Web/MetricsServer/2_MetricsServer.jpg"),
-        width: 1,
-        height: 2,
-      },
-      {
-        src: require("../../assets/images/projets/Web/MetricsServer/3_MetricsServer.jpg"),
-        width: 1,
-        height: 4,
-      },
-    ],
-  },
-  {
-    id: 10,
-    thumbnail: {
-      url: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_BriefOnline.jpg"),
-      urlSD: require("../../assets/images/projets/Thumbnails/Web/Thumbnail_BriefOnline_SD.jpg"),
-      width: 1000,
-      height: 554,
-    },
-    title: "Brief Online",
-    location: "Altavia Connect",
-    path: "/brief-online",
-    year: "2019",
-    category: "Développement web",
-    website: {
-      name: "www.altavia-group.com",
-      url: "https://www.altavia-group.com/fr/",
-    },
-    tags: [
-      "AngularJS",
-      "Java",
-      "Javascript",
-      "MySQL",
-      "Sass",
-      "Gulp",
-      "Material Design",
-    ],
-    description:
-      "<p> La web application « <b>Brief Online</b> » permet aux clients d’Altavia d’envoyer un <b>brief de leurs besoins</b> et d’avoir un <b> suivi</b> de leurs projets. <br /> Le client peut gérer ses <b> campagnes </b> et y inclure des <b> supports </b> (brochure, catalogue, affiche, roll-up, PLV...) qu&apos;il pourra <b> paramétrer </b>à souhait. </p> <p> Voici une liste non exhaustive des <b>tâches réalisées</b> sur ce projet: </p> <ul> <li> Stabilisation de la version 3 de Brief Online (debugging, amélioration des performances) </li> <li> Refonte de la partie workflow permettant aux clients de suivre l&apos;avancement de leurs projets </li> <li>Réalisation de maquettes</li> <li> Développement du contrôle en amont des fichiers PDF (Preflight) </li> <li>Mise en place de la messagerie interne</li> <li>Upload et encodage des fichiers envoyés</li> <li>Création de templates d’emails et gestion de leurs envois</li> <li>Écriture de tests fonctionnels et unitaires</li> <li>Rédaction de documentation</li> <li>Support de l&apos;application</li> </ul",
-    images: [
-      {
-        src: require("../../assets/images/projets/Web/BriefOnline/1_Bol_OngoingProject.jpg"),
-        width: 4,
-        height: 2,
-      },
-      {
-        src: require("../../assets/images/projets/Web/BriefOnline/2_Bol_AddSupport.jpg"),
-        width: 4,
-        height: 2,
-      },
-      {
-        src: require("../../assets/images/projets/Web/BriefOnline/3_Bol_Support.jpg"),
-        width: 4,
-        height: 2,
-      },
-      {
-        src: require("../../assets/images/projets/Web/BriefOnline/4_Bol_Workflow.jpg"),
-        width: 4,
-        height: 2,
       },
     ],
   },
