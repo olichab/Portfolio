@@ -10,6 +10,7 @@ import photo from "../assets/images/Photo_OC.png";
 import sentence from "../assets/images/Sentence.png";
 import logoReact from "../assets/images/logos/react.svg";
 import logoRedux from "../assets/images/logos/redux.svg";
+import logoJest from "../assets/images/logos/Jest.svg";
 import logoNodeJS from "../assets/images/logos/nodejs.svg";
 import logoApi from "../assets/images/logos/api.svg";
 import logoTypescript from "../assets/images/logos/typescript.svg";
@@ -19,6 +20,7 @@ import logoJira from "../assets/images/logos/jira.svg";
 import logoBitbucket from "../assets/images/logos/bitbucket.svg";
 import logoAgile from "../assets/images/logos/agile.svg";
 import logoBootstrap from "../assets/images/logos/bootstrap.svg";
+import logoTailwindCSS from "../assets/images/logos/TailwindCSS.svg";
 import logoHtml from "../assets/images/logos/html5.svg";
 import logoCss from "../assets/images/logos/css3.svg";
 import logoSketch from "../assets/images/logos/sketch.svg";
@@ -34,14 +36,17 @@ const competences = [
     name: ["React", "Redux"],
   },
   { srcLogo: [logoTypescript], name: ["Typescript", "PropTypes"] },
+  { srcLogo: [logoJest], name: ["Jest"] },
+  { srcLogo: [logoHtml, logoCss], name: ["Html 5", "Css 3"] },
+  {
+    srcLogo: [logoBootstrap, logoTailwindCSS],
+    name: ["Bootstrap", "Tailwind CSS"],
+  },
   { srcLogo: [logoNodeJS], name: ["NodeJS", "SQL"] },
   { srcLogo: [logoApi], name: ["API Rest", "Postman"] },
   { srcLogo: [logoGit, logoGithub], name: ["Git", "Github"] },
   { srcLogo: [logoJira, logoBitbucket], name: ["Jira", "Bitbucket"] },
   { srcLogo: [logoAgile], name: ["Méthode agile"] },
-  { srcLogo: [logoBootstrap], name: ["Bootstrap"] },
-  { srcLogo: [logoHtml], name: ["Html 5"] },
-  { srcLogo: [logoCss], name: ["Css 3"] },
   { srcLogo: [logoSketch, logoAdobeXD], name: ["Sketch", "AdobeXD"] },
   {
     srcLogo: [logoPhotoshop, logoIllustrator],
@@ -103,7 +108,7 @@ const Bio = () => {
                   en tant qu’ancien infographiste, je porte une attention
                   particulière aux interfaces et à l’expérience utilisateur. Une
                   approche centrée sur l&apos;humain est pour moi un enjeu
-                  majeur en 2020.
+                  majeur en 2021.
                 </p>
                 <br />
                 <p ref={(el) => (refPartText.current[4] = el)}>

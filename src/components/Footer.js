@@ -8,7 +8,7 @@ export default function Footer() {
     <Container fluid className="footer-container">
       <Row>
         <Col xs="12">
-          Tous droits reservés &copy; 2020 ∙ Powered by Olivier Chabot
+          Tous droits reservés &copy; 2021 ∙ Powered by Olivier Chabot
         </Col>
         <Col xs="12">
           <a
